@@ -1,0 +1,844 @@
+I
+(Legislative acts)
+DIRECTIVES
+DIRECTIVE 2014/104/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL
+of 26 November 2014
+on certain rules governing actions for damages under national law for infringements of the
+competition law provisions of the Member States and of the European Union
+(Text with EEA relevance)
+THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION,
+Having regard to the Treaty on the Functioning of the European Union, and in particular Articles 103 and 114 thereof,
+Having regard to the proposal from the European Commission,
+After transmission of the draft legislative act to the national parliaments,
+Having regard to the opinion of the European Economic and Social Committee (
+1
+),
+Acting in accordance with the ordinary legislative procedure (
+2
+),
+Whereas:
+(1) Articles 101 and 102 of the Treaty on the Functioning of the European Union (TFEU) are a matter of public
+policy and should be applied effectively throughout the Union in order to ensure that competition in the internal
+market is not distorted.
+(2) The public enforcement of Articles 101 and 102 TFEU is carried out by the Commission using the powers
+provided by Council Regulation (EC) No 1/2003 (
+3
+). Upon the entry into force of the Treaty of Lisbon
+on 1 December 2009, Articles 81 and 82 of the Treaty establishing the European Community became Articles 101 and 102 TFEU, and they remain identical in substance. Public enforcement is also carried out by national
+competition authorities, which may take the decisions listed in Article 5 of Regulation (EC) No 1/2003. In accordance with that Regulation, Member States should be able to designate administrative as well as judicial authorities
+to apply Articles 101 and 102 TFEU as public enforcers and to carry out the various functions conferred upon
+competition authorities by that Regulation.
+(3) Articles 101 and 102 TFEU produce direct effects in relations between individuals and create, for the individuals
+concerned, rights and obligations which national courts must enforce. National courts thus have an equally essential part to play in applying the competition rules (private enforcement). When ruling on disputes between
+private individuals, they protect subjective rights under Union law, for example by awarding damages to the
+victims of infringements. The full effectiveness of Articles 101 and 102 TFEU, and in particular the practical
+effect of the prohibitions laid down therein, requires that anyone — be they an individual, including consumers
+5.12.2014 EN Official Journal of the European Union L 349/1
+(
+1
+) OJ C 67, 6.3.2014, p. 83.
+(
+2
+) Position of the European Parliament of 17 April 2014 (not yet published in the Official Journal) and decision of the Council of
+10 November 2014.
+(
+3
+) Council Regulation (EC) No 1/2003 of 16 December 2002 on the implementation of the rules of competition laid down in Articles 81
+and 82 of the Treaty (OJ L 1, 4.1.2003, p. 1). 
+and undertakings, or a public authority — can claim compensation before national courts for the harm caused to
+them by an infringement of those provisions. The right to compensation in Union law applies equally to infringements of Articles 101 and 102 TFEU by public undertakings and by undertakings entrusted with special or exclusive rights by Member States within the meaning of Article 106 TFEU.
+(4) The right in Union law to compensation for harm resulting from infringements of Union and national competition law requires each Member State to have procedural rules ensuring the effective exercise of that right. The
+need for effective procedural remedies also follows from the right to effective judicial protection as laid down in
+the second subparagraph of Article 19(1) of the Treaty on European Union (TEU) and in the first paragraph of
+Article 47 of the Charter of Fundamental Rights of the European Union. Member States should ensure effective
+legal protection in the fields covered by Union law.
+(5) Actions for damages are only one element of an effective system of private enforcement of infringements of
+competition law and are complemented by alternative avenues of redress, such as consensual dispute resolution
+and public enforcement decisions that give parties an incentive to provide compensation.
+(6) To ensure effective private enforcement actions under civil law and effective public enforcement by competition
+authorities, both tools are required to interact to ensure maximum effectiveness of the competition rules. It is
+necessary to regulate the coordination of those two forms of enforcement in a coherent manner, for instance in
+relation to the arrangements for access to documents held by competition authorities. Such coordination at
+Union level will also avoid the divergence of applicable rules, which could jeopardise the proper functioning of
+the internal market.
+(7) In accordance with Article 26(2) TFEU, the internal market comprises an area without internal frontiers in which
+the free movement of goods, persons, services and capital is ensured. There are marked differences between the
+rules in the Member States governing actions for damages for infringements of Union or national competition
+law. Those differences lead to uncertainty concerning the conditions under which injured parties can exercise the
+right to compensation they derive from the TFEU and affect the substantive effectiveness of such right. As injured
+parties often choose their Member State of establishment as the forum in which to claim damages, the discrepancies between the national rules lead to an uneven playing field as regards actions for damages and may thus affect
+competition on the markets on which those injured parties, as well as the infringing undertakings, operate.
+(8) Undertakings established and operating in various Member States are subject to differing procedural rules that
+significantly affect the extent to which they can be held liable for infringements of competition law. This uneven
+enforcement of the right to compensation in Union law may result not only in a competitive advantage for some
+undertakings which have infringed Article 101 or 102 TFEU but also in a disincentive to the exercise of the
+rights of establishment and provision of goods or services in those Member States where the right to compensation is enforced more effectively. As the differences in the liability regimes applicable in the Member States may
+negatively affect both competition and the proper functioning of the internal market, it is appropriate to base
+this Directive on the dual legal bases of Articles 103 and 114 TFEU.
+(9) It is necessary, bearing in mind that large-scale infringements of competition law often have a cross-border
+element, to ensure a more level playing field for undertakings operating in the internal market and to improve
+the conditions for consumers to exercise the rights that they derive from the internal market. It is appropriate to
+increase legal certainty and to reduce the differences between the Member States as to the national rules
+governing actions for damages for infringements of both Union competition law and national competition law
+where that is applied in parallel with Union competition law. An approximation of those rules will help to
+prevent the increase of differences between the Member States' rules governing actions for damages in competition cases.
+(10) Article 3(1) of Regulation (EC) No 1/2003 provides that ‘[w]here the competition authorities of the Member States
+or national courts apply national competition law to agreements, decisions by associations of undertakings or
+concerted practices within the meaning of Article [101(1) TFEU] which may affect trade between Member States
+within the meaning of that provision, they shall also apply Article [101 TFEU] to such agreements, decisions or
+concerted practices. Where the competition authorities of the Member States or national courts apply national
+competition law to any abuse prohibited by Article [102 TFEU], they shall also apply Article [102 TFEU].’ In the
+interests of the proper functioning of the internal market and with a view to greater legal certainty and a more
+level playing field for undertakings and consumers, it is appropriate that the scope of this Directive extend to
+actions for damages based on the infringement of national competition law where it is applied pursuant to
+Article 3(1) of Regulation (EC) No 1/2003. Applying differing rules on civil liability in respect of infringements
+of Article 101 or 102 TFEU and in respect of infringements of rules of national competition law which must be
+applied in the same cases in parallel to Union competition law would otherwise adversely affect the position of
+L 349/2 EN Official Journal of the European Union 5.12.2014 
+claimants in the same case and the scope of their claims, and would constitute an obstacle to the proper functioning of the internal market. This Directive should not affect actions for damages in respect of infringements of
+national competition law which do not affect trade between Member States within the meaning of Article 101
+or 102 TFEU.
+(11) In the absence of Union law, actions for damages are governed by the national rules and procedures of the
+Member States. According to the case-law of the Court of Justice of the European Union (Court of Justice), any
+person can claim compensation for harm suffered where there is a causal relationship between that harm and an
+infringement of competition law. All national rules governing the exercise of the right to compensation for harm
+resulting from an infringement of Article 101 or 102 TFEU, including those concerning aspects not dealt with in
+this Directive such as the notion of causal relationship between the infringement and the harm, must observe the
+principles of effectiveness and equivalence. This means that they should not be formulated or applied in a way
+that makes it excessively difficult or practically impossible to exercise the right to compensation guaranteed by
+the TFEU or less favourably than those applicable to similar domestic actions. Where Member States provide
+other conditions for compensation under national law, such as imputability, adequacy or culpability, they should
+be able to maintain such conditions in so far as they comply with the case-law of the Court of Justice, the principles of effectiveness and equivalence, and this Directive.
+(12) This Directive reaffirms the acquis communautaire on the right to compensation for harm caused by infringements
+of Union competition law, particularly regarding standing and the definition of damage, as stated in the case-law
+of the Court of Justice, and does not pre-empt any further development thereof. Anyone who has suffered harm
+caused by such an infringement can claim compensation for actual loss (damnum emergens), for gain of which that
+person has been deprived (loss of profit or lucrum cessans), plus interest, irrespective of whether those categories
+are established separately or in combination in national law. The payment of interest is an essential component of
+compensation to make good the damage sustained by taking into account the effluxion of time and should be
+due from the time when the harm occurred until the time when compensation is paid, without prejudice to the
+qualification of such interest as compensatory or default interest under national law and to whether effluxion of
+time is taken into account as a separate category (interest) or as a constituent part of actual loss or loss of profit.
+It is incumbent on the Member States to lay down the rules to be applied for that purpose.
+(13) The right to compensation is recognised for any natural or legal person — consumers, undertakings and public
+authorities alike — irrespective of the existence of a direct contractual relationship with the infringing undertaking, and regardless of whether or not there has been a prior finding of an infringement by a competition
+authority. This Directive should not require Member States to introduce collective redress mechanisms for the enforcement of Articles 101 and 102 TFEU. Without prejudice to compensation for loss of opportunity, full
+compensation under this Directive should not lead to overcompensation, whether by means of punitive, multiple
+or other damages.
+(14) Actions for damages for infringements of Union or national competition law typically require a complex factual
+and economic analysis. The evidence necessary to prove a claim for damages is often held exclusively by the
+opposing party or by third parties, and is not sufficiently known by, or accessible to, the claimant. In such
+circumstances, strict legal requirements for claimants to assert in detail all the facts of their case at the beginning
+of an action and to proffer precisely specified items of supporting evidence can unduly impede the effective exercise of the right to compensation guaranteed by the TFEU.
+(15) Evidence is an important element for bringing actions for damages for infringement of Union or national competition law. However, as competition law litigation is characterised by an information asymmetry, it is appropriate
+to ensure that claimants are afforded the right to obtain the disclosure of evidence relevant to their claim,
+without it being necessary for them to specify individual items of evidence. In order to ensure equality of arms,
+those means should also be available to defendants in actions for damages, so that they can request the disclosure
+of evidence by those claimants. National courts should also be able to order that evidence be disclosed by third
+parties, including public authorities. Where a national court wishes to order disclosure of evidence by the
+Commission, the principle in Article 4(3) TEU of sincere cooperation between the Union and the Member States
+and Article 15(1) of Regulation (EC) No 1/2003 as regards requests for information apply. Where national courts
+order public authorities to disclose evidence, the principles of legal and administrative cooperation under Union
+or national law apply.
+5.12.2014 EN Official Journal of the European Union L 349/3 
+(16) National courts should be able, under their strict control, especially as regards the necessity and proportionality
+of disclosure measures, to order the disclosure of specified items of evidence or categories of evidence upon
+request of a party. It follows from the requirement of proportionality that disclosure can be ordered only where a
+claimant has made a plausible assertion, on the basis of facts which are reasonably available to that claimant, that
+the claimant has suffered harm that was caused by the defendant. Where a request for disclosure aims to obtain a
+category of evidence, that category should be identified by reference to common features of its constitutive
+elements such as the nature, object or content of the documents the disclosure of which is requested, the time
+during which they were drawn up, or other criteria, provided that the evidence falling within the category is relevant within the meaning of this Directive. Such categories should be defined as precisely and narrowly as possible
+on the basis of reasonably available facts.
+(17) Where a court in one Member State requests a competent court in another Member State to take evidence or
+requests that evidence be taken directly in another Member State, the provisions of Council Regulation (EC)
+No 1206/2001 (
+1
+) apply.
+(18) While relevant evidence containing business secrets or otherwise confidential information should, in principle, be
+available in actions for damages, such confidential information needs to be protected appropriately. National
+courts should therefore have at their disposal a range of measures to protect such confidential information from
+being disclosed during the proceedings. Those measures could include the possibility of redacting sensitive
+passages in documents, conducting hearings in camera, restricting the persons allowed to see the evidence, and
+instructing experts to produce summaries of the information in an aggregated or otherwise non-confidential
+form. Measures protecting business secrets and other confidential information should, nevertheless, not impede
+the exercise of the right to compensation.
+(19) This Directive affects neither the possibility under the laws of the Member States to appeal disclosure orders, nor
+the conditions for bringing such appeals.
+(20) Regulation (EC) No 1049/2001 of the European Parliament and of the Council (
+2
+) governs public access to European Parliament, Council and Commission documents, and is designed to confer on the public as wide a right
+of access as possible to documents of those institutions. That right is nonetheless subject to certain limits based
+on reasons of public or private interest. It follows that the system of exceptions laid down in Article 4 of that
+Regulation is based on a balancing of the opposing interests in a given situation, namely, the interests which
+would be favoured by the disclosure of the documents in question and those which would be jeopardised by such
+disclosure. This Directive should be without prejudice to such rules and practices under Regulation (EC)
+No 1049/2001.
+(21) The effectiveness and consistency of the application of Articles 101 and 102 TFEU by the Commission and the
+national competition authorities require a common approach across the Union on the disclosure of evidence that
+is included in the file of a competition authority. Disclosure of evidence should not unduly detract from the effectiveness of the enforcement of competition law by a competition authority. This Directive does not cover the
+disclosure of internal documents of, or correspondence between, competition authorities.
+(22) In order to ensure the effective protection of the right to compensation, it is not necessary that every document
+relating to proceedings under Article 101 or 102 TFEU be disclosed to a claimant merely on the grounds of the
+claimant's intended action for damages since it is highly unlikely that the action for damages will need to be
+based on all the evidence in the file relating to those proceedings.
+(23) The requirement of proportionality should be carefully assessed when disclosure risks unravelling the investigation strategy of a competition authority by revealing which documents are part of the file or risks having a negative effect on the way in which undertakings cooperate with the competition authorities. Particular attention
+should be paid to preventing ‘fishing expeditions’, i.e. non-specific or overly broad searches for information that
+is unlikely to be of relevance for the parties to the proceedings. Disclosure requests should therefore not be
+deemed to be proportionate where they refer to the generic disclosure of documents in the file of a competition
+authority relating to a certain case, or the generic disclosure of documents submitted by a party in the context of
+a particular case. Such wide disclosure requests would not be compatible with the requesting party's duty to
+specify the items of evidence or the categories of evidence as precisely and narrowly as possible.
+L 349/4 EN Official Journal of the European Union 5.12.2014
+(
+1
+) Council Regulation (EC) No 1206/2001 of 28 May 2001 on cooperation between the courts of the Member States in the taking of
+evidence in civil or commercial matters (OJ L 174, 27.6.2001, p. 1).
+(
+2
+) Regulation (EC) No 1049/2001 of the European Parliament and of the Council of 30 May 2001 regarding public access to European
+Parliament, Council and Commission documents (OJ L 145, 31.5.2001, p. 43). 
+(24) This Directive does not affect the right of courts to consider, under Union or national law, the interests of the
+effective public enforcement of competition law when ordering the disclosure of any type of evidence with the
+exception of leniency statements and settlement submissions.
+(25) An exemption should apply in respect of any disclosure that, if granted, would unduly interfere with an ongoing
+investigation by a competition authority concerning an infringement of Union or national competition law. Information that was prepared by a competition authority in the course of its proceedings for the enforcement of
+Union or national competition law and sent to the parties to those proceedings (such as a ‘Statement of Objections’) or prepared by a party thereto (such as replies to requests for information of the competition authority or
+witness statements) should therefore be disclosable in actions for damages only after the competition authority
+has closed its proceedings, for instance by adopting a decision under Article 5 or under Chapter III of Regulation
+(EC) No 1/2003, with the exception of decisions on interim measures.
+(26) Leniency programmes and settlement procedures are important tools for the public enforcement of Union
+competition law as they contribute to the detection and efficient prosecution of, and the imposition of penalties
+for, the most serious infringements of competition law. Furthermore, as many decisions of competition authorities in cartel cases are based on a leniency application, and damages actions in cartel cases generally follow on
+from those decisions, leniency programmes are also important for the effectiveness of actions for damages in
+cartel cases. Undertakings might be deterred from cooperating with competition authorities under leniency
+programmes and settlement procedures if self-incriminating statements such as leniency statements and settlement submissions, which are produced for the sole purpose of cooperating with the competition authorities,
+were to be disclosed. Such disclosure would pose a risk of exposing cooperating undertakings or their managing
+staff to civil or criminal liability under conditions worse than those of co-infringers not cooperating with the
+competition authorities. To ensure undertakings' continued willingness to approach competition authorities
+voluntarily with leniency statements or settlement submissions, such documents should be exempted from the
+disclosure of evidence. That exemption should also apply to verbatim quotations from leniency statements or
+settlement submissions included in other documents. Those limitations on the disclosure of evidence should not
+prevent competition authorities from publishing their decisions in accordance with the applicable Union or
+national law. In order to ensure that that exemption does not unduly interfere with injured parties' rights to
+compensation, it should be limited to those voluntary and self-incriminating leniency statements and settlement
+submissions.
+(27) The rules in this Directive on the disclosure of documents other than leniency statements and settlement submissions ensure that injured parties retain sufficient alternative means by which to obtain access to the relevant
+evidence that they need in order to prepare their actions for damages. National courts should themselves be able,
+upon request by a claimant, to access documents in respect of which the exemption is invoked in order to verify
+whether the contents thereof fall outside the definitions of leniency statements and settlement submissions laid
+down in this Directive. Any content falling outside those definitions should be disclosable under the relevant
+conditions.
+(28) National courts should be able, at any time, to order, in the context of an action for damages, the disclosure of
+evidence that exists independently of the proceedings of a competition authority (‘pre-existing information’).
+(29) The disclosure of evidence should be ordered from a competition authority only when that evidence cannot
+reasonably be obtained from another party or from a third party.
+(30) Pursuant to Article 15(3) of Regulation (EC) No 1/2003, competition authorities, acting upon their own initiative,
+can submit written observations to national courts on issues relating to the application of Article 101 or 102
+TFEU. In order to preserve the contribution made by public enforcement to the application of those Articles,
+competition authorities should likewise be able, acting upon their own initiative, to submit their observations to
+a national court for the purpose of assessing the proportionality of a disclosure of evidence included in the
+authorities' files, in light of the impact that such disclosure would have on the effectiveness of the public enforcement of competition law. Member States should be able to set up a system whereby a competition authority
+is informed of requests for disclosure of information when the person requesting disclosure or the person from
+whom disclosure is sought is involved in that competition authority's investigation into the alleged infringement,
+without prejudice to national law providing for ex parte proceedings.
+5.12.2014 EN Official Journal of the European Union L 349/5 
+(31) Any natural or legal person that obtains evidence through access to the file of a competition authority should be
+able to use that evidence for the purposes of an action for damages to which it is a party. Such use should also
+be allowed on the part of any natural or legal person that succeeded in its rights and obligations, including
+through the acquisition of its claim. Where the evidence was obtained by a legal person forming part of a corporate group constituting one undertaking for the application of Articles 101 and 102 TFEU, other legal persons
+belonging to the same undertaking should also be able to use that evidence.
+(32) However, the use of evidence obtained through access to the file of a competition authority should not unduly
+detract from the effective enforcement of competition law by a competition authority. In order to ensure that the
+limitations on disclosure laid down in this Directive are not undermined, the use of evidence of the types referred
+to in recitals 24 and 25 which is obtained solely through access to the file of a competition authority should be
+limited under the same circumstances. The limitation should take the form of inadmissibility in actions for
+damages or the form of any other protection under applicable national rules capable of ensuring the full effect of
+the limits on the disclosure of those types of evidence. Moreover, evidence obtained from a competition authority
+should not become an object of trade. The possibility of using evidence that was obtained solely through access
+to the file of a competition authority should therefore be limited to the natural or legal person that was originally
+granted access and to its legal successors. That limitation to avoid trading of evidence does not, however, prevent
+a national court from ordering the disclosure of that evidence under the conditions provided for in this Directive.
+(33) The fact that a claim for damages is initiated, or that an investigation by a competition authority is started, entails
+a risk that persons concerned may destroy or hide evidence that would be useful in substantiating an injured
+party's claim for damages. To prevent the destruction of relevant evidence and to ensure that court orders as to
+disclosure are complied with, national courts should be able to impose sufficiently deterrent penalties. In so far as
+parties to the proceedings are concerned, the risk of adverse inferences being drawn in the proceedings for
+damages can be a particularly effective penalty, and can help avoid delays. Penalties should also be available for
+non-compliance with obligations to protect confidential information and for the abusive use of information
+obtained through disclosure. Similarly, penalties should be available if information obtained through access to the
+file of a competition authority is used abusively in actions for damages.
+(34) Ensuring the effective and consistent application of Articles 101 and 102 TFEU by the Commission and the
+national competition authorities necessitates a common approach across the Union on the effect of national
+competition authorities' final infringement decisions on subsequent actions for damages. Such decisions are
+adopted only after the Commission has been informed of the decision envisaged or, in the absence thereof, of
+any other document indicating the proposed course of action pursuant to Article 11(4) of Regulation (EC)
+No 1/2003, and if the Commission has not relieved the national competition authority of its competence by initiating proceedings pursuant to Article 11(6) of that Regulation. The Commission should ensure the consistent
+application of Union competition law by providing, bilaterally and within the framework of the European Competition Network, guidance to the national competition authorities. To enhance legal certainty, to avoid inconsistency in the application of Articles 101 and 102 TFEU, to increase the effectiveness and procedural efficiency of
+actions for damages and to foster the functioning of the internal market for undertakings and consumers, the
+finding of an infringement of Article 101 or 102 TFEU in a final decision by a national competition authority or
+a review court should not be relitigated in subsequent actions for damages. Therefore, such a finding should be
+deemed to be irrefutably established in actions for damages brought in the Member State of the national competition authority or review court relating to that infringement. The effect of the finding should, however, cover only
+the nature of the infringement and its material, personal, temporal and territorial scope as determined by the
+competition authority or review court in the exercise of its jurisdiction. Where a decision has found that provisions of national competition law are infringed in cases where Union and national competition law are applied in
+the same case and in parallel, that infringement should also be deemed to be irrefutably established.
+(35) Where an action for damages is brought in a Member State other than the Member State of a national competition authority or a review court that found the infringement of Article 101 or 102 TFEU to which the action
+relates, it should be possible to present that finding in a final decision by the national competition authority or
+the review court to a national court as at least prima facie evidence of the fact that an infringement of competition law has occurred. The finding can be assessed as appropriate, along with any other evidence adduced by the
+parties. The effects of decisions by national competition authorities and review courts finding an infringement of
+the competition rules are without prejudice to the rights and obligations of national courts under Article 267
+TFEU.
+L 349/6 EN Official Journal of the European Union 5.12.2014 
+(36) National rules on the beginning, duration, suspension or interruption of limitation periods should not unduly
+hamper the bringing of actions for damages. This is particularly important in respect of actions that build upon a
+finding by a competition authority or a review court of an infringement. To that end, it should be possible to
+bring an action for damages after proceedings by a competition authority, with a view to enforcing national and
+Union competition law. The limitation period should not begin to run before the infringement ceases and before
+a claimant knows, or can reasonably be expected to know, the behaviour constituting the infringement, the fact
+that the infringement caused the claimant harm and the identity of the infringer. Member States should be able to
+maintain or introduce absolute limitation periods that are of general application, provided that the duration of
+such absolute limitation periods does not render practically impossible or excessively difficult the exercise of the
+right to full compensation.
+(37) Where several undertakings infringe the competition rules jointly, as in the case of a cartel, it is appropriate to
+make provision for those co-infringers to be held jointly and severally liable for the entire harm caused by the infringement. A co-infringer should have the right to obtain a contribution from other co-infringers if it has paid
+more compensation than its share. The determination of that share as the relative responsibility of a given
+infringer, and the relevant criteria such as turnover, market share, or role in the cartel, is a matter for the applicable national law, while respecting the principles of effectiveness and equivalence.
+(38) Undertakings which cooperate with competition authorities under a leniency programme play a key role in
+exposing secret cartel infringements and in bringing them to an end, thereby often mitigating the harm which
+could have been caused had the infringement continued. It is therefore appropriate to make provision for undertakings which have received immunity from fines from a competition authority under a leniency programme to
+be protected from undue exposure to damages claims, bearing in mind that the decision of the competition
+authority finding the infringement may become final for the immunity recipient before it becomes final for other
+undertakings which have not received immunity, thus potentially making the immunity recipient the preferential
+target of litigation. It is therefore appropriate that the immunity recipient be relieved in principle from joint and
+several liability for the entire harm and that any contribution it must make vis-à-vis co-infringers not exceed the
+amount of harm caused to its own direct or indirect purchasers or, in the case of a buying cartel, its direct or
+indirect providers. To the extent that a cartel has caused harm to those other than the customers or providers of
+the infringers, the contribution of the immunity recipient should not exceed its relative responsibility for the
+harm caused by the cartel. That share should be determined in accordance with the same rules used to determine
+the contributions between infringers. The immunity recipient should remain fully liable to the injured parties
+other than its direct or indirect purchasers or providers only where they are unable to obtain full compensation
+from the other infringers.
+(39) Harm in the form of actual loss can result from the price difference between what was actually paid and what
+would otherwise have been paid in the absence of the infringement. When an injured party has reduced its actual
+loss by passing it on, entirely or in part, to its own purchasers, the loss which has been passed on no longer
+constitutes harm for which the party that passed it on needs to be compensated. It is therefore in principle appropriate to allow an infringer to invoke the passing-on of actual loss as a defence against a claim for damages. It is
+appropriate to provide that the infringer, in so far as it invokes the passing-on defence, must prove the existence
+and extent of pass-on of the overcharge. This burden of proof should not affect the possibility for the infringer to
+use evidence other than that in its possession, such as evidence already acquired in the proceedings or evidence
+held by other parties or third parties.
+(40) In situations where the passing-on resulted in reduced sales and thus harm in the form of a loss of profit, the
+right to claim compensation for such loss of profit should remain unaffected.
+(41) Depending on the conditions under which undertakings are operating, it may be commercial practice to pass on
+price increases down the supply chain. Consumers or undertakings to whom actual loss has thus been passed on
+have suffered harm caused by an infringement of Union or national competition law. While such harm should be
+compensated for by the infringer, it may be particularly difficult for consumers or undertakings that did not
+themselves make any purchase from the infringer to prove the extent of that harm. It is therefore appropriate to
+provide that, where the existence of a claim for damages or the amount of damages to be awarded depends on
+whether or to what degree an overcharge paid by a direct purchaser from the infringer has been passed on to an
+indirect purchaser, the latter is regarded as having proven that an overcharge paid by that direct purchaser has
+5.12.2014 EN Official Journal of the European Union L 349/7 
+been passed on to its level where it is able to show prima facie that such passing-on has occurred. This rebuttable
+presumption applies unless the infringer can credibly demonstrate to the satisfaction of the court that the actual
+loss has not or not entirely been passed on to the indirect purchaser. It is furthermore appropriate to define
+under what conditions the indirect purchaser is to be regarded as having established such prima facie proof. As
+regards the quantification of passing-on, national courts should have the power to estimate which share of the
+overcharge has been passed on to the level of indirect purchasers in disputes pending before them.
+(42) The Commission should issue clear, simple and comprehensive guidelines for national courts on how to estimate
+the share of the overcharge passed on to indirect purchasers.
+(43) Infringements of competition law often concern the conditions and the price under which goods or services are
+sold, and lead to an overcharge and other harm for the customers of the infringers. The infringement may also
+concern supplies to the infringer (for example in the case of a buyers' cartel). In such cases, the actual loss could
+result from a lower price paid by infringers to their suppliers. This Directive and in particular the rules on
+passing-on should apply accordingly to those cases.
+(44) Actions for damages can be brought both by those who purchased goods or services from the infringer and by
+purchasers further down the supply chain. In the interest of consistency between judgments resulting from
+related proceedings and hence to avoid the harm caused by the infringement of Union or national competition
+law not being fully compensated or the infringer being required to pay damages to compensate for harm that has
+not been suffered, national courts should have the power to estimate the proportion of any overcharge which
+was suffered by the direct or indirect purchasers in disputes pending before them. In this context, national courts
+should be able to take due account, by procedural or substantive means available under Union and national law,
+of any related action and of the resulting judgment, particularly where it finds that passing-on has been proven.
+National courts should have at their disposal appropriate procedural means, such as joinder of claims, to ensure
+that compensation for actual loss paid at any level of the supply chain does not exceed the overcharge harm
+caused at that level. Such means should also be available in cross-border cases. This possibility to take due
+account of judgments should be without prejudice to the fundamental rights of the defence and the rights to an
+effective remedy and a fair trial of those who were not parties to the judicial proceedings, and without prejudice
+to the rules on the evidenciary value of judgments rendered in that context. It is possible for actions pending
+before the courts of different Member States to be considered as related within the meaning of Article 30 of
+Regulation (EU) No 1215/2012 of the European Parliament and of the Council (
+1
+). Under that Article, national
+courts other than that first seized may stay proceedings or, under certain circumstances, may decline jurisdiction.
+This Directive is without prejudice to the rights and obligations of national courts under that Regulation.
+(45) An injured party who has proven having suffered harm as a result of a competition law infringement still needs
+to prove the extent of the harm in order to obtain damages. Quantifying harm in competition law cases is a very
+fact-intensive process and may require the application of complex economic models. This is often very costly, and
+claimants have difficulties in obtaining the data necessary to substantiate their claims. The quantification of harm
+in competition law cases can thus constitute a substantial barrier preventing effective claims for compensation.
+(46) In the absence of Union rules on the quantification of harm caused by a competition law infringement, it is for
+the domestic legal system of each Member State to determine its own rules on quantifying harm, and for the
+Member States and for the national courts to determine what requirements the claimant has to meet when
+proving the amount of the harm suffered, the methods that can be used in quantifying the amount, and the
+consequences of not being able to fully meet those requirements. However, the requirements of national law
+regarding the quantification of harm in competition law cases should not be less favourable than those governing
+similar domestic actions (principle of equivalence), nor should they render the exercise of the Union right to
+damages practically impossible or excessively difficult (principle of effectiveness). Regard should be had to any
+information asymmetries between the parties and to the fact that quantifying the harm means assessing how the
+market in question would have evolved had there been no infringement. This assessment implies a comparison
+with a situation which is by definition hypothetical and can thus never be made with complete accuracy. It is
+therefore appropriate to ensure that national courts have the power to estimate the amount of the harm caused
+L 349/8 EN Official Journal of the European Union 5.12.2014
+(
+1
+) Regulation (EU) No 1215/2012 of the European Parliament and of the Council of 12 December 2012 on jurisdiction and the recognition
+and enforcement of judgments in civil and commercial matters (OJ L 351, 20.12.2012, p. 1). 
+by the competition law infringement. Member States should ensure that, where requested, national competition
+authorities may provide guidance on quantum. In order to ensure coherence and predictability, the Commission
+should provide general guidance at Union level.
+(47) To remedy the information asymmetry and some of the difficulties associated with quantifying harm in competition law cases, and to ensure the effectiveness of claims for damages, it is appropriate to presume that cartel
+infringements result in harm, in particular via an effect on prices. Depending on the facts of the case, cartels
+result in a rise in prices, or prevent a lowering of prices which would otherwise have occurred but for the cartel.
+This presumption should not cover the concrete amount of harm. Infringers should be allowed to rebut the
+presumption. It is appropriate to limit this rebuttable presumption to cartels, given their secret nature, which
+increases the information asymmetry and makes it more difficult for claimants to obtain the evidence necessary
+to prove the harm.
+(48) Achieving a ‘once-and-for-all’ settlement for defendants is desirable in order to reduce uncertainty for infringers
+and injured parties. Therefore, infringers and injured parties should be encouraged to agree on compensating for
+the harm caused by a competition law infringement through consensual dispute resolution mechanisms, such as
+out-of-court settlements (including those where a judge can declare a settlement binding), arbitration, mediation
+or conciliation. Such consensual dispute resolution should cover as many injured parties and infringers as legally
+possible. The provisions in this Directive on consensual dispute resolution are therefore meant to facilitate the use
+of such mechanisms and increase their effectiveness.
+(49) Limitation periods for bringing an action for damages could be such that they prevent injured parties and infringers from having sufficient time to come to an agreement on the compensation to be paid. In order to provide
+both sides with a genuine opportunity to engage in consensual dispute resolution before bringing proceedings
+before national courts, limitation periods need to be suspended for the duration of the consensual dispute resolution process.
+(50) Furthermore, when parties decide to engage in consensual dispute resolution after an action for damages for the
+same claim has been brought before a national court, that court should be able to suspend the proceedings
+before it for the duration of the consensual dispute resolution process. When considering whether to suspend the
+proceedings, the national court should take into account the advantages of an expeditious procedure.
+(51) To encourage consensual settlements, an infringer that pays damages through consensual dispute resolution
+should not be placed in a worse position vis-à-vis its co-infringers than it would otherwise be without the consensual settlement. That might happen if a settling infringer, even after a consensual settlement, continued to be fully
+jointly and severally liable for the harm caused by the infringement. A settling infringer should in principle therefore not contribute to its non-settling co-infringers when the latter have paid damages to an injured party with
+whom the first infringer had previously settled. The corollary to this non-contribution rule is that the claim of
+the injured party should be reduced by the settling infringer's share of the harm caused to it, regardless of
+whether the amount of the settlement equals or is different from the relative share of the harm that the settling
+co-infringer inflicted upon the settling injured party. That relative share should be determined in accordance with
+the rules otherwise used to determine the contributions among infringers. Without such a reduction, non-settling
+infringers would be unduly affected by settlements to which they were not a party. However, in order to ensure
+the right to full compensation, settling co-infringers should still have to pay damages where that is the only possibility for the settling injured party to obtain compensation for the remaining claim. The remaining claim refers to
+the claim of the settling injured party reduced by the settling co-infringer's share of the harm that the infringement inflicted upon the settling injured party. The latter possibility to claim damages from the settling coinfringer exists unless it is expressly excluded under the terms of the consensual settlement.
+(52) Situations should be avoided in which settling co-infringers, by paying contribution to non-settling co-infringers
+for damages they paid to non-settling injured parties, pay a total amount of compensation exceeding their relative
+responsibility for the harm caused by the infringement. Therefore, when settling co-infringers are asked to contribute to damages subsequently paid by non-settling co-infringers to non-settling injured parties, national courts
+should take account of the damages already paid under the consensual settlement, bearing in mind that not all
+co-infringers are necessarily equally involved in the full substantive, temporal and geographical scope of the infringement.
+5.12.2014 EN Official Journal of the European Union L 349/9 
+(53) This Directive respects the fundamental rights and observes the principles recognised in the Charter of Fundamental Rights of the European Union.
+(54) Since the objectives of this Directive, namely to establish rules concerning actions for damages for infringements
+of Union competition law in order to ensure the full effect of Articles 101 and 102 TFEU, and the proper functioning of the internal market for undertakings and consumers, cannot be sufficiently achieved by the
+Member States, but can rather, by reason of the requisite effectiveness and consistency in the application of Articles 101 and 102 TFEU, be better achieved at Union level, the Union may adopt measures, in accordance with
+the principle of subsidiarity as set out in Article 5 TEU. In accordance with the principle of proportionality, as set
+out in that Article, this Directive does not go beyond what is necessary in order to achieve those objectives.
+(55) In accordance with the Joint Political Declaration of 28 September 2011 of Member States and the Commission
+on explanatory documents (
+1
+), Member States have undertaken to accompany, in justified cases, the notification
+of their transposition measures with one or more documents explaining the relationship between the components of a directive and the corresponding parts of national transposition instruments. With regard to this Directive, the legislator considers the transmission of such documents to be justified.
+(56) It is appropriate to provide rules for the temporal application of this Directive,
+HAVE ADOPTED THIS DIRECTIVE:
+CHAPTER I
+SUBJECT MATTER, SCOPE AND DEFINITIONS
+Article 1
+Subject matter and scope
+1. This Directive sets out certain rules necessary to ensure that anyone who has suffered harm caused by an infringement of competition law by an undertaking or by an association of undertakings can effectively exercise the right to
+claim full compensation for that harm from that undertaking or association. It sets out rules fostering undistorted
+competition in the internal market and removing obstacles to its proper functioning, by ensuring equivalent protection
+throughout the Union for anyone who has suffered such harm.
+2. This Directive sets out rules coordinating the enforcement of the competition rules by competition authorities and
+the enforcement of those rules in damages actions before national courts.
+Article 2
+Definitions
+For the purposes of this Directive, the following definitions apply:
+(1) ‘infringement of competition law’ means an infringement of Article 101 or 102 TFEU, or of national competition
+law;
+(2) ‘infringer’ means an undertaking or association of undertakings which has committed an infringement of competition law;
+(3) ‘national competition law’ means provisions of national law that predominantly pursue the same objective as Articles 101 and 102 TFEU and that are applied to the same case and in parallel to Union competition law pursuant to
+Article 3(1) of Regulation (EC) No 1/2003, excluding provisions of national law which impose criminal penalties
+on natural persons, except to the extent that such criminal penalties are the means whereby competition rules
+applying to undertakings are enforced;
+(4) ‘action for damages’ means an action under national law by which a claim for damages is brought before a national
+court by an alleged injured party, or by someone acting on behalf of one or more alleged injured parties where
+Union or national law provides for that possibility, or by a natural or legal person that succeeded in the right of
+the alleged injured party, including the person that acquired the claim;
+(5) ‘claim for damages’ means a claim for compensation for harm caused by an infringement of competition law;
+(6) ‘injured party’ means a person that has suffered harm caused by an infringement of competition law;
+L 349/10 EN Official Journal of the European Union 5.12.2014
+(
+1
+) OJ C 369, 17.12.2011, p. 14. 
+(7) ‘national competition authority’ means an authority designated by a Member State pursuant to Article 35 of Regulation (EC) No 1/2003, as being responsible for the application of Articles 101 and 102 TFEU;
+(8) ‘competition authority’ means the Commission or a national competition authority or both, as the context may
+require;
+(9) ‘national court’ means a court or tribunal of a Member State within the meaning of Article 267 TFEU;
+(10) ‘review court’ means a national court that is empowered by ordinary means of appeal to review decisions of a
+national competition authority or to review judgments pronouncing on those decisions, irrespective of whether
+that court itself has the power to find an infringement of competition law;
+(11) ‘infringement decision’ means a decision of a competition authority or review court that finds an infringement of
+competition law;
+(12) ‘final infringement decision’ means an infringement decision that cannot be, or that can no longer be, appealed by
+ordinary means;
+(13) ‘evidence’ means all types of means of proof admissible before the national court seized, in particular documents
+and all other objects containing information, irrespective of the medium on which the information is stored;
+(14) ‘cartel’ means an agreement or concerted practice between two or more competitors aimed at coordinating their
+competitive behaviour on the market or influencing the relevant parameters of competition through practices such
+as, but not limited to, the fixing or coordination of purchase or selling prices or other trading conditions, including
+in relation to intellectual property rights, the allocation of production or sales quotas, the sharing of markets and
+customers, including bid-rigging, restrictions of imports or exports or anti-competitive actions against other
+competitors;
+(15) ‘leniency programme’ means a programme concerning the application of Article 101 TFEU or a corresponding
+provision under national law on the basis of which a participant in a secret cartel, independently of the other
+undertakings involved in the cartel, cooperates with an investigation of the competition authority, by voluntarily
+providing presentations regarding that participant's knowledge of, and role in, the cartel in return for which that
+participant receives, by decision or by a discontinuation of proceedings, immunity from, or a reduction in, fines for
+its involvement in the cartel;
+(16) ‘leniency statement’ means an oral or written presentation voluntarily provided by, or on behalf of, an undertaking
+or a natural person to a competition authority or a record thereof, describing the knowledge of that undertaking or
+natural person of a cartel and describing its role therein, which presentation was drawn up specifically for submission to the competition authority with a view to obtaining immunity or a reduction of fines under a leniency
+programme, not including pre-existing information;
+(17) ‘pre-existing information’ means evidence that exists irrespective of the proceedings of a competition authority,
+whether or not such information is in the file of a competition authority;
+(18) ‘settlement submission’ means a voluntary presentation by, or on behalf of, an undertaking to a competition
+authority describing the undertaking's acknowledgement of, or its renunciation to dispute, its participation in an infringement of competition law and its responsibility for that infringement of competition law, which was drawn up
+specifically to enable the competition authority to apply a simplified or expedited procedure;
+(19) ‘immunity recipient’ means an undertaking which, or a natural person who, has been granted immunity from fines
+by a competition authority under a leniency programme;
+(20) ‘overcharge’ means the difference between the price actually paid and the price that would otherwise have prevailed
+in the absence of an infringement of competition law;
+(21) ‘consensual dispute resolution’ means any mechanism enabling parties to reach the out-of-court resolution of a
+dispute concerning a claim for damages;
+(22) ‘consensual settlement’ means an agreement reached through consensual dispute resolution.
+(23) ‘direct purchaser’ means a natural or legal person who acquired, directly from an infringer, products or services
+that were the object of an infringement of competition law;
+(24) ‘indirect purchaser’ means a natural or legal person who acquired, not directly from an infringer, but from a direct
+purchaser or a subsequent purchaser, products or services that were the object of an infringement of competition
+law, or products or services containing them or derived therefrom.
+5.12.2014 EN Official Journal of the European Union L 349/11 
+Article 3
+Right to full compensation
+1. Member States shall ensure that any natural or legal person who has suffered harm caused by an infringement of
+competition law is able to claim and to obtain full compensation for that harm.
+2. Full compensation shall place a person who has suffered harm in the position in which that person would have
+been had the infringement of competition law not been committed. It shall therefore cover the right to compensation
+for actual loss and for loss of profit, plus the payment of interest.
+3. Full compensation under this Directive shall not lead to overcompensation, whether by means of punitive, multiple
+or other types of damages.
+Article 4
+Principles of effectiveness and equivalence
+In accordance with the principle of effectiveness, Member States shall ensure that all national rules and procedures
+relating to the exercise of claims for damages are designed and applied in such a way that they do not render practically
+impossible or excessively difficult the exercise of the Union right to full compensation for harm caused by an infringement of competition law. In accordance with the principle of equivalence, national rules and procedures relating to
+actions for damages resulting from infringements of Article 101 or 102 TFEU shall not be less favourable to the alleged
+injured parties than those governing similar actions for damages resulting from infringements of national law.
+CHAPTER II
+DISCLOSURE OF EVIDENCE
+Article 5
+Disclosure of evidence
+1. Member States shall ensure that in proceedings relating to an action for damages in the Union, upon request of a
+claimant who has presented a reasoned justification containing reasonably available facts and evidence sufficient to
+support the plausibility of its claim for damages, national courts are able to order the defendant or a third party to
+disclose relevant evidence which lies in their control, subject to the conditions set out in this Chapter. Member States
+shall ensure that national courts are able, upon request of the defendant, to order the claimant or a third party to
+disclose relevant evidence.
+This paragraph is without prejudice to the rights and obligations of national courts under Regulation (EC)
+No 1206/2001.
+2. Member States shall ensure that national courts are able to order the disclosure of specified items of evidence or
+relevant categories of evidence circumscribed as precisely and as narrowly as possible on the basis of reasonably available facts in the reasoned justification.
+3. Member States shall ensure that national courts limit the disclosure of evidence to that which is proportionate. In
+determining whether any disclosure requested by a party is proportionate, national courts shall consider the legitimate
+interests of all parties and third parties concerned. They shall, in particular, consider:
+(a) the extent to which the claim or defence is supported by available facts and evidence justifying the request to disclose
+evidence;
+(b) the scope and cost of disclosure, especially for any third parties concerned, including preventing non-specific
+searches for information which is unlikely to be of relevance for the parties in the procedure;
+(c) whether the evidence the disclosure of which is sought contains confidential information, especially concerning any
+third parties, and what arrangements are in place for protecting such confidential information.
+4. Member States shall ensure that national courts have the power to order the disclosure of evidence containing
+confidential information where they consider it relevant to the action for damages. Member States shall ensure that,
+when ordering the disclosure of such information, national courts have at their disposal effective measures to protect
+such information.
+L 349/12 EN Official Journal of the European Union 5.12.2014 
+5. The interest of undertakings to avoid actions for damages following an infringement of competition law shall not
+constitute an interest that warrants protection.
+6. Member States shall ensure that national courts give full effect to applicable legal professional privilege under
+Union or national law when ordering the disclosure of evidence.
+7. Member States shall ensure that those from whom disclosure is sought are provided with an opportunity to be
+heard before a national court orders disclosure under this Article.
+8. Without prejudice to paragraphs 4 and 7 and to Article 6, this Article shall not prevent Member States from maintaining or introducing rules which would lead to wider disclosure of evidence.
+Article 6
+Disclosure of evidence included in the file of a competition authority
+1. Member States shall ensure that, for the purpose of actions for damages, where national courts order the disclosure
+of evidence included in the file of a competition authority, this Article applies in addition to Article 5.
+2. This Article is without prejudice to the rules and practices on public access to documents under Regulation (EC)
+No 1049/2001.
+3. This Article is without prejudice to the rules and practices under Union or national law on the protection of
+internal documents of competition authorities and of correspondence between competition authorities.
+4. When assessing, in accordance with Article 5(3), the proportionality of an order to disclose information, national
+courts shall, in addition, consider the following:
+(a) whether the request has been formulated specifically with regard to the nature, subject matter or contents of documents submitted to a competition authority or held in the file thereof, rather than by a non-specific application
+concerning documents submitted to a competition authority;
+(b) whether the party requesting disclosure is doing so in relation to an action for damages before a national court; and
+(c) in relation to paragraphs 5 and 10, or upon request of a competition authority pursuant to paragraph 11, the need
+to safeguard the effectiveness of the public enforcement of competition law.
+5. National courts may order the disclosure of the following categories of evidence only after a competition authority,
+by adopting a decision or otherwise, has closed its proceedings:
+(a) information that was prepared by a natural or legal person specifically for the proceedings of a competition
+authority;
+(b) information that the competition authority has drawn up and sent to the parties in the course of its proceedings;
+and
+(c) settlement submissions that have been withdrawn.
+6. Member States shall ensure that, for the purpose of actions for damages, national courts cannot at any time order
+a party or a third party to disclose any of the following categories of evidence:
+(a) leniency statements; and
+(b) settlement submissions.
+7. A claimant may present a reasoned request that a national court access the evidence referred to in point (a) or (b)
+of paragraph 6 for the sole purpose of ensuring that their contents correspond to the definitions in points (16) and (18)
+of Article 2. In that assessment, national courts may request assistance only from the competent competition authority.
+The authors of the evidence in question may also have the possibility to be heard. In no case shall the national court
+permit other parties or third parties access to that evidence.
+8. If only parts of the evidence requested are covered by paragraph 6, the remaining parts thereof shall, depending on
+the category under which they fall, be released in accordance with the relevant paragraphs of this Article.
+5.12.2014 EN Official Journal of the European Union L 349/13 
+9. The disclosure of evidence in the file of a competition authority that does not fall into any of the categories listed
+in this Article may be ordered in actions for damages at any time, without prejudice to this Article.
+10. Member States shall ensure that national courts request the disclosure from a competition authority of evidence
+included in its file only where no party or third party is reasonably able to provide that evidence.
+11. To the extent that a competition authority is willing to state its views on the proportionality of disclosure
+requests, it may, acting on its own initiative, submit observations to the national court before which a disclosure order is
+sought.
+Article 7
+Limits on the use of evidence obtained solely through access to the file of a competition authority
+1. Member States shall ensure that evidence in the categories listed in Article 6(6) which is obtained by a natural or
+legal person solely through access to the file of a competition authority is either deemed to be inadmissible in actions
+for damages or is otherwise protected under the applicable national rules to ensure the full effect of the limits on the
+disclosure of evidence set out in Article 6.
+2. Member States shall ensure that, until a competition authority has closed its proceedings by adopting a decision or
+otherwise, evidence in the categories listed in Article 6(5) which is obtained by a natural or legal person solely through
+access to the file of that competition authority is either deemed to be inadmissible in actions for damages or is otherwise
+protected under the applicable national rules to ensure the full effect of the limits on the disclosure of evidence set out
+in Article 6.
+3. Member States shall ensure that evidence which is obtained by a natural or legal person solely through access to
+the file of a competition authority and which does not fall under paragraph 1 or 2, can be used in an action for
+damages only by that person or by a natural or legal person that succeeded to that person's rights, including a person
+that acquired that person's claim.
+Article 8
+Penalties
+1. Member States shall ensure that national courts are able effectively to impose penalties on parties, third parties and
+their legal representatives in the event of any of the following:
+(a) their failure or refusal to comply with the disclosure order of any national court;
+(b) their destruction of relevant evidence;
+(c) their failure or refusal to comply with the obligations imposed by a national court order protecting confidential
+information;
+(d) their breach of the limits on the use of evidence provided for in this Chapter.
+2. Member States shall ensure that the penalties that can be imposed by national courts are effective, proportionate
+and dissuasive. The penalties available to national courts shall include, with regard to the behaviour of a party to
+proceedings for an action for damages, the possibility to draw adverse inferences, such as presuming the relevant issue
+to be proven or dismissing claims and defences in whole or in part, and the possibility to order the payment of costs.
+CHAPTER III
+EFFECT OF NATIONAL DECISIONS, LIMITATION PERIODS, JOINT AND SEVERAL LIABILITY
+Article 9
+Effect of national decisions
+1. Member States shall ensure that an infringement of competition law found by a final decision of a national competition authority or by a review court is deemed to be irrefutably established for the purposes of an action for damages
+brought before their national courts under Article 101 or 102 TFEU or under national competition law.
+L 349/14 EN Official Journal of the European Union 5.12.2014 
+2. Member States shall ensure that where a final decision referred to in paragraph 1 is taken in another Member State,
+that final decision may, in accordance with national law, be presented before their national courts as at least prima facie
+evidence that an infringement of competition law has occurred and, as appropriate, may be assessed along with any
+other evidence adduced by the parties.
+3. This Article is without prejudice to the rights and obligations of national courts under Article 267 TFEU.
+Article 10
+Limitation periods
+1. Member States shall, in accordance with this Article, lay down rules applicable to limitation periods for bringing
+actions for damages. Those rules shall determine when the limitation period begins to run, the duration thereof and the
+circumstances under which it is interrupted or suspended.
+2. Limitation periods shall not begin to run before the infringement of competition law has ceased and the claimant
+knows, or can reasonably be expected to know:
+(a) of the behaviour and the fact that it constitutes an infringement of competition law;
+(b) of the fact that the infringement of competition law caused harm to it; and
+(c) the identity of the infringer.
+3. Member States shall ensure that the limitation periods for bringing actions for damages are at least five years.
+4. Member States shall ensure that a limitation period is suspended or, depending on national law, interrupted, if a
+competition authority takes action for the purpose of the investigation or its proceedings in respect of an infringement
+of competition law to which the action for damages relates. The suspension shall end at the earliest one year after the infringement decision has become final or after the proceedings are otherwise terminated.
+Article 11
+Joint and several liability
+1. Member States shall ensure that undertakings which have infringed competition law through joint behaviour are
+jointly and severally liable for the harm caused by the infringement of competition law; with the effect that each of
+those undertakings is bound to compensate for the harm in full, and the injured party has the right to require full
+compensation from any of them until he has been fully compensated.
+2. By way of derogation from paragraph 1, Member States shall ensure that, without prejudice to the right of full
+compensation as laid down in Article 3, where the infringer is a small or medium-sized enterprise (SME) as defined in
+Commission Recommendation 2003/361/EC (
+1
+), the infringer is liable only to its own direct and indirect purchasers
+where:
+(a) its market share in the relevant market was below 5 % at any time during the infringement of competition law; and
+(b) the application of the normal rules of joint and several liability would irretrievably jeopardise its economic viability
+and cause its assets to lose all their value.
+3. The derogation laid down in paragraph 2 shall not apply where:
+(a) the SME has led the infringement of competition law or has coerced other undertakings to participate therein; or
+(b) the SME has previously been found to have infringed competition law.
+4. By way of derogation from paragraph 1, Member States shall ensure that an immunity recipient is jointly and
+severally liable as follows:
+(a) to its direct or indirect purchasers or providers; and
+(b) to other injured parties only where full compensation cannot be obtained from the other undertakings that were
+involved in the same infringement of competition law.
+Member States shall ensure that any limitation period applicable to cases under this paragraph is reasonable and sufficient to allow injured parties to bring such actions.
+5.12.2014 EN Official Journal of the European Union L 349/15
+(
+1
+) Commission Recommendation 2003/361/EC of 6 May 2003 concerning the definition of micro, small and medium-sized enterprises
+(OJ L 124, 20.5.2003, p. 36). 
+5. Member States shall ensure that an infringer may recover a contribution from any other infringer, the amount of
+which shall be determined in the light of their relative responsibility for the harm caused by the infringement of competition law. The amount of contribution of an infringer which has been granted immunity from fines under a leniency
+programme shall not exceed the amount of the harm it caused to its own direct or indirect purchasers or providers.
+6. Member States shall ensure that, to the extent the infringement of competition law caused harm to injured parties
+other than the direct or indirect purchasers or providers of the infringers, the amount of any contribution from an immunity recipient to other infringers shall be determined in the light of its relative responsibility for that harm.
+CHAPTER IV
+THE PASSING-ON OF OVERCHARGES
+Article 12
+Passing-on of overcharges and the right to full compensation
+1. To ensure the full effectiveness of the right to full compensation as laid down in Article 3, Member States shall
+ensure that, in accordance with the rules laid down in this Chapter, compensation of harm can be claimed by anyone
+who suffered it, irrespective of whether they are direct or indirect purchasers from an infringer, and that compensation
+of harm exceeding that caused by the infringement of competition law to the claimant, as well as the absence of liability
+of the infringer, are avoided.
+2. In order to avoid overcompensation, Member States shall lay down procedural rules appropriate to ensure that
+compensation for actual loss at any level of the supply chain does not exceed the overcharge harm suffered at that level.
+3. This Chapter shall be without prejudice to the right of an injured party to claim and obtain compensation for loss
+of profits due to a full or partial passing-on of the overcharge.
+4. Member States shall ensure that the rules laid down in this Chapter apply accordingly where the infringement of
+competition law relates to a supply to the infringer.
+5. Member States shall ensure that the national courts have the power to estimate, in accordance with national procedures, the share of any overcharge that was passed on.
+Article 13
+Passing-on defence
+Member States shall ensure that the defendant in an action for damages can invoke as a defence against a claim for
+damages the fact that the claimant passed on the whole or part of the overcharge resulting from the infringement of
+competition law. The burden of proving that the overcharge was passed on shall be on the defendant, who may reasonably require disclosure from the claimant or from third parties.
+Article 14
+Indirect purchasers
+1. Member States shall ensure that, where in an action for damages the existence of a claim for damages or the
+amount of compensation to be awarded depends on whether, or to what degree, an overcharge was passed on to the
+claimant, taking into account the commercial practice that price increases are passed on down the supply chain, the
+burden of proving the existence and scope of such a passing-on shall rest with the claimant, who may reasonably
+require disclosure from the defendant or from third parties.
+2. In the situation referred to in paragraph 1, the indirect purchaser shall be deemed to have proven that a passing-on
+to that indirect purchaser occurred where that indirect purchaser has shown that:
+(a) the defendant has committed an infringement of competition law;
+(b) the infringement of competition law has resulted in an overcharge for the direct purchaser of the defendant; and
+(c) the indirect purchaser has purchased the goods or services that were the object of the infringement of competition
+law, or has purchased goods or services derived from or containing them.
+L 349/16 EN Official Journal of the European Union 5.12.2014 
+This paragraph shall not apply where the defendant can demonstrate credibly to the satisfaction of the court that the
+overcharge was not, or was not entirely, passed on to the indirect purchaser.
+Article 15
+Actions for damages by claimants from different levels in the supply chain
+1. To avoid that actions for damages by claimants from different levels in the supply chain lead to a multiple liability
+or to an absence of liability of the infringer, Member States shall ensure that in assessing whether the burden of proof
+resulting from the application of Articles 13 and 14 is satisfied, national courts seized of an action for damages are able,
+by means available under Union or national law, to take due account of any of the following:
+(a) actions for damages that are related to the same infringement of competition law, but that are brought by claimants
+from other levels in the supply chain;
+(b) judgments resulting from actions for damages as referred to in point (a);
+(c) relevant information in the public domain resulting from the public enforcement of competition law.
+2. This Article shall be without prejudice to the rights and obligations of national courts under Article 30 of
+Regulation (EU) No 1215/2012.
+Article 16
+Guidelines for national courts
+The Commission shall issue guidelines for national courts on how to estimate the share of the overcharge which was
+passed on to the indirect purchaser.
+CHAPTER V
+QUANTIFICATION OF HARM
+Article 17
+Quantification of harm
+1. Member States shall ensure that neither the burden nor the standard of proof required for the quantification of
+harm renders the exercise of the right to damages practically impossible or excessively difficult. Member States shall
+ensure that the national courts are empowered, in accordance with national procedures, to estimate the amount of harm
+if it is established that a claimant suffered harm but it is practically impossible or excessively difficult precisely to quantify the harm suffered on the basis of the evidence available.
+2. It shall be presumed that cartel infringements cause harm. The infringer shall have the right to rebut that
+presumption.
+3. Member States shall ensure that, in proceedings relating to an action for damages, a national competition authority
+may, upon request of a national court, assist that national court with respect to the determination of the quantum of
+damages where that national competition authority considers such assistance to be appropriate.
+CHAPTER VI
+CONSENSUAL DISPUTE RESOLUTION
+Article 18
+Suspensive and other effects of consensual dispute resolution
+1. Member States shall ensure that the limitation period for bringing an action for damages is suspended for the duration of any consensual dispute resolution process. The suspension of the limitation period shall apply only with regard
+to those parties that are or that were involved or represented in the consensual dispute resolution.
+2. Without prejudice to provisions of national law in matters of arbitration, Member States shall ensure that national
+courts seized of an action for damages may suspend their proceedings for up to two years where the parties thereto are
+involved in consensual dispute resolution concerning the claim covered by that action for damages.
+5.12.2014 EN Official Journal of the European Union L 349/17 
+3. A competition authority may consider compensation paid as a result of a consensual settlement and prior to its
+decision imposing a fine to be a mitigating factor.
+Article 19
+Effect of consensual settlements on subsequent actions for damages
+1. Member States shall ensure that, following a consensual settlement, the claim of the settling injured party is
+reduced by the settling co-infringer's share of the harm that the infringement of competition law inflicted upon the
+injured party.
+2. Any remaining claim of the settling injured party shall be exercised only against non-settling co-infringers. Nonsettling co-infringers shall not be permitted to recover contribution for the remaining claim from the settling
+co-infringer.
+3. By way of derogation from paragraph 2, Member States shall ensure that where the non-settling co-infringers
+cannot pay the damages that correspond to the remaining claim of the settling injured party, the settling injured party
+may exercise the remaining claim against the settling co-infringer.
+The derogation referred to in the first subparagraph may be expressly excluded under the terms of the consensual
+settlement.
+4. When determining the amount of contribution that a co-infringer may recover from any other co-infringer in
+accordance with their relative responsibility for the harm caused by the infringement of competition law, national courts
+shall take due account of any damages paid pursuant to a prior consensual settlement involving the relevant
+co-infringer.
+CHAPTER VII
+FINAL PROVISIONS
+Article 20
+Review
+1. The Commission shall review this Directive and shall submit a report thereon to the European Parliament and the
+Council by 27 December 2020.
+2. The report referred to in paragraph 1 shall, inter alia, include information on all of the following:
+(a) the possible impact of financial constraints flowing from the payment of fines imposed by a competition authority
+for an infringement of competition law on the possibility for injured parties to obtain full compensation for the
+harm caused by that infringement of competition law;
+(b) the extent to which claimants for damages caused by an infringement of competition law established in an infringement decision adopted by a competition authority of a Member State are able to prove before the national court of
+another Member State that such an infringement of competition law has occurred;
+(c) the extent to which compensation for actual loss exceeds the overcharge harm caused by the infringement of competition law or suffered at any level of the supply chain.
+3. If appropriate, the report referred to in paragraph 1 shall be accompanied by a legislative proposal.
+Article 21
+Transposition
+1. Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with
+this Directive by 27 December 2016. They shall forthwith communicate to the Commission the text thereof.
+When Member States adopt those measures, they shall contain a reference to this Directive or be accompanied by such a
+reference on the occasion of their official publication. Member States shall determine how such reference is to be made.
+2. Member States shall communicate to the Commission the text of the main provisions of national law which they
+adopt in the field covered by this Directive.
+L 349/18 EN Official Journal of the European Union 5.12.2014 
+Article 22
+Temporal application
+1. Member States shall ensure that the national measures adopted pursuant to Article 21 in order to comply with
+substantive provisions of this Directive do not apply retroactively.
+2. Member States shall ensure that any national measures adopted pursuant to Article 21, other than those referred
+to in paragraph 1, do not apply to actions for damages of which a national court was seized prior to 26 December
+2014.
+Article 23
+Entry into force
+This Directive shall enter into force on the twentieth day following that of its publication in the Official Journal of the
+European Union.
+Article 24
+Addressees
+This Directive is addressed to the Member States.
+Done at Strasbourg, 26 November 2014.
+For the European Parliament
+The President
+M. SCHULZ
+For the Council
+The President
+S. GOZI
+5.12.2014 EN Official Journal of the European Union L 349/19 
