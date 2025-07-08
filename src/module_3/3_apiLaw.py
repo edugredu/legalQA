@@ -364,27 +364,33 @@ def extract_appendices(soup):
 #Load to a dataframe the lawsToBeConsidered.csv
 df = pd.read_csv('lawsToBeConsidered.csv', encoding='utf-8')
 
+df_cache_1 = pd.read_csv('cachedLaws_1.csv', encoding='utf-8')
+df_cache_2 = pd.read_csv('cachedLaws_2.csv', encoding='utf-8')
+df_cache_3 = pd.read_csv('cachedLaws_3.csv', encoding='utf-8')
+df_cache_4 = pd.read_csv('cachedLaws_4.csv', encoding='utf-8')
+df_cache = pd.concat([df_cache_1, df_cache_2, df_cache_3, df_cache_4], ignore_index=True)
+
 # %%
 for i, row in df.iterrows():
     #Get the CELEX ID
     celex_id = row['celex_id']
 
+    if df_cache[df_cache['celex_id'] == celex_id].empty or \
+       df_cache[df_cache['celex_id'] == celex_id]['structured_text'].isnull().all():
+        
+        encoded_celex_id = url_encode_celex_id(celex_id)
+        
+        #Get the HTML content
+        html = get_html_by_celex_id(encoded_celex_id)
 
-    #If the CELEX ID contains (), remove it. For example, '32023R1234(1)' should become '32023R1234'
-    #celex_id = re.sub(r'\(\d+\)$', '', celex_id)
+        # Extract structured text
+        structured_text = extract_eu_law_text(html)
 
-    encoded_celex_id = url_encode_celex_id(celex_id)
-    
-    print("Looking for CELEX ID:", celex_id)
-
-    #Get the HTML content
-    html = get_html_by_celex_id(encoded_celex_id)
-
-    # Extract structured text
-    structured_text = extract_eu_law_text(html)
-
-    # Append the structured text to the DataFrame
-    df.at[i, 'structured_text'] = structured_text
+        # Append the structured text to the DataFrame
+        df.at[i, 'structured_text'] = structured_text
+       
+    else:
+       df.at[i, 'structured_text'] = df_cache[df_cache['celex_id'] == celex_id]['structured_text'].values[0]
 
 # %%
 #Export the dataframe to a CSV file
