@@ -1,0 +1,23 @@
+# ==== Core project dependencies ====
+beautifulsoup4==4.12.3
+requests==2.31.0
+pandas==2.2.2
+eurlex==0.35
+
+# ==== LLM / Embeddings / Graph ====
+openai==1.30.5          # OpenRouter-compatible
+ollama==0.1.9           # Local Ollama client
+langgraph==0.0.26       # Agent graph framework
+sentence-transformers==2.7.0
+transformers==4.41.2    # Explicit to keep hf libs aligned
+
+datasets==2.19.1        # Works with transformers 4.41 & pandas 2.x
+pyarrow==15.0.2         # datasets backend
+
+# ==== IR / Ranking ====
+python-terrier==0.10.0  # Includes PyTerrier core (supersedes pyterrier)
+
+# ==== Dev / UI ====
+jupyterlab==4.2.2
+tqdm==4.66.4
+streamlit
