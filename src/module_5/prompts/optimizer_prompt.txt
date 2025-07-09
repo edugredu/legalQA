@@ -11,17 +11,8 @@ Your task is to propose a **revised prompt** for the answer generation model tha
 
 **Inputs:**
 
-User Query:
-{user_query}
-
-Summarized Laws:
-{summarized_laws}
-
 Previous Final Answer Prompt:
 {previous_final_answer_prompt}
-
-Final Answer:
-{final_answer}
 
 Judge Response (JSON):
 {judge_response}
@@ -32,6 +23,7 @@ Judge Response (JSON):
 - Propose a new or revised prompt for the answer generation model that addresses the weaknesses or gaps identified by the judge.
 - The new prompt should be clear, actionable, and tailored to help the answer model perform better for this specific scenario.
 - Output only the revised answer generation prompt.
-
+- Make sure the generated prompt does not remove any variable defined in the previous prompt.
+- Maintain every variable defined in the previous prompt in the same previous format.
 **Output:**
 [Your revised answer generation prompt here]
