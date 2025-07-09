@@ -1,14 +1,17 @@
 # Base image using slim Python for smaller footprint
-FROM python:3.11-slim
+FROM python:3.9-slim
 
 # Avoid interactive prompts & Python bytecode generation
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 \
+    PATH="$PATH:/usr/lib/jvm/java-17-openjdk-amd64/bin"
 
 # Install system dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+        openjdk-17-jdk-headless \
         build-essential \
         curl \
         git \

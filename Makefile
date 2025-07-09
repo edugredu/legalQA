@@ -1,8 +1,8 @@
 .PHONY: build run attach logs stop rm rebuild shell jupyter
 
 # Modify these names if you change the repo / image name
-IMAGE ?= legalqa
-CONTAINER ?= legalqa
+IMAGE ?= legal_qa
+CONTAINER ?= legal_qa
 TAG ?= latest
 
 # Build the Docker image
