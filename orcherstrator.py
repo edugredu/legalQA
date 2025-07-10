@@ -1,5 +1,6 @@
-from module_1.run_llm_prompt import run_module_1
-from module_2.law_retriever  import LawRetriever
+from src.module_1.run_llm_prompt import run_module_1
+from src.module_2.law_retriever  import LawRetriever
+import os
 
 def process_legal_query(user_query: str) -> str:
     """
@@ -16,7 +17,7 @@ def process_legal_query(user_query: str) -> str:
     
     try:
 
-        API_KEY = None
+        API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
         examples = ["What Rules Do Companies That Handle Online Payments Have to Follow?",
                     "What Rules Do Companies Have to Follow When Sending Personal Data Outside the EU?",
@@ -27,7 +28,7 @@ def process_legal_query(user_query: str) -> str:
         ## STEP 1 ##
         ############
 
-        output_1 = run_module_1(user_query)
+        output_1 = run_module_1(user_query, API_KEY=API_KEY)  # Call your LLM model with the user query
 
         #The output_1 is a textual response in a legal way of writing
 
@@ -35,8 +36,8 @@ def process_legal_query(user_query: str) -> str:
         ## STEP 2 ##
         ############
 
-        law_retriever = LawRetriever.retrieve_docs("jonathanli/eurlex")
-        output_2 = law_retriever.run(user_query)
+        #law_retriever = LawRetriever.retrieve_docs("jonathanli/eurlex")
+        #output_2 = law_retriever.run(user_query)
 
         #The output_2 is a dataframe
 
@@ -57,9 +58,12 @@ def process_legal_query(user_query: str) -> str:
         # 4. Format and return
         
         # Placeholder response
-        response = f"Processing query: {user_query}\n\nThis is where your AI-generated legal guidance will appear."
+        #response = f"Processing query: {user_query}\n\nThis is where your AI-generated legal guidance will appear."
         
-        return response
+        return output_1
         
     except Exception as e:
         return f"Error processing query: {str(e)}"
+
+
+process_legal_query("What Rules Do Companies Have to Follow When Selling Toys in the EU?")  # Example query
