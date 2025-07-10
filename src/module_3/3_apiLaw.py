@@ -2,10 +2,40 @@
 import re
 from bs4 import BeautifulSoup
 #from eurlex import get_data_by_celex_id #pip install eurlex-parser
-from eurlex import get_html_by_celex_id #pip install eurlex
+#from eurlex import get_html_by_celex_id #pip install eurlex
 import requests
 import pandas as pd
 import urllib.parse
+import json
+from tqdm import tqdm
+
+# %%
+def get_html_by_celex_id(celex_id: str) -> str:
+    """Retrieve HTML by CELEX ID.
+
+    Parameters
+    ----------
+    celex_id : str
+        The CELEX ID to find HTML for.
+
+    Returns
+    -------
+    str
+        HTML found using the CELEX ID.
+    """
+    url = "http://publications.europa.eu/resource/celex/" + str(
+        celex_id
+    )  # pragma: no cover
+    response = requests.get(
+        url,
+        allow_redirects=True,
+        headers={  # pragma: no cover
+            "Accept": "text/html,application/xhtml+xml,application/xml",  # pragma: no cover
+            "Accept-Language": "en",  # pragma: no cover
+        },
+    )  # pragma: no cover
+    html = response.content.decode("utf-8")  # pragma: no cover
+    return html  # pragma: no cover
 
 # %%
 #URL encode the celex_id
@@ -22,56 +52,6 @@ def url_encode_celex_id(celex_id):
     return urllib.parse.quote(celex_id, safe='')
 
 # %%
-def get_html_by_celex_id_webservice(celex_id, username, password):
-    """
-    Retrieve EU law document using EUR-Lex web service.
-    Handles special characters in CELEX IDs properly.
-    """
-    # Escape special characters for EUR-Lex query syntax
-    escaped_celex_id = celex_id.replace('(', '\\(').replace(')', '\\)')
-    
-    soap_body = f"""<?xml version="1.0" encoding="UTF-8"?>
-<soap12:Envelope xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" 
-                 xmlns:sear="http://eur-lex.europa.eu/search"
-                 xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-                 xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-  <soap12:Header>
-    <wsse:Security soap12:mustUnderstand="true">
-      <wsse:UsernameToken wsu:Id="UsernameToken-1">
-        <wsse:Username>{username}</wsse:Username>
-        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{password}</wsse:Password>
-      </wsse:UsernameToken>
-    </wsse:Security>
-  </soap12:Header>
-  <soap12:Body>
-    <sear:searchRequest>
-      <sear:expertQuery>DN={escaped_celex_id}</sear:expertQuery>
-      <sear:page>1</sear:page>
-      <sear:pageSize>1</sear:pageSize>
-      <sear:searchLanguage>en</sear:searchLanguage>
-    </sear:searchRequest>
-  </soap12:Body>
-</soap12:Envelope>"""
-    
-    headers = {
-        'Content-Type': 'application/soap+xml; charset=utf-8',
-        'SOAPAction': 'https://eur-lex.europa.eu/EURLexWebService/doQuery'
-    }
-    
-    response = requests.post(
-        'https://eur-lex.europa.eu/EURLexWebService',
-        data=soap_body,
-        headers=headers,
-        timeout=30
-    )
-    
-    if response.status_code != 200:
-        print(f"Response status: {response.status_code}")
-        print(f"Response content: {response.text}")
-        raise Exception(f"SOAP request failed: {response.status_code}")
-    
-    return parse_search_results(response.text)
-
 def parse_search_results(soap_response):
     """Parse the SOAP response to extract search results"""
     import xml.etree.ElementTree as ET
@@ -361,6 +341,257 @@ def extract_appendices(soup):
     return '\n\n'.join(appendix_text) if appendix_text else None
 
 # %%
+def extract_articles_json(soup):
+    """Extract all articles as a list of dictionaries with full text in a single property"""
+    articles_list = []
+    
+    # Find all article divisions
+    articles = soup.find_all('div', id=re.compile(r'art_\d+'))
+    
+    for article in articles:
+        article_data = {}
+        
+        # Extract article ID from the div id
+        article_id = article.get('id', '').replace('art_', '')
+        if article_id:
+            article_data['id'] = article_id
+        
+        # Article title
+        article_title = article.find(class_='oj-ti-art')
+        if article_title:
+            article_data['title'] = article_title.get_text(strip=True)
+        
+        # Article subtitle
+        article_subtitle = article.find(class_='oj-sti-art')
+        if article_subtitle:
+            article_data['subtitle'] = article_subtitle.get_text(strip=True)
+        
+        # Get full text content of the article div
+        full_text = article.get_text(separator='\n', strip=True)
+        article_data['text'] = full_text
+        
+        articles_list.append(article_data)
+    
+    return articles_list if articles_list else None
+
+def extract_annexes_json(soup):
+    """Extract annex content as structured data with full text in a single property"""
+    annexes_list = []
+    
+    # Find annex container
+    annex = soup.find('div', id='anx_1')
+    if annex:
+        annex_data = {
+            "id": "anx_1",
+            "type": "annex"
+        }
+        
+        # Annex title
+        annex_title = annex.find('p', class_='oj-doc-ti')
+        if annex_title:
+            annex_data['title'] = annex_title.get_text(strip=True)
+        
+        # Get full text content of the annex div
+        full_text = annex.get_text(separator='\n', strip=True)
+        annex_data['text'] = full_text
+        
+        annexes_list.append(annex_data)
+    
+    return annexes_list if annexes_list else None
+
+def extract_appendices_json(soup):
+    """Extract appendix content as structured data with full text in a single property"""
+    appendices_list = []
+    
+    # Find appendix
+    appendix = soup.find('div', id='anx_1.app_1')
+    if appendix:
+        appendix_data = {
+            "id": "anx_1.app_1",
+            "type": "appendix"
+        }
+        
+        appendix_title = appendix.find('p', class_='oj-doc-ti')
+        if appendix_title:
+            appendix_data['title'] = appendix_title.get_text(strip=True)
+        
+        # Get full text content of the appendix div
+        full_text = appendix.get_text(separator='\n', strip=True)
+        appendix_data['text'] = full_text
+        
+        appendices_list.append(appendix_data)
+    
+    return appendices_list if appendices_list else None
+
+# %%
+def parse_legacy_format(soup, texte_only_div):
+    """
+    Parse the older EUR-Lex HTML format found in TexteOnly div.
+    """
+    # Extract title from outside TexteOnly div
+    title_element = soup.find('h1')
+    title = title_element.get_text(strip=True) if title_element else None
+    
+    # Extract the main regulation title
+    strong_element = soup.find('strong')
+    regulation_title = strong_element.get_text(strip=True) if strong_element else None
+    
+    # Get all paragraphs within TexteOnly
+    paragraphs = texte_only_div.find_all('p')
+    
+    # Parse the content
+    articles = []
+    annexes = []
+    current_article = None
+    current_annex = None
+    
+    for p in paragraphs:
+        text = p.get_text(strip=True)
+        
+        if not text:
+            continue
+            
+        # Check if this is an article
+        if text.startswith('Article '):
+            # Save previous article if exists
+            if current_article:
+                articles.append(current_article)
+            
+            # Extract article number
+            article_match = re.match(r'Article (\d+)', text)
+            if article_match:
+                current_article = {
+                    "id": article_match.group(1),
+                    "title": text,
+                    "text": text
+                }
+            current_annex = None
+            
+        # Check if this is an annex
+        elif text.startswith('ANNEX '):
+            # Save previous article if exists
+            if current_article:
+                articles.append(current_article)
+                current_article = None
+            
+            # Save previous annex if exists
+            if current_annex:
+                annexes.append(current_annex)
+            
+            # Extract annex identifier
+            annex_match = re.match(r'ANNEX ([IVX]+)', text)
+            if annex_match:
+                current_annex = {
+                    "id": f"anx_{annex_match.group(1)}",
+                    "type": "annex",
+                    "title": text,
+                    "text": text
+                }
+            
+        # Add content to current article or annex
+        elif current_article:
+            current_article["text"] += "\n\n" + text
+        elif current_annex:
+            current_annex["text"] += "\n\n" + text
+    
+    # Don't forget the last article/annex
+    if current_article:
+        articles.append(current_article)
+    if current_annex:
+        annexes.append(current_annex)
+    
+    # Build the document structure
+    document_data = {
+        "title": regulation_title or title,
+        "articles": articles if articles else None,
+        "annexes": annexes if annexes else None
+    }
+    
+    return document_data
+
+def parse_legacy_format_enhanced(soup, texte_only_div):
+    """
+    Enhanced parser for older EUR-Lex HTML format with better content detection.
+    """
+    # Extract metadata
+    title_element = soup.find('h1')
+    title = title_element.get_text(strip=True) if title_element else None
+    
+    strong_element = soup.find('strong')
+    regulation_title = strong_element.get_text(strip=True) if strong_element else None
+    
+    # Get full text content and split into logical sections
+    full_text = texte_only_div.get_text(separator='\n', strip=True)
+    
+    # Split by known patterns
+    articles = []
+    annexes = []
+    
+    # Find all article sections
+    article_pattern = r'Article (\d+)\s*\n(.*?)(?=Article \d+|ANNEX|$)'
+    article_matches = re.findall(article_pattern, full_text, re.DOTALL)
+    
+    for article_num, article_content in article_matches:
+        articles.append({
+            "id": article_num,
+            "title": f"Article {article_num}",
+            "text": f"Article {article_num}\n\n{article_content.strip()}"
+        })
+    
+    # Find all annex sections
+    annex_pattern = r'ANNEX ([IVX]+)\s*\n(.*?)(?=ANNEX [IVX]+|$)'
+    annex_matches = re.findall(annex_pattern, full_text, re.DOTALL)
+    
+    for annex_num, annex_content in annex_matches:
+        annexes.append({
+            "id": f"anx_{annex_num}",
+            "type": "annex",
+            "title": f"ANNEX {annex_num}",
+            "text": f"ANNEX {annex_num}\n\n{annex_content.strip()}"
+        })
+    
+    # Build the document structure
+    document_data = {
+        "title": regulation_title or title,
+        "articles": articles if articles else None,
+        "annexes": annexes if annexes else None
+    }
+    
+    return document_data
+
+def extract_eu_law_text_json(html_content):
+    """
+    Extract clean, structured data from EU legal document HTML.
+    Handles both modern and legacy HTML formats.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    
+    # Remove unwanted elements
+    for element in soup(['script', 'style', 'link', 'meta', 'hr']):
+        element.decompose()
+    
+    # Check if this is the modern format or legacy format
+    modern_articles = soup.find_all('div', id=re.compile(r'art_\d+'))
+    texte_only_div = soup.find('div', id='TexteOnly')
+    
+    if modern_articles or not texte_only_div:
+        # Use modern parsing
+        document_data = {
+            "header": extract_header_info(soup),
+            "title": extract_main_title(soup),
+            "preamble": extract_preamble(soup),
+            "articles": extract_articles_json(soup),
+            "annexes": extract_annexes_json(soup),
+            "appendices": extract_appendices_json(soup)
+        }
+    else:
+        # Use legacy parsing for older HTML format
+        document_data = parse_legacy_format(soup, texte_only_div)
+    
+    # Remove None values
+    return {k: v for k, v in document_data.items() if v is not None}
+
+# %%
 #Load to a dataframe the lawsToBeConsidered.csv
 df = pd.read_csv('lawsToBeConsidered.csv', encoding='utf-8')
 
@@ -371,29 +602,134 @@ df_cache_4 = pd.read_csv('cachedLaws_4.csv', encoding='utf-8')
 df_cache = pd.concat([df_cache_1, df_cache_2, df_cache_3, df_cache_4], ignore_index=True)
 
 # %%
+# Add this column to store JSON data
+df['structured_json'] = None
+
+# %%
 for i, row in df.iterrows():
     #Get the CELEX ID
     celex_id = row['celex_id']
 
+    # If the CELEX ID is not in the cache
     if df_cache[df_cache['celex_id'] == celex_id].empty or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_text'].isnull().all():
-        
+       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isnull().all() or \
+       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isna().all() or \
+       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].apply(lambda x: x == {}).all():
+                    
         encoded_celex_id = url_encode_celex_id(celex_id)
         
-        #Get the HTML content
+        # Get the HTML content
         html = get_html_by_celex_id(encoded_celex_id)
-
-        # Extract structured text
-        structured_text = extract_eu_law_text(html)
-
-        # Append the structured text to the DataFrame
-        df.at[i, 'structured_text'] = structured_text
-       
+        
+        # Extract structured JSON
+        structured_json = extract_eu_law_text_json(html)
+        
+        # Store JSON
+        df.at[i, 'structured_json'] = structured_json
     else:
-       df.at[i, 'structured_text'] = df_cache[df_cache['celex_id'] == celex_id]['structured_text'].values[0]
+        try:
+            cacheJson = df_cache[df_cache['celex_id'] == celex_id]['structured_json'].values[0]
+
+            #Convert it to a JSON object
+            if isinstance(cacheJson, str):
+                json_data = ast.literal_eval(cacheJson)
+                df.at[i, 'structured_json'] = json_data
+
+            else:
+                # If it's already a JSON object, just assign it
+                df.at[i, 'structured_json'] = cacheJson
+
+        except:
+            print("Exception parsing JSON for CELEX ID:", celex_id, " in row:", i)
+            df.at[i, 'structured_json'] = None
 
 # %%
 #Export the dataframe to a CSV file
 df.to_csv('lawsWithText.csv', index=False)
+
+# %% [markdown]
+# ## Cache generation code
+
+# %%
+#Import the dennlinger/eur-lex-sum dataset
+from datasets import load_dataset
+dataset = load_dataset("dennlinger/eur-lex-sum", "english")
+
+df_train = dataset['train'].to_pandas()
+df_test = dataset['test'].to_pandas()
+df_validation = dataset['validation'].to_pandas()
+
+df = pd.concat([df_train, df_test, df_validation], ignore_index=True)
+
+df['structured_json'] = None
+
+# %%
+df_cache = df.copy()
+df_cache['structured_json'] = None
+#Remove all rows from df_cache
+df_cache = df_cache[0:0]
+
+
+
+# %%
+#Export the df to cachedLaws1.csv, cachedLaws2.csv, cachedLaws3.csv, cachedLaws4.csv
+df_cache_1 = df[:400]
+df_cache_2 = df[400:800]
+df_cache_3 = df[800:1200]
+df_cache_4 = df[1200:]
+
+df_cache_1.to_csv('cachedLaws_1.csv', index=False, encoding='utf-8')
+df_cache_2.to_csv('cachedLaws_2.csv', index=False, encoding='utf-8')
+df_cache_3.to_csv('cachedLaws_3.csv', index=False, encoding='utf-8')
+df_cache_4.to_csv('cachedLaws_4.csv', index=False, encoding='utf-8')
+
+# %%
+#Get the lengths of the structured_json
+i = 0
+
+print("Cached laws 1:", 0, len(df_cache_1))
+i += len(df_cache_1)
+print("Cached laws 2:", i, len(df_cache_2) + i)
+i += len(df_cache_2)
+print("Cached laws 3:", i, len(df_cache_3) + i)
+i += len(df_cache_3)
+print("Cached laws 4:", i, len(df_cache_4) + i)
+
+# %%
+for i, row in tqdm(df.iterrows(), total=len(df), desc="Processing laws"):
+    celex_id = row['celex_id']
+    
+    if df_cache[df_cache['celex_id'] == celex_id].empty or \
+       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isnull().all() or \
+       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isna().all() or \
+       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].apply(lambda x: x == {}).all():
+        # If the CELEX ID is not in the cache
+                
+        encoded_celex_id = url_encode_celex_id(celex_id)
+        
+        # Get the HTML content
+        html = get_html_by_celex_id(encoded_celex_id)
+        
+        # Extract structured JSON
+        structured_json = extract_eu_law_text_json(html)
+        
+        # Store JSON
+        df.at[i, 'structured_json'] = structured_json
+    else:
+        try:
+            cacheJson = df_cache[df_cache['celex_id'] == celex_id]['structured_json'].values[0]
+
+            #Convert it to a JSON object
+            if isinstance(cacheJson, str):
+                df.at[i, 'structured_json'] = json.loads(cacheJson)
+            df.at[i, 'structured_json'] = df_cache[df_cache['celex_id'] == celex_id]['structured_json'].values[0]
+        except:
+            print("Exception parsing JSON for CELEX ID:", celex_id, " in row:", i)
+            df.at[i, 'structured_json'] = None
+
+
+# %%
+#Save the dataframe to a csv file
+df.to_csv('fullLaws.json', index=False, encoding='utf-8')
 
 
