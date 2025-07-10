@@ -689,6 +689,7 @@ def mod3_response(lawsToConsider):
     lawsToConsider = lawsToConsider.drop(columns=['eurovoc_concepts'], errors='ignore')
 
     df_cache = load_cache()
+    print("Running module 3: API Law")
 
     dfFullText = getFullText(lawsToConsider, df_cache)
 

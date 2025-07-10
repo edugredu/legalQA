@@ -1,5 +1,6 @@
 from src.module_1.run_llm_prompt import run_module_1
 from src.module_2.module_2 import run_module_2
+from src.module_3.apiLaw import mod3_response
 import os
 
 
@@ -53,9 +54,9 @@ def process_legal_query(user_query: str) -> str:
         ############
         ## STEP 3 ##
         ############
-        print(results.head())
-        output_3 = None
- 
+        output_3 = mod3_response(results)
+        print(output_3)
+
         #The output_2 is a dataframe
 
 
