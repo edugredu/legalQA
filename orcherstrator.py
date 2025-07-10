@@ -1,9 +1,8 @@
 from src.module_1.run_llm_prompt import run_module_1
 from src.module_2.module_2 import run_module_2
 from src.module_3.apiLaw import mod3_response
+from src.module_4.module_4 import module_4
 import os
-
-
 
 def process_legal_query(user_query: str) -> str:
     """
@@ -47,16 +46,29 @@ def process_legal_query(user_query: str) -> str:
         ## STEP 2 ##
         ############
 
-        results = run_module_2(user_query, K=5)
+        output_2 = run_module_2(user_query, K=5)
 
         #The output_2 is a dataframe
 
         ############
         ## STEP 3 ##
         ############
-        output_3 = mod3_response(results)
+        output_3 = mod3_response(output_2)
 
-        #The output_2 is a dataframe
+        #The output_3 is a dataframe
+        
+        ############
+        ## STEP 4 ##
+        ############
+        print("Output from module 3:")
+        print(output_3)
+        
+        # Filter laws
+        filtered_df = module_4(output_3, output_1)
+
+        print(filtered_df.head())
+        
+        
 
 
 
