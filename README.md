@@ -1,12 +1,15 @@
-# LegalQA: LLM-RAG-powered Legal Assistant for EU Legislation
+# LawLens: LLM-RAG-powered Legal Assistant for EU Legislation
 
 - **Team:** The Sharks
 - **Event:** ELLIS ESSIR 2025 Hackathon
 - **Location:** University of Wolverhampton, UK
 
+![Summary of the project](./summary.svg)
+
+
 ## 🎯 Overview
 
-LegalQA is an intelligent legal assistant designed to answer questions regarding EU legislation using advanced Information Retrieval (IR) and Retrieval-Augmented Generation (RAG) techniques. The system leverages Large Language Models to provide accurate, legally-appropriate responses to user queries about European Union laws.
+LawLens is an intelligent legal assistant designed to answer questions regarding EU legislation using advanced Information Retrieval (IR) and Retrieval-Augmented Generation (RAG) techniques. The system leverages Large Language Models to provide accurate, legally-appropriate responses to user queries about European Union laws.
 
 ## 👥 Team Members
 
@@ -19,7 +22,7 @@ LegalQA is an intelligent legal assistant designed to answer questions regarding
 
 ## 🏗️ System Architecture
 
-The LegalQA system consists of **6 interconnected modules**:
+The LawLens system consists of **6 interconnected modules**:
 
 1. **Query Rephrasing** - Uses an LLM to rephrase user input into a more legally appropriate format
 2. **Laws Retrieval** - Gets the basic info (code, name and summary) of the relevant laws for the query
@@ -151,7 +154,7 @@ legalQA/
 
 ## 🎓 About ESSIR 2025
 
-This project was developed as part of the **European Summer School on Information Retrieval (ESSIR) 2025** hackathon[^1]. ESSIR 2025 focuses on cutting-edge IR training, covering topics from Generative AI to RAG, explainability, neural ranking, and more[^1]. The event took place at the University of Wolverhampton, UK, and is associated with the ELLIS Unit London[^1].
+This project was developed as part of the **European Summer School on Information Retrieval (ESSIR) 2025** hackathon[^1]. ESSIR 2025 focuses on cutting-edge IR training, covering topics from Generative AI to RAG, explainability, neural ranking, and more. The event took place at the University of Wolverhampton, UK, and is associated with the ELLIS Unit London.
 
 ## 📝 License
 
@@ -159,25 +162,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🤝 Contributing
 
-We welcome contributions to improve LegalQA! Please feel free to submit issues, feature requests, or pull requests.
+We welcome contributions to improve LawLens! Please feel free to submit issues, feature requests, or pull requests.
 
 **Developed with ❤️ by Team "The Sharks" at ESSIR 2025**
 
 <div style="text-align: center">⁂</div>
 
-[^1]: https://www.eventbrite.co.uk/e/ellis-essir-2025-tickets-1320667063739
-
-[^2]: Anadir-un-subtitulo.pdf
-
-[^3]: https://github.com
-
-[^4]: https://2025.essir.eu
-
-[^5]: https://ellis.eu/news
-
-[^6]: https://ebooks.iospress.nl/volumearticle/50859
-
-[^7]: https://scholarspace.manoa.hawaii.edu/bitstreams/dab84895-5911-44fd-9125-1e71a76dbf30/download
-
-[^8]: https://www.mdpi.com/2078-2489/16/6
-
+[^1]: https://2025.essir.eu
