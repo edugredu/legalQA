@@ -9,6 +9,7 @@ import urllib.parse
 import json
 from tqdm import tqdm
 import ast
+import os
 
 # %%
 def get_html_by_celex_id(celex_id: str) -> str:
@@ -593,57 +594,76 @@ def extract_eu_law_text_json(html_content):
     return {k: v for k, v in document_data.items() if v is not None}
 
 # %%
-#Load to a dataframe the lawsToBeConsidered.csv
-df = pd.read_csv('lawsToBeConsidered.csv', encoding='utf-8')
+def load_cache():
 
-df_cache_1 = pd.read_csv('cachedLaws_1.csv', encoding='utf-8')
-df_cache_2 = pd.read_csv('cachedLaws_2.csv', encoding='utf-8')
-df_cache_3 = pd.read_csv('cachedLaws_3.csv', encoding='utf-8')
-df_cache_4 = pd.read_csv('cachedLaws_4.csv', encoding='utf-8')
-df_cache = pd.concat([df_cache_1, df_cache_2, df_cache_3, df_cache_4], ignore_index=True)
+    #Read all the cached laws CSV files from the data directory
+    cacheFiles = os.listdir('data')
+    cacheFiles = [f for f in cacheFiles if f.startswith('cachedLawsTexts_') and f.endswith('.csv')]
+    cacheFiles.sort()  # Sort to ensure consistent order
 
-# %%
-# Add this column to store JSON data
-df['structured_json'] = None
+    # Read the cached laws CSV files into dataframes
+    df_cache = pd.DataFrame()
+    for cache_file in cacheFiles:
+        file_path = os.path.join('data', cache_file)
+        df_temp = pd.read_csv(file_path, encoding='utf-8')
+        df_cache = pd.concat([df_cache, df_temp], ignore_index=True)
 
-# %%
-for i, row in df.iterrows():
-    #Get the CELEX ID
-    celex_id = row['celex_id']
-
-    # If the CELEX ID is not in the cache
-    if df_cache[df_cache['celex_id'] == celex_id].empty or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isnull().all() or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isna().all() or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].apply(lambda x: x == {}).all():
-                    
-        encoded_celex_id = url_encode_celex_id(celex_id)
-        
-        # Get the HTML content
-        html = get_html_by_celex_id(encoded_celex_id)
-        
-        # Extract structured JSON
-        structured_json = extract_eu_law_text_json(html)
-        
-        # Store JSON
-        df.at[i, 'structured_json'] = structured_json
-    else:
-        try:
-            cacheJson = df_cache[df_cache['celex_id'] == celex_id]['structured_json'].values[0]
-
-            #Convert it to a JSON object
-            if isinstance(cacheJson, str):
-                json_data = ast.literal_eval(cacheJson)
-                df.at[i, 'structured_json'] = json_data
-
-            else:
-                # If it's already a JSON object, just assign it
-                df.at[i, 'structured_json'] = cacheJson
-
-        except:
-            print("Exception parsing JSON for CELEX ID:", celex_id, " in row:", i)
-            df.at[i, 'structured_json'] = None
+    return df_cache
 
 # %%
-#Export the dataframe to a CSV file
-df.to_csv('lawsWithText.csv', index=False)
+def getFullText(dfToGet, dfCache):
+
+    for i, row in dfToGet.iterrows():
+        #Get the CELEX ID
+        celex_id = row['celex_id']
+
+        # If the CELEX ID is not in the cache
+        if row['structured_json'] is None or \
+        dfCache[dfCache['celex_id'] == celex_id].empty or \
+        dfCache[dfCache['celex_id'] == celex_id]['structured_json'].isnull().all() or \
+        dfCache[dfCache['celex_id'] == celex_id]['structured_json'].isna().all() or \
+        dfCache[dfCache['celex_id'] == celex_id]['structured_json'].apply(lambda x: x == {}).all():
+                        
+            encoded_celex_id = url_encode_celex_id(celex_id)
+            
+            # Get the HTML content
+            html = get_html_by_celex_id(encoded_celex_id)
+            
+            # Extract structured JSON
+            structured_json = extract_eu_law_text_json(html)
+            
+            # Store JSON
+            dfToGet.at[i, 'structured_json'] = structured_json
+        else:
+            try:
+                cacheJson = dfCache[dfCache['celex_id'] == celex_id]['structured_json'].values[0]
+
+                #Convert it to a JSON object
+                if isinstance(cacheJson, str):
+                    json_data = ast.literal_eval(cacheJson)
+                    dfToGet.at[i, 'structured_json'] = json_data
+
+                else:
+                    # If it's already a JSON object, just assign it
+                    dfToGet.at[i, 'structured_json'] = cacheJson
+
+            except:
+                print("Exception parsing JSON for CELEX ID:", celex_id, " in row:", i)
+                dfToGet.at[i, 'structured_json'] = None
+                
+
+    return dfToGet
+
+# %%
+def mod3_response(lawsToConsider):
+    # Add this column to store JSON data
+    lawsToConsider['structured_json'] = None
+
+    #Remove erovoc_concepts
+    lawsToConsider = lawsToConsider.drop(columns=['eurovoc_concepts'], errors='ignore')
+
+    df_cache = load_cache()
+
+    dfFullText = getFullText(lawsToConsider, df_cache)
+
+    return dfFullText

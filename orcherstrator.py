@@ -1,4 +1,5 @@
 from module_1.run_llm_prompt import run_module_1
+from module_2.law_retriever  import LawRetriever
 
 def process_legal_query(user_query: str) -> str:
     """
@@ -16,6 +17,10 @@ def process_legal_query(user_query: str) -> str:
     try:
 
         API_KEY = None
+
+        examples = ["What Rules Do Companies That Handle Online Payments Have to Follow?",
+                    "What Rules Do Companies Have to Follow When Sending Personal Data Outside the EU?",
+                    "What Rules Do Companies Have to Follow When Selling Toys in the EU?"]
         
 
         ############
@@ -30,7 +35,8 @@ def process_legal_query(user_query: str) -> str:
         ## STEP 2 ##
         ############
 
-        output_2 = None
+        law_retriever = LawRetriever.retrieve_docs("jonathanli/eurlex")
+        output_2 = law_retriever.run(user_query)
 
         #The output_2 is a dataframe
 
