@@ -93,10 +93,11 @@ def retrieve_docs(query, K=10):
     results['eurovoc_concepts'] = results.apply(get_eurovoc_concepts, axis=1, raw=False)
     results.rename(columns={'docno': 'celex_id'}, inplace=True)
     results = results[['celex_id', 'title', 'text', 'eurovoc_concepts']]
-    results.to_csv('lawsToBeConsidered.csv', index=False)
+    results.to_csv('/app/src/module_2/outputs/sample3.csv', index=False)
     # return results
 
 
-input_query = 'What are the key requirements for GDPR compliance for small businesses?'
+with open("/app/src/module_1/outputs/sample3.txt", "r", encoding="utf-8") as f:
+    input_query = f.read().strip()
 
 retrieve_docs(input_query)
