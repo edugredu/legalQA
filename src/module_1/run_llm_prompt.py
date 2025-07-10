@@ -57,7 +57,7 @@ def call_openrouter_llm(prompt, api_key, model=MODEL):
 
 def write_output(output, outputs_dir):
     outputs_dir.mkdir(parents=True, exist_ok=True)
-    output_file = outputs_dir / "llm_output.txt"
+    output_file = outputs_dir / "sample3.txt"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(output)
     print(f"Output written to {output_file}")
