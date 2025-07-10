@@ -7,7 +7,7 @@ load_dotenv()
 
 from openai import OpenAI
 
-PROMPT_PATH = Path(__file__).parent / "prompts/llm_prompt.txt"
+PROMPT_PATH = Path(__file__).parent / "llm_prompt.txt"
 #INPUTS_DIR = Path(__file__).parent / "inputs"
 #OUTPUTS_DIR = Path(__file__).parent / "outputs"
 MODEL = os.environ.get("OPENROUTER_MODEL", "qwen/qwen3-30b-a3b:free")
@@ -66,7 +66,7 @@ def run_module_1(promptInput, API_KEY=None):
     try:
         assert API_KEY, "OPENROUTER_API_KEY environment variable must be set."
         template = load_prompt_template(PROMPT_PATH)
-        variables = {'user_query': promptInput}
+        variables = {'initial_query': promptInput}
         prompt = fill_prompt(template, variables)
         answer = call_openrouter_llm(prompt, API_KEY, model=MODEL)
         return answer

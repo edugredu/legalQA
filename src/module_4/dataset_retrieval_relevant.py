@@ -15,7 +15,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 
 # —— Parameters —— #
-INPUT_CSV    = '/app/src/module_3/cachedLaws_1.csv'    # your source CSV
+INPUT_CSV    = '/app/src/module_3/lawsToBeConsidered.csv'    # your source CSV
 QUERY_FILE   = '/app/src/module_4/input/query.txt'           # your query text
 OUTPUT_CSV   = '/app/src/module_4/output/filtered_laws.csv'  # where to save results
 THRESHOLD    = 0.5                         # similarity cutoff (0–1)

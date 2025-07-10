@@ -62,6 +62,8 @@ class DocumentFilter:
         mask = self.df['filtered_json'].apply(lambda d: len(d['articles']) + len(d['annexes']) > 0)
         self.df_filtered = self.df[mask].copy()
         self.df_filtered['filtered_json'] = self.df_filtered['filtered_json'].apply(json.dumps)
+        
+        return self.df_filtered
 
     def save_results(self, output_csv, output_json=None):
         """Save the filtered results to CSV and optionally to JSON."""
@@ -84,11 +86,13 @@ class DocumentFilter:
         self.input_csv = input_csv
         self.load_data(nrows)
         self.set_query(query)
-        self.filter_documents()
-        self.save_results(output_csv, output_json)
+        dataframe = self.filter_documents()
+
+        return dataframe
 
 # Example usage:
-# filterer = DocumentFilter(threshold=0.5, model_name='jinaai/jina-embeddings-v2-small-en')
-# filterer.run('input.csv', "Your query here", nrows=5)
-# filterer.filter_documents()
-# filterer.save_results('filtered_laws.csv', 'filtered_laws.json')
+#filterer = DocumentFilter(threshold=0.5, model_name='jinaai/jina-embeddings-v2-small-en')
+#dataframe = filterer.run('input.csv', "Your query here", nrows=5)
+#filterer.save_results('filtered_laws.csv', 'filtered_laws.json')
+
+
