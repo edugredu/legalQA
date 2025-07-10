@@ -8,12 +8,12 @@ load_dotenv()
 from openai import OpenAI
 
 PROMPT_PATH = Path(__file__).parent / "prompts/llm_prompt.txt"
-INPUTS_DIR = Path(__file__).parent / "inputs"
-OUTPUTS_DIR = Path(__file__).parent / "outputs"
+#INPUTS_DIR = Path(__file__).parent / "inputs"
+#OUTPUTS_DIR = Path(__file__).parent / "outputs"
 MODEL = os.environ.get("OPENROUTER_MODEL", "qwen/qwen3-30b-a3b:free")
-API_KEY = os.environ.get("OPENROUTER_API_KEY")
+#API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
-assert API_KEY, "OPENROUTER_API_KEY environment variable must be set."
+#assert API_KEY, "OPENROUTER_API_KEY environment variable must be set."
 
 def load_prompt_template(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -32,7 +32,6 @@ def fill_prompt(template, variables):
         return template.format(**variables)
     except KeyError as e:
         raise ValueError(f"Missing variable for prompt: {e}")
-
 
 def call_openrouter_llm(prompt, api_key, model=MODEL):
     client = OpenAI(
@@ -63,6 +62,20 @@ def write_output(output, outputs_dir):
         f.write(output)
     print(f"Output written to {output_file}")
 
+def run_module_1(promptInput, API_KEY=None):
+    try:
+        assert API_KEY, "OPENROUTER_API_KEY environment variable must be set."
+        template = load_prompt_template(PROMPT_PATH)
+        variables = {'user_query': promptInput}
+        prompt = fill_prompt(template, variables)
+        answer = call_openrouter_llm(prompt, API_KEY, model=MODEL)
+        return answer
+    
+    except Exception as e:
+        print(f"Error: {e}")
+        exit(1)
+
+'''
 def main():
     try:
         template = load_prompt_template(PROMPT_PATH)
@@ -76,3 +89,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+'''

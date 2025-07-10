@@ -1,3 +1,5 @@
+from module_1.run_llm_prompt import run_module_1
+
 def process_legal_query(user_query: str) -> str:
     """
     Process a user's legal query and return a response.
@@ -12,6 +14,25 @@ def process_legal_query(user_query: str) -> str:
     # This is where you'll integrate your models and Gen AI
     
     try:
+
+        API_KEY = None
+        
+
+        ############
+        ## STEP 1 ##
+        ############
+
+        output_1 = run_module_1(user_query)
+
+        ############
+        ## STEP 2 ##
+        ############
+
+        
+
+
+
+
         # Example structure:
         # 1. Validate query is EU law related
         # 2. Process with your AI models
