@@ -5,12 +5,13 @@ import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 
-class LegalDocumentFilter:
-    def __init__(self, threshold: float, model_name: str):
+class DocumentFilter:
+    def __init__(self, threshold=0.5, model_name='jinaai/jina-embeddings-v2-small-en'):
         """
-        Initialize the LegalDocumentFilter.
+        Initialize the DocumentFilter.
 
         Parameters:
+        - input_csv (str): Path to the input CSV file.
         - threshold (float): Cosine similarity cutoff for filtering.
         - model_name (str): Name of the sentence transformer model.
         """
@@ -18,11 +19,10 @@ class LegalDocumentFilter:
         self.model = SentenceTransformer(model_name)
         self.df = None
         self.query_emb = None
-        self.df_filtered = None
 
-    def load_data(self, input_dataframe: pd.DataFrame, nrows = None):
+    def load_data(self, nrows=None):
         """Load the CSV data into a DataFrame."""
-        self.df = input_dataframe
+        self.df = pd.read_csv(self.input_csv)
         if nrows:
             self.df = self.df.head(nrows)
 
@@ -65,9 +65,30 @@ class LegalDocumentFilter:
 
     def save_results(self, output_csv, output_json=None):
         """Save the filtered results to CSV and optionally to JSON."""
-        if self.df_filtered is None:
-            raise ValueError("No filtered results to save.")
         result = self.df_filtered[['celex_id', 'reference', 'summary', 'filtered_json']]
         result.to_csv(output_csv, index=False)
         if output_json:
             result.to_json(output_json, orient='records', lines=True)
+            
+    def run(self, input_csv, query, nrows=None, output_csv='filtered_laws.csv', output_json=None):
+        """
+        Run the filtering process.
+
+        Parameters:
+        - input_csv (str): Path to the input CSV file.
+        - query (str): User query for filtering.
+        - nrows (int): Number of rows to read from the CSV.
+        - output_csv (str): Path to save the filtered results in CSV format.
+        - output_json (str): Path to save the filtered results in JSON format.
+        """
+        self.input_csv = input_csv
+        self.load_data(nrows)
+        self.set_query(query)
+        self.filter_documents()
+        self.save_results(output_csv, output_json)
+
+# Example usage:
+# filterer = DocumentFilter(threshold=0.5, model_name='jinaai/jina-embeddings-v2-small-en')
+# filterer.run('input.csv', "Your query here", nrows=5)
+# filterer.filter_documents()
+# filterer.save_results('filtered_laws.csv', 'filtered_laws.json')
