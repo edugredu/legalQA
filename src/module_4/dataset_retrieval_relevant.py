@@ -15,9 +15,9 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 
 # —— Parameters —— #
-INPUT_CSV    = 'input/cachedLaws_1.csv'    # your source CSV
-QUERY_FILE   = 'input/query.txt'           # your query text
-OUTPUT_CSV   = 'output/filtered_laws.csv'  # where to save results
+INPUT_CSV    = '/app/src/module_3/cachedLaws_1.csv'    # your source CSV
+QUERY_FILE   = '/app/src/module_4/input/query.txt'           # your query text
+OUTPUT_CSV   = '/app/src/module_4/output/filtered_laws.csv'  # where to save results
 THRESHOLD    = 0.5                         # similarity cutoff (0–1)
 
 # —— Prepare output directory —— #
@@ -26,7 +26,7 @@ os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
 # —— Load data —— #
 # Read first 5 rows (tab-separated)
 df = pd.read_csv(INPUT_CSV).head(5)
-df.to_csv("input/sample_input.csv", index=False)
+df.to_csv("/app/src/module_4/input/sample_input.csv", index=False)
 
 # Load the user query
 with open(QUERY_FILE, 'r', encoding='utf-8') as f:
