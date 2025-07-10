@@ -1,45 +1,580 @@
-1. Council Regulation (EU) No 216/2013 of 7 March 2013 on the electronic publication of the Official Journal of the European Union
-For the purposes of ensuring the authenticity, integrity and inalterability of the electronic edition of the Official Journal, an advanced electronic signature based on a qualified certificate and created by a secure-signature-creation device in accordance with that Directive provides sufficient guarantees to the public.
+===== LAW: 32019R0980 =====
+Acknowledgment of the receipt of an application for approval of a draft prospectus, or of the filing of a universal registration document or of an amendment thereto, and processing of an application for approval of a draft prospectus
+Article 39
+Scrutiny of the information contained in the prospectus of specialist issuers
+Competent authorities may require additional information to be included in the prospectus based on the activities of the specialist issuers falling under one of the categories set out in Annex 29.
+Article 40
+Additional criteria for the scrutiny of the completeness, consistency and comprehensibility of the information contained in the prospectus
+Where necessary for investor protection, the competent authority may apply criteria in addition to those laid down in Articles 36, 37 and 38 for the purposes of scrutinising the completeness, comprehensibility and consistency of the information in the draft prospectus.
+Article 29
+EU Growth registration document for non-equity securities
+A specific registration document for non-equity securities that is drawn up in accordance with Article 15 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 25 to this Regulation.
+Article 38
+Criteria for the scrutiny of the consistency of the information contained in the prospectus
+For the purposes of scrutinising the consistency of the information in a draft prospectus, the competent authority shall consider all of the following:
+(a)
+whether the draft prospectus is free of material discrepancies between the different pieces of information provided therein, including any information incorporated by reference;
+(b)
+whether any material and specific risks disclosed elsewhere in the draft prospectus are included in the risk factors section;
+(c)
+whether the information in the summary is in line with information elsewhere in the draft prospectus;
+(d)
+whether any figures on the use of proceeds correspond to the amount of proceeds being raised and whether the disclosed use of proceeds is in line with the disclosed strategy of the issuer;
+(e)
+whether the description of the issuer in the operating and financial review, the historical financial information, the description of the issuer’s activity and the description of the risk factors are consistent;
+(f)
+whether the working capital statement is in line with the risk factors, the auditor’s report, the use of proceeds and the disclosed strategy of the issuer and how that strategy will be funded.
+Article 30
+EU Growth securities note for equity securities
+A specific securities note for equity securities that is drawn up in accordance with Article 15 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 26 to this Regulation.
+Article 31
+EU Growth securities note for non-equity securities
+A specific securities note for non-equity securities that is drawn up in accordance with Article 15 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 27 to this Regulation.
+Article 28
+EU Growth registration document for equity securities
+A specific registration document for equity securities that is drawn up in accordance with Article 15 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 24 to this Regulation.
+Article 35
+Scope of the scrutiny
+For the purposes of the scrutiny of the prospectus and the review of the universal registration document, references to the prospectus shall mean the prospectus or any of its constituent parts, including a universal registration document whether submitted for approval or filed without prior approval and any amendments thereto as well as supplements to the prospectus.
+Article 3
+Universal registration document
+A registration document that is drawn up in accordance with Article 9 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 2 to this Regulation.
+Article 8
+Registration document for wholesale non-equity securities
+1.   For non-equity securities as referred to in paragraph 2, the registration document shall contain the information referred to in Annex 7 to this Regulation, unless the registration document is drawn up in accordance with Articles 9, 14 or 15 of Regulation (EU) 2017/1129 or contains the information referred to in Annexes 1 or 6 to this Regulation.
+2.   The requirement referred to in paragraph 1 shall apply to non-equity securities that comply with one of the following conditions:
+(a)
+they are to be traded only on a regulated market, or a specific segment thereof, to which only qualified investors can have access for the purposes of trading in such securities;
+(b)
+they have a denomination per unit of at least than EUR 100 000 or, where there is no individual denomination, can only be acquired on issue for at least EUR 100 000 per security.
+Article 10
+Registration document for asset-backed securities
+By way of derogation from Articles 7 and 8, a registration document that is drawn up for asset-backed securities, shall contain the information referred to in Annex 9.
+Article 2
+Registration document for equity securities
+For equity securities, the registration document shall contain the information referred to in Annex 1 to this Regulation, unless it is drawn up in accordance with Articles 9, 14 or 15 of Regulation (EU) 2017/1129.
+Submission of an application for approval of a draft prospectus or filing of a universal registration document or of amendments thereto
+Article 4
+Registration document for secondary issuances of equity securities
+A specific registration document for equity securities that is drawn up in accordance with Article 14 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 3 to this Regulation.
+Article 34
+Supplements to the specific summary for the EU Growth prospectus
+Where the specific summary of an EU Growth prospectus is to be supplemented in accordance with Article 23 of Regulation (EU) 2017/1129, the new information shall be integrated in the specific summary of that EU Growth prospectus in a way that enables investors to easily identify the changes. The new information shall be integrated in the specific summary of the EU Growth prospectus either by producing a new specific summary or by supplementing the original specific summary.
+Article 17
+Securities note for secondary issuances of non-equity securities
+A specific securities note for non-equity securities that is drawn up in accordance with Article 14 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 16 to this Regulation.
+Article 21
+Asset backed securities
+For asset-backed securities, the securities notes shall also contain the additional information referred to in Annex 19.
+Article 22
+Guarantees
+For non-equity securities that include guarantees, the securities notes shall also contain the additional information referred to in Annex 21.
+Article 23
+Consent
+Where the issuer or the person responsible for drawing up a prospectus consents to its use as referred to in the second subparagraph of Article 5(1) of Regulation (EU) 2017/1129, the prospectus shall contain the following additional information:
+(a)
+the information referred to in items 1 and 2A of Annex 22 to this Regulation where the consent is provided to one or more specified financial intermediaries;
+(b)
+the information referred to in items 1 and 2B of Annex 22 to this Regulation where the consent is given to all financial intermediaries.
+Article 15
+Securities note for retail non-equity securities
+For non-equity securities other than those referred to in Article 8(2) of this Regulation, the securities note shall contain the information referred to in Annex 14 to this Regulation, unless a specific securities note is drawn up in accordance with Articles 14 or 15 of Regulation (EU) 2017/1129.
+Article 13
+Securities note for secondary issuances of equity securities or of units issued by collective investment undertakings of the closed-end type
+A specific securities note for equity securities or units issued by collective investment undertakings of the closed-end type that is drawn up in accordance with Article 14 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 12 to this Regulation.
+Article 12
+Securities note for equity securities or units issued by collective investment undertakings of the closed-end type
+For equity securities or units issued by collective investment undertakings of the closed-end type, the securities note shall contain the information referred to in Annex 11 to this Regulation, unless it is drawn up in accordance with Articles 14 or 15 of Regulation (EU) 2017/1129.
+Article 7
+Registration document for retail non-equity securities
+For non-equity securities other than those referred to in Article 8(2) of this Regulation, the registration document shall contain the information referred to in Annex 6 to this Regulation, unless it is drawn up in accordance with Articles 9, 14 or 15 of Regulation (EU) 2017/1129 or contains the information referred to in Annex 1 to this Regulation.
+Article 47
+Entry into force and application
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union
+.
+It shall apply from 21 July 2019.
+Article 16
+Securities note for wholesale non-equity securities
+For non-equity securities as referred to in Article 8(2) of this Regulation, the securities note shall contain the information referred to in Annex 15 to this Regulation, unless it contains the information referred to in Annex 14 to this Regulation or unless a specific securities note is drawn up in accordance with Articles 14 or 15 of Regulation (EU) 2017/1129.
+Article 19
+Securities that are exchangeable for or convertible into shares
+1.   Where securities are exchangeable for or convertible into shares that are admitted to trading on a regulated market, the securities note shall contain as additional information the information referred to in item 2.2.2 of Annex 17.
+2.   Where securities are exchangeable for or convertible into shares that are or will be issued by the issuer or by an entity belonging to that issuer’s group and that are not admitted to trading on a regulated market, the securities note shall also contain the following additional information:
+(a)
+the information referred to in items 3.1 and 3.2 of Annex 11 in respect of that issuer or of that entity belonging to the issuer’s group;
+(b)
+the information referred to in Annex 18 in respect of the underlying share.
+3.   Where securities are exchangeable for or convertible into shares that are or will be issued by a third party issuer and that are not admitted to trading on a regulated market, the securities note shall contain as additional information the information referred to in Annex 18.
+Article 1
+Definitions
+For the purposes of this Regulation, the following definitions shall apply:
+(a)
+‘asset-backed securities’ means non-equity securities which either:
+(i)
+represent an interest in assets, including any rights intended to ensure the servicing of those assets, the receipt or the timely receipt by holders of those assets of the amounts payable under those assets;
+(ii)
+are secured by assets and the terms of the securities provide for payments calculated by reference to those assets;
+(b)
+‘equivalent third country market’ means a third country market which has been deemed equivalent to a regulated market in accordance with the requirements set out in third and fourth subparagraphs of Article 25(4) of Directive 2014/65/EU of the European Parliament and of the Council
+(
+3
+)
+;
+(c)
+‘profit estimate’ means a profit forecast for a financial period which has expired and for which results have not yet been published;
+(d)
+‘profit forecast’ means a statement that expressly or by implication indicates a figure or a minimum or maximum figure for the likely level of profits or losses for current or future financial periods, or contains data from which a calculation of such a figure for future profits or losses can be made, even if no particular figure is mentioned and the word ‘profit’ is not used;
+(e)
+‘significant gross change’ means a variation of more than 25 % to one or more indicators of the size of the issuer’s business.
+Article 5
+Registration document for units of closed-end collective investment undertakings
+For units issued by collective investment undertakings of the closed-end type, the registration document shall contain the information referred to in Annex 4.
+Article 6
+Registration document for depository receipts issued over shares
+For depository receipts issued over shares, the registration document shall contain the information referred to in Annex 5.
+Article 9
+Registration document for secondary issuances of non-equity securities
+A specific registration document for non-equity securities that is drawn up in accordance with Article 14 of Regulation (EU) 2017/1129 shall contain the information referred to in Annex 8 to this Regulation, unless it contains the information referred to in Annex 3 to this Regulation.
+Article 36
+Criteria for the scrutiny of the completeness of the information contained in the prospectus
+1.   For the purposes of scrutinising the completeness of the information in a draft prospectus, competent authorities shall consider all of the following:
+(a)
+whether the draft prospectus is drawn up in accordance with Regulation (EU) 2017/1129 and this Regulation, depending on the type of issuer, the type of issuance, the type of security and the type of offer or admission to trading;
+(b)
+whether the issuer has a complex financial history or has made a significant financial commitment, as referred to in Article 18.
+2.   For the purposes of point (b) of paragraph 1, competent authorities may require the issuer to include, modify or remove information from a draft prospectus, taking into account the following:
+(a)
+the type of securities;
+(b)
+the information already included in the prospectus and the existence and content of information already included in a prospectus of the entity other than the issuer, as well as the applicable accounting and auditing principles;
+(c)
+the economic nature of the transactions by which the issuer has acquired, or disposed of, its undertaking or any part of it, and the specific nature of that undertaking;
+(d)
+whether the issuer can obtain with reasonable effort information about the entity other than the issuer.
 
-2. Council Directive 88/665/EEC of 21 December 1988 amending several Directives concerning the approximation of the laws of Member States where there is provision in those Directives for publication in the Official Journal of the European Communities of attestations and certificates
-COUNCIL DIRECTIVE of 21 December 1988 amending several Directives concerning the approximation of the laws of Member States where there is provision in those Directives for publication in the Official, Journal of the European Communities of  attestations and certificates (88/665/EEC)
-THE COUNCIL OF THE EUROPEAN COMMUNITIES
-,
-Having regard to the Treaty establishing the European Economic Community, and in particular Article 100a thereof,
-Having regard to the proposal from the Commission,
-In cooperation with the European Parliament (1),
-Having regard to the opinion of the Economic and Social Committee (2),
-Whereas several Community Directives set out general provisions which concern in particular procedures for EEC approval, EEC type examination, EEC verification and other EEC certifications; whereas other specific Directives make reference to these  procedures;
-Whereas in the context of the procedures for EEC approval and EEC type examination, a reciprocal system of information between Member States and/or authorized bodies as well as notification to the Commission of the certificates granted are provided for;  whereas an extract of the certificates is also to be published in the Official Journal of the European Communities;
-Whereas the experience gained has shown that publication of extracts of certificates and attestations in the Official Journal does not appreciably improve the transparency of the matter, since this is already assured in a satisfactory manner by other  means; whereas publication is therefore not essential and could be discontinued,
+===== LAW: 32019R1122 =====
+Article 70
+Automated checking of processes
+1.   All processes must conform to the general IT-requirements of electronic messaging that ensure the successful reading, checking and recording of a process by the Union Registry. All processes must conform to the specific process-related requirements set out in this Regulation.
+2.   The central administrator shall ensure that the EUTL conducts automated checks having regard to the data exchange and technical specifications provided for in Article 75 for all processes to identify irregularities and discrepancies, where a proposed process does not conform to the requirements of Directive 2003/87/EC and this Regulation.
+Article 2
+Scope
+This Regulation applies to allowances created for the purposes of the European Union Emissions Trading System (EU ETS).
+Article 1
+Subject matter
+This Regulation lays down general, operational and maintenance requirements concerning the Union Registry and the independent transaction log provided for in Article 20(1) of Directive 2003/87/EC.
+Article 75
+Data exchange and technical specifications
+1.   The Commission shall make available to national administrators data exchange and technical specifications laying down operational requirements for the Union Registry including the identification codes, automated checks, response codes and data logging requirements, as well as the testing procedures and security requirements.
+2.   The data exchange and technical specifications shall be drawn up in consultation with the Member States.
+3.   Standards developed in accordance with agreements under Article 25 of Directive 2003/87/EC shall be consistent with the data exchange and technical specifications drawn up in accordance with paragraphs 1 and 2 of this Article.
+Article 17
+Opening national holding accounts in the Union Registry
+The competent authority of a Member State shall instruct the national administrator to open a national holding account in the Union Registry within 20 working days of the receipt of the information set out in Annex III.
+Article 24
+Closure of accounts
+Subject to Article 29, within 10 working days of the receipt of a request from the account holder of an account other than those specified in Articles 25 and 26, the administrator shall close the account.
+Article 76
+Change and release management
+If a new version or release of the Union Registry software is required, the central administrator shall ensure that the testing procedures set out in the data exchange and technical specifications provided for in Article 75 are completed before a communication link is established and activated between the new version or release of that software and the EUTL.
+Article 82
+Interruption of operation
+The central administrator shall ensure that interruptions to the operation of the Union Registry are kept to a minimum by taking all reasonable steps to ensure the availability and security of the Union Registry and of the EUTL within the meaning of Decision (EU, Euratom) 2017/46 and by providing for robust systems and procedures to safeguard all information.
+Article 43
+Transfer of general allowances to the EU Total Quantity-Account
+At the end of each trading period, the central administrator shall transfer all allowances remaining on the EU Allocation Account to the EU Total Quantity Account.
+Article 86
+Provision of new account information
+Account information required by this Regulation that was not required by Regulation (EU) No 389/2013 shall be submitted to national administrators at the latest during the next review referred to in Article 22(4).
+Article 34
+Only transactions expressly provided for in this Regulation for each account type shall be initiated by that account type.
+Article 12
+Opening accounts administered by the central administrator
+The central administrator shall open all ETS management accounts in the Union Registry.
+Article 59
+Implementation of linking arrangements
+The central administrator may create accounts and processes and undertake transactions and other operations at appropriate times to implement agreements and arrangements made pursuant to Articles 25 and 25a of Directive 2003/87/EC.
+Article 44
+Transfer of aviation allowances to the EU Aviation Total Quantity Account
+At the end of each trading period, the central administrator shall transfer all allowances remaining on the EU Special Reserve Account to the EU Aviation Total Quantity Account.
+Article 51
+Return of aviation allowances
+When a change to the national aviation allocation table is carried out pursuant to Article 25a of Directive 2003/87/EC after the transfer of allowances to the aircraft operator holding accounts for a given year in accordance with Article 50 of this Regulation, the central administrator shall execute any transfer required by any measure adopted pursuant to Article 25a of Directive 2003/87/EC.
+Article 69
+Suspension of linking agreements
+In case of suspension or termination of an agreement under Article 25 of Directive 2003/87/EC, the central administrator shall take the appropriate measures in accordance with the agreement.
+Article 5
+European Union Transaction Log
+1.   A European Union Transaction Log (EUTL), to take the form of a standardised electronic database, is established, pursuant to Article 20 of Directive 2003/87/EC, for transactions within the scope of this Regulation.
+2.   The central administrator shall operate and maintain the EUTL in accordance with the provisions of this Regulation.
+3.   The central administrator shall ensure that the EUTL is capable of checking and recording all processes referred to under this Regulation, and complies with the hardware, network and software requirements set out in the data exchange and technical specifications provided for in Article 75 of this Regulation.
+4.   The central administrator shall ensure that the EUTL is capable of recording all processes described in Chapter 3 of Title I and in Titles II and III.
+Article 88
+Repeal
+Regulation (EU) No 389/2013 is repealed with effect from 1 January 2021.
+However, Regulation (EU) No 389/2013 shall continue to apply until 1 January 2026 to all operations required in relation to the trading period between 2013 and 2020, to the second commitment period of the Kyoto Protocol and to the compliance period as defined in Article 3(30) of that Regulation.
+Article 29
+Positive balance on accounts under closure
+If there is a positive balance of allowances on an account which an administrator is to close in accordance with Articles 24, 25, 26 and 28, the administrator shall request the account holder to specify another account to which such allowances shall be transferred. If the account holder has not responded to the administrator's request within 40 working days, the administrator may transfer the allowances to its national holding account or set the account status to closure pending.
+Article 61
+Helpdesks
+1.   National administrators shall provide assistance and support to account holders and account representatives in the Union Registry that are administered by them through national helpdesks.
+2.   The central administrator shall provide support to national administrators through a central helpdesk for the purposes of helping them to provide assistance in accordance with paragraph 1.
+Article 4
+Union Registry
+1.   The central administrator shall operate and maintain the Union Registry, including its technical infrastructure.
+2.   Member States shall use the Union Registry for the purposes of meeting their obligations under Article 19 of Directive 2003/87/EC. The Union Registry shall provide national administrators and account holders with the processes set out in this Regulation.
+3.   The central administrator shall ensure that the Union Registry conforms to the hardware, network, software and security requirements set out in the data exchange and technical specifications provided for in Article 75 of this Regulation.
+Article 39
+Transfer of general allowances to be allocated free of charge
+The central administrator shall, in a timely manner, transfer general allowances from the EU Total Quantity Account into the EU Allocation Account in a quantity corresponding to the sum of the allowances allocated free of charge according to the national allocation table of each Member State.
+Article 11
+Notifications from the central administrator
+The central administrator shall notify the account representatives and the national administrator of the proposal for execution and completion or termination of any process related to the account, and of the change of status of the account, through an automated mechanism described in the data exchange and technical specifications provided for in Article 75. Notifications shall be sent in the official language(s) of the Member State of the administrator of the account.
+Article 78
+Records
+1.   The central administrator shall ensure that the Union Registry stores records concerning all processes, log data and account holders for five years after the closure of an account.
+2.   Personal data shall be removed from the records after five years of the closure of an account or after five years of the closure of business relationship, as defined in Article 3(13) of Directive (EU) 2015/849, with a natural person.
+3.   Personal data may be retained, with access restricted to the central administrator, for additional five years only for the purposes of investigation, detection, prosecution, tax administration or enforcement, auditing and financial supervision of activities involving allowances, or of money laundering, terrorism financing, other serious crime or market abuse for which the accounts in the Union Registry may be an instrument, or of breaches of Union or national law ensuring the functioning the EU ETS.
+4.   For the purposes of investigation, detection, prosecution, tax administration or enforcement, auditing and financial supervision of activities involving allowances, or of money laundering, terrorism financing, other serious crime or market abuse for which the accounts in the Union Registry may be an instrument, or of breaches of Union or national law ensuring the functioning the EU ETS, personal data controlled by national administrators may be retained after the closure of the business relationship until the end of a period corresponding to the maximum prescription period of these offences laid down in the national law of the national administrator.
+5.   Account information containing personal data, gathered pursuant to the provisions of this Regulation and not stored in the Union Registry or the EUTL shall be retained according to the provisions of this Regulation.
+6.   The central administrator shall ensure that national administrators are able to access, query and export all records held in the Union Registry in relation to accounts that are or were administered by them.
+Article 72
+Detection of discrepancies within the Union Registry
+1.   The central administrator and Member States shall ensure that the Union Registry contain check input codes and check response codes to ensure the correct interpretation of information exchanged during each process. The check codes shall have regard to those contained in the data exchange and technical specifications provided for in Article 75.
+2.   The central administrator shall ensure that, prior to and during the execution of all processes, the Union Registry conducts appropriate automated checks to ensure that discrepancies are detected and incorrect processes are terminated in advance of automated checks being conducted by the EUTL.
+Article 6
+Communication links between registries and the EUTL
+1.   The central administrator shall ensure that the Union Registry maintains a communication link with the registries of greenhouse gas emissions trading systems with whom a linking agreement is in force in accordance with Article 25 of Directive 2003/87/EC for the purposes of communicating transactions with allowances.
+2.   The central administrator shall ensure that the Union Registry maintains a direct communication link with the EUTL for the purposes of checking and recording transactions with allowances and the account management processes set out in Chapter 3 of Title I. All transactions involving allowances units shall take place within the Union Registry, and shall be recorded and checked by the EUTL. The central administrator may establish a restricted communication link between the EUTL and the registry of a third country which signed a treaty concerning its accession to the Union.
+Article 8
+Accounts
+1.   Member States and the central administrator shall ensure that the Union Registry contains accounts as specified in Annex I.
+2.   Each account type may hold the unit types as set out in Annex I.
+Article 89
+Entry into force and application
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union
+.
+It shall apply from 1 January 2021, with the exception of Article 87, which shall apply from the day of entry into force.
+Article 71
+Detection of discrepancies
+In the case of processes completed through the direct communication link between the Union Registry and the EUTL referred to in Article 6(2), the central administrator shall ensure that the EUTL terminates any processes where it identifies discrepancies upon conducting the automated checks referred to in Article 72(2), and informs thereof the Union Registry and the administrator of the accounts involved in the terminated transaction by returning an automated check response code. The central administrator shall ensure that the Union Registry immediately informs the relevant account holders that the process has been terminated.
+Article 62
+Authentication of the Union Registry
+The identity of the Union Registry shall be authenticated by the EUTL having regard to the data exchange and technical specifications provided for in Article 75.
+Article 16
+Opening trading accounts in the Union Registry
+1.   A request for opening a trading account in the Union Registry shall be submitted to the national administrator by the prospective account holder. The prospective account holder shall provide information as required by the national administrator, which shall include, at a minimum, the information set out in Annex IV.
+2.   The Member State of the national administrator may require as a condition for opening a trading account that the prospective account holders have their permanent residence or registration in the Member State of the national administrator administering the account.
+3.   The Member State of the national administrator may require as a condition for opening a trading account that prospective account holders are registered for value added tax (VAT) in the Member State of the national administrator of the account.
+4.   Within 20 working days of the receipt of a complete set of information in accordance with paragraph 1 of this Article and Article 21, the national administrator shall open a trading account in the Union Registry or inform the prospective account holder of the refusal to open the account, pursuant to Article 19.
+Article 83
+Implementation
+Member States shall bring into force the laws, regulations and administrative provisions necessary to implement this Regulation, and in particular for national administrators to comply with their obligations to verify and review information submitted pursuant to Articles 19(1), 21(4) and 22(4).
+Article 81
+Fees
+1.   The central administrator shall not charge any fees to account holders in the Union Registry.
+2.   National administrators may charge reasonable fees to account holders and verifiers administered by them.
+3.   National administrators shall notify the central administrator of the fees charged and of any changes in the fees within ten working days. The central administrator shall display fees on a public website.
+Article 48
+Free allocation of general allowances
+1.   The national administrator shall indicate in the national allocation table for each operator, for each year and for each legal basis set out in Annex X, whether or not an installation should receive an allocation for that year.
+2.   The central administrator shall ensure that the Union Registry transfers general allowances automatically from the EU Allocation Account in accordance with the relevant national allocation table to the relevant open or blocked operator holding account, having regard to the modalities of the automatic transfer specified in the data exchange and technical specifications provided for in Article 75.
+3.   Where an excluded operator holding account does not receive allowances under paragraph 2, allowances for the years of exclusion shall not be transferred to the account, should it be set to open status for subsequent years.
+4.   The central administrator shall ensure that an operator can perform transfers returning excess allowances to the EU Allocation Account where the national allocation table of a Member State has been changed pursuant to Article 47 to correct for an over allocation of allowances to the operator, and the competent authority has requested the operator to return such excess allowances.
+5.   The competent authority may instruct the national administrator to transfer returning excess allowances to the EU Allocation Account where the over allocation of allowances is a consequence of allocation after an operator ceased the activities carried out in the installation to which the allocation relate, without informing the competent authority.
+Article 45
+Deletion of aviation allowances
+The central administrator shall ensure that, at the end of each trading period, all allowances remaining on the EU Aviation Allocation Account shall be transferred to the Union Deletion Account.
+Article 84
+Further use of accounts
+1.   Accounts, as specified in Chapter 3 of Title I of this Regulation, opened or used pursuant to Commission Regulation (EU) No 389/2013 shall remain in use for the purposes of this Regulation.
+2.   Person holding accounts opened pursuant to Article 18 of Regulation (EU) No 389/2013 shall be transformed into trading accounts.
+Article 74
+Finalisation of processes
+1.   All transactions and other processes communicated to the EUTL in accordance with Article 6(2) shall be final when the EUTL notifies the Union Registry that it has completed the processes. The central administrator shall ensure that the EUTL automatically aborts the completion of a transaction or process if it could not be completed within 24 hours of its communication.
+2.   The data reconciliation process referred to in Article 73(1) shall be final when all inconsistencies between the information contained in the Union Registry and the information contained in the EUTL for a specific time and date have been resolved, and the data reconciliation process has been successfully re-initiated and completed.
+Article 32
+Blocking of accounts due to a failure to submit verified emissions
+1.   If, on 1 April of each year, the annual emissions of an installation or aircraft operator for the preceding year have not been entered and marked as ‘verified’ in the Union Registry, the central administrator shall ensure that the Union Registry sets the corresponding operator holding account or aircraft operator holding account to a blocked status.
+2.   When all overdue verified emissions of the installation or aircraft operator for that year have been recorded in the Union Registry, the central administrator shall ensure that the Union Registry sets the account to open status.
 
-3. Commission Regulation (EU) No 623/2012 of 11 July 2012 amending Annex II to Directive 2005/36/EC of the European Parliament and of the Council on the recognition of professional qualifications  Text with EEA relevance
-12.7.2012 EN Official Journal of the European Union L 180/9
-COMMISSION REGULATION (EU) No 623/2012
-of 11 July 2012
-amending Annex II to Directive 2005/36/EC of the European Parliament and of the Council on the recognition of professional qualifications
-(Text with EEA relevance)
-THE EUROPEAN COMMISSION
-,
-Having regard to the Treaty on the Functioning of the European Union,
-Having regard to Directive 2005/36/EC of the European Parliament and of the Council of 7 September 2005 on the recognition of professional qualifications (1), and in particular the second paragraph of Article 11 thereof,
-Whereas:
-(1) Poland has submitted a reasoned request for amendment to Annex II to Directive 2005/36/EC.
-(2) Poland has requested an amendment to the content of training for the profession of train dispatcher (‘dyżurny ruchu’), a profession which is already included in Annex II to Directive 2005/36/EC.
+===== LAW: 32019D0785 =====
+Article 1
+The purpose of this Decision is to harmonise the technical conditions for the availability and efficient use of radio spectrum by equipment using ultra-wideband technology in the Union.
+Article 4
+Member States shall monitor the use of the bands identified in the Annex by equipment using ultra-wideband technology, in particular to ensure that all the conditions laid down in Article 3 of this Decision continue to be relevant, and report their findings to the Commission.
+Article 3
+Within six months after this Decision takes effect, Member States shall designate and make available the radio spectrum, on a non-interference and non-protected basis, for equipment using ultra-wideband technology provided that such equipment meets the conditions set out in the Annex and it is used indoors or, if it is used outdoors, it is not attached to a fixed installation, a fixed infrastructure or a fixed outdoor antenna. Equipment using ultra-wideband technology which meets the conditions set out in the Annex shall also be allowed in motor and railway vehicles.
 
-4. 2011/479/: Commission Decision of 27 July 2011 on the safety requirements to be met by European standards for gymnastic equipment pursuant to Directive 2001/95/EC of the European Parliament and of the Council Text with EEA relevance
-Under that procedure, the Commission is to determine the specific safety requirements which the European standards should satisfy and, subsequently, on the basis of those requirements, to give mandates to the European standardisation bodies to draw up those standards.
-(4) The Commission is to publish the references of the European standards adopted in that way in the Official Journal of the European Union.
+===== LAW: 32019R0856 =====
+Article 3
+Operational objectives
+The Innovation Fund shall have the following operational objectives:
+(a)
+to support projects demonstrating highly innovative technologies, processes or products, that are sufficiently mature and have a significant potential to reduce greenhouse gas emissions;
+(b)
+to offer financial support tailored to market needs and risk profiles of eligible projects, while attracting additional public and private resources;
+(c)
+to ensure that the revenues of the Innovation Fund are managed in accordance with the objectives of Directive 2003/87/EC.
+Article 26
+Cross-reliance on audits
+Without prejudice to existing possibilities for carrying out further audits, where an audit based on internationally accepted audit standards providing reasonable assurance has been conducted by an independent auditor on the financial statements and reports setting out the use of a Union contribution, that audit shall form the basis of the overall assurance, as further specified, where appropriate, in sector-specific rules, provided that there is sufficient evidence of the independence and competence of the auditor. The report of the independent auditor and the related audit documentation shall be made available on request to the European Parliament, the Commission, the Court of Auditors and the audit authorities of Member States.
+Article 2
+Definitions
+For the purposes of this Regulation the following definitions apply:
+(1)
+‘financial close’ means the moment in the project development cycle where all the project and financing agreements have been signed and all the required conditions contained in them have been met;
+(2)
+‘entry into operation’ means the moment in the project development cycle where all elements and systems required for operation of the project have been tested and activities resulting in effective avoidance of greenhouse gas emissions have commenced;
+(3)
+‘small-scale project’ means a project with a total capital expenditure not exceeding EUR 7 500 000.
+Article 13
+Project development assistance
+1.   The Commission shall, after consulting the Member States in accordance with Article 21(2)(c), determine the maximum amount of the Innovation Fund support available for project development assistance.
+2.   The project development assistance shall be awarded by the Commission or by the implementing body in accordance with Article 12(2) in the form of a grant.
+3.   The following activities may be funded by way of project development assistance:
+(a)
+improvement and development of a project documentation, or of components of the project design, with a view to ensuring the sufficient maturity of the project;
+(b)
+assessment of the feasibility of the project, including technical and economic studies;
+(c)
+advice on the financial and legal structure of the project;
+(d)
+capacity building of the project proponent.
+4.   For the purposes of project development assistance, the relevant costs shall be all project development related costs. The Innovation Fund may finance up to 100 % of the relevant costs.
+Article 10
+Application procedure
+1.   The implementing body shall collect the applications and organise the application procedure in two subsequent phases:
+(a)
+the expression of interest;
+(b)
+the full application.
+2.   At the expression of interest phase, the project proponent shall be required to submit a description of key project characteristics in line with the requirements laid down in the relevant call for proposals, including the description of the project's effectiveness, degree of innovation, and maturity as specified in points (a), (b) and (c) of Article 11(1).
+3.   At the full application phase, the project proponent shall be required to submit a detailed description of the project and all supporting documentation, including the knowledge-sharing plan.
+4.   A simplified application procedure may be applied for small-scale projects.
+Article 7
+General recovery rules
+1.   The Commission shall take appropriate measures to ensure that, where activities financed under this Regulation are implemented, the financial interests of the Innovation Fund are protected by the application of preventive measures against fraud, corruption and any other illegal activities, by effective checks and, if irregularities are detected, by the recovery of the amounts unduly paid and, where appropriate, by effective, proportionate and dissuasive administrative and financial penalties.
+2.   Recoveries shall be implemented in accordance with the Financial Regulation.
+3.   The grounds for recovery as well as the recovery procedures shall be further specified in the contractual documentation.
+Article 5
+Relevant costs
+1.   For the purposes of the fourth sentence of the third subparagraph of Article 10a(8) of Directive 2003/87/EC, the relevant costs shall be the additional costs that are borne by the project proponent as a result of the application of the innovative technology related to the reduction or avoidance of the greenhouse gas emissions. The relevant costs shall be calculated as the difference between the best estimate of the total capital expenditure, the net present value of operating costs and benefits arising during 10 years after the entry into operation of the project compared to the result of the same calculation for a conventional production with the same capacity in terms of effective production of the respective final product.
+Where conventional production referred to in the first subparagraph does not exist, the relevant costs shall be the best estimate of the total capital expenditure and the net present value of operating costs and benefits arising during 10 years after the entry into operation of the project.
+2.   The relevant costs of a small-scale project shall be the total capital expenditure costs of that project.
+Article 22
+Role of the stakeholders
+The Commission may involve stakeholders in the discussions relating to the implementation of the Innovation Fund, including on the issues listed in Article 21(3).
+Article 16
+Implementation of the Innovation Fund
+1.   The Commission shall implement the Innovation Fund in direct management in accordance with relevant provisions of Articles 125 to 153 of the Financial Regulation or in indirect management through bodies referred to in Article 62(1)(c) of the Financial Regulation.
+2.   Costs incurred, in relation to the Innovation Fund implementation activities, including the administrative and management costs, shall be financed from the Innovation Fund.
+Article 17
+Designation of implementing bodies
+1.   Where the Commission decides to delegate certain tasks related to the Innovation Fund implementation to an implementing body, the Commission shall adopt a decision designating such an implementing body.
+The Commission and the designated implementing body shall enter into an agreement laying down the specific terms and conditions under which the implementing body is to perform its tasks.
+2.   Where the Commission implements the Innovation Fund in direct management and decides to delegate certain implementation tasks to an implementing body, the Commission shall designate an executive agency as implementing body.
+3.   Where the Commission implements the Innovation Fund in indirect management, the Commission shall designate as implementing body a body referred to in Article 62(1)(c) of the Financial Regulation.
+4.   To the extent that the tasks relating to the implementation of the Innovation Fund are not delegated to an implementing body, the Commission shall carry out those tasks.
+Article 25
+Audits
+1.   Audits on the use of the Innovation Fund support carried out by independent external auditors, including by other than those mandated by the Union Institutions or bodies, shall form the basis of the overall assurance pursuant to Article 26.
+2.   Any person or entity receiving Innovation Fund support shall agree in writing to grant the necessary rights and access as provided for to in Article 129 of the Financial Regulation.
+Article 9
+Calls for proposals
+1.   The project proponents shall be invited to apply for the Innovation Fund support through open calls for proposals launched by the Commission.
+Before adopting a decision launching a call for proposals, the Commission shall consult the Member States on the draft decision.
+2.   The Commission decision launching the calls for proposals shall include at least the following:
+(a)
+the overall amount of the Innovation Fund support available for the call;
+(b)
+the maximum amount of the Innovation Fund support available for project development assistance;
+(c)
+the types of solicited projects or sectors;
+(d)
+a description of the application procedure and a detailed list of information and documentation to be submitted at each phase of the application procedure;
+(e)
+detailed information on the selection procedure, including the methodology for evaluation and ranking;
+(f)
+where specific application and selection procedures are applied in accordance with Article 10(4) and Article 12(6) for small-scale projects, the rules on those specific procedures;
+(g)
+where the Commission reserves a part of the total amount of the Innovation Fund support available for the call to small-scale projects, the amount of that part;
+(h)
+where additional selection criteria aimed at achieving a geographically balanced distribution of the Innovation Fund support are applied in accordance with Article 11(2), those criteria.
+Article 15
+Provisions of the Innovation Fund support in any other form laid down in the Financial Regulation
+1.   Where the Commission decides to disburse the Innovation Fund support in any form laid down in the Financial Regulation other than grants, the Commission shall adopt, after consulting the Member States, a decision indicating the amount of the Innovation Fund support available for disbursement in that form as well as the rules applicable to the application for such support, the selection of the projects and the disbursement of the support.
+2.   Projects receiving the Innovation Fund support under this Article shall comply with the Union state aid rules.
+Article 11
+Selection criteria
+1.   The selection of projects for the Innovation Fund support shall be based on the following criteria:
+(a)
+effectiveness in terms of greenhouse gas emission avoidance potential, where applicable, compared to the benchmarks referred to in Article 10a(2) of Directive 2003/87/EC;
+(b)
+degree of innovation of the projects compared to the state of the art;
+(c)
+project maturity in terms of planning, business model, financial and legal structure as well as prospect of reaching the financial close within a pre-defined period of time not exceeding four years after the award decision;
+(d)
+technical and market potential for widespread application or replication, or for future cost reductions;
+(e)
+efficiency in terms of the relevant costs of the project minus any contribution to those costs from the project proponent, divided by the total projected amount of greenhouse gas emissions to be avoided or energy to be produced or stored or CO
+2
+to be stored in the first 10 years of operation.
+2.   Additional criteria aimed at achieving a geographically balanced distribution of the Innovation Fund support may also be applied for the purposes of project selection.
+Article 23
+Monitoring and reporting
+1.   The implementing body shall monitor the operation of the Innovation Fund, including the amounts of the disbursed Innovation Fund support.
+2.   With a view to ensuring that data for monitoring refered to in paragprah 1 and results are collected efficiently, effectively and in a timely manner, proportionate reporting requirements may be imposed on the project proponents. The reports of the project proponents shall include the information on the knowledge-sharing actions undertaken pursuant to Article 27.
+3.   The implementing body shall regularly report to the Commission on the performance of its tasks.
+4.   The implementing body shall report to the Commission on the full cycle of the disbursement of support, and in particular on the organisation of the calls for proposals, and on the signatures of contracts with the project proponents.
+5.   After completion of the each call for proposals, the Commission shall report to the Member States on the implementation of that call for proposals.
+6.   The Commission shall report annually to the Council and to the European Parliament on the progress of the implementation of the Innovation Fund.
+7.   Implementing bodies, other than executive agencies, and entities to which the management of the Innovation Fund revenues has been delegated pursuant Article 20(3) shall provide the Commission with the following:
+(a)
+by 15 February, unaudited financial statements covering the preceding financial year, which shall run from 1 January to 31 December, in respect of the activities delegated to those implementing bodies and entities;
+(b)
+by 15 March of the year of the transmission of the unaudited financial statements, the audited financial statements covering the preceding financial year, which shall run from 1 January to 31 December, in respect of the activities delegated to those implementing bodies and entities.
+The Commission shall prepare annual accounts of the Innovation Fund for each financial year, which shall run from 1 January to 31 December on the basis of the financial statements provided pursuant to the first subparagraph. Those accounts shall be subject to an independent external audit.
+Any financial statements and accounts provided for in this paragraph shall be drawn up in compliance with the accounting rules referred to in Article 80 of the Financial Regulation.
+Article 28
+Entry into force
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union
+.
+Article 24
+Evaluation
+1.   In 2025 and every five years thereafter, the Commission shall carry out an evaluation on the operation of the Innovation Fund. The evaluation shall focus on, but shall not be limited to, the assessment of synergies between the Innovation Fund and other relevant Union programmes, as well as the procedure of disbursement of the Innovation Fund support.
+2.   Based on the results of the evaluations referred to in paragraph 1 of this Article, the Commission shall, where appropriate, make proposals to ensure that the Innovation Fund progresses towards the achievement of its objectives provided for in Directive 2003/87/EC and in Article 3 of this Regulation.
+3.   At the end of the implementation of the Innovation Fund, but no later than in 2035, the Commission shall carry out a final evaluation of the operation of the Innovation Fund.
+4.   The Commission shall make the results of the evaluations undertaken pursuant to paragraphs 1, 2, and 3 publicly available.
+Article 4
+Forms of the Innovation Fund support
+The Innovation Fund support to the project may take the following forms:
+(a)
+grants;
+(b)
+contributions to blending operations under the Union investment support instrument;
+(c)
+where necessary to achieve the objectives of Directive 2003/87/EC, funding in any of the other form laid down in Regulation (EU, Euratom) 2018/1046 (the ‘Financial Regulation’), in particular prizes, and procurement.
+Article 27
+Communication, knowledge sharing and publicity
+1.   The project proponents shall proactively and systematically make publicly available on their websites information relating to projects supported under this Regulation. Such information shall include an explicit reference to the Innovation Fund support received.
+2.   The project proponents shall ensure the provision of coherent, effective and targeted information on the Innovation Fund support received to multiple audiences, including the media and the public.
+3.   The Innovation Fund logo or other promotional elements required in the contractual documentation shall be used for all communication and knowledge-sharing activities and appear on notice boards at strategic places visible to the public.
+4.   The project proponents shall provide detailed information on the planned actions in accordance with paragraphs 1 and 2 of this Article in the knowledge-sharing plan submitted in accordance with Article 10(3).
+5.   The implementing body shall perform information, communication and promotion actions relating to the Innovation Fund support and results. The implementing body shall organise specific seminars, workshops or, where appropriate, other types of activities to facilitate exchanges of experience, knowledge and best practices as regards the design, preparation and implementation of projects as well as on the effectiveness of the financing provided through project development assistance projects.
+Article 19
+Specific provisions applicable to the implementation of the Innovation Fund in direct management
+1.   Where the Commission designates an executive agency as implementing body under Article 17(1) of this Regulation, such a Commission decision shall be subject to the result of the cost-benefit analysis referred to in Article 3 of Council Regulation (EC) No 58/2003
+(
+6
+)
+and the agreement referred to in second subparagraph of Article 17(1) of this Regulation shall take the form of an instrument of delegation in accordance with Regulation (EC) No 58/2003.
+2.   Where amounts disbursed by way of direct management are recovered under Articles 7 and 8 of this Regulation, the recovered amounts shall constitute assigned revenue in accordance with Article 21 of the Financial Regulation and shall be used to finance the Innovation Fund operations.
+3.   For all implementing tasks carried out by the Commission, including through an executive agency, the revenue of the Innovation Fund shall constitute external assigned revenue within the meaning of paragraphs 1 and 5 of Article 21 of the Financial Regulation. That assigned revenue shall also cover all administrative costs related to the implementation of the Innovation Fund. The Commission may use a maximum of 5 % of the Innovation Fund envelope to cover its management costs.
+4.   A project that has received the Innovation Fund support may also receive a contribution from any other Union programme, including Funds under shared management, provided that the contributions do not cover the same costs. The cumulative financing shall not exceed the total eligible costs of the project and the support from different Union programmes may be calculated on a pro-rata basis.
+Article 14
+Provision of Innovation Fund support through contributions to blending operations under the Union investment support instrument
+1.   Where the Commission decides to disburse the Innovation Fund support through contributions to blending operations under the Union investment support instrument, the Innovation Fund support shall be implemented in accordance with the rules applicable to the Union investment support instrument. However, the eligibility of the projects shall be assessed in accordance with Article 10a(8) of Directive 2003/87/EC.
+2.   The Commission shall adopt, after consulting the Member States, a decision specifying whether the contribution to blending operations takes a form of non-repayable support or repayable support or both, and indicating the amount of the Innovation Fund support available for the disbursement through the Union investment support instrument.
 
-5. 2006/178/EC: Commission Decision of  27 February 2006  setting up a High Level Expert Group on Digital Libraries  (This text annuls and replaces the text published in  Official Journal L 46 of 16 February 2006, p. 32 )
-4.3.2006 EN Official Journal of the European Union L 63/25
-COMMISSION DECISION
-of 27 February 2006
-setting up a High Level Expert Group on Digital Libraries
-(This text annuls and replaces the text published in Official Journal L 46 of 16 February 2006, p. 32)
-(2006/178/EC)
-THE COMMISSION OF THE EUROPEAN COMMUNITIES
-,
-Having regard to the Treaty establishing the European Community,
-Whereas:
-(1) Article 157 of the Treaty establishing the European Community assigns the Community and the Member States the task of ensuring that the conditions necessary for the competitiveness of the Community's industry exist.
+===== LAW: 22020A0724(01) =====
+Article 9
+Cooperation in Enforcement Activities
+The Parties agree, subject to applicable laws and regulations, to provide, when requested and subject to the availability of required resources, through their Technical Agents or Competent Authorities, mutual cooperation and assistance in investigations or enforcement proceedings under the scope of this Agreement. In addition, each Party shall notify the other promptly of any investigation when mutual interests are involved.
+Article 1
+Objectives
+The objectives of this Agreement are to:
+(a)
+enable the reciprocal acceptance, as provided for in the Annexes to this Agreement, of findings of compliance and certificates issued by either Party's Competent Authorities;
+(b)
+facilitate the multinational dimension of the civil aviation industry;
+(c)
+facilitate and promote the free circulation of civil aeronautical products and services;
+(d)
+promote cooperation in order to achieve a high level of civil aviation safety and environmental compatibility.
+Article 12
+Cost recovery
+Each Party shall endeavour to ensure that any fees or charges imposed by its Technical Agent on a legal or natural person whose activities are regulated under this Agreement shall be just, reasonable and commensurate with the services provided, and shall not create a barrier to trade.
+Article 7
+Regulatory cooperation, mutual assistance and transparency
+1.   Each Party shall ensure that the other Party is kept informed of all its relevant laws, regulations, standards, and requirements, and of its system for issuing Certificates.
+2.   The Parties shall notify each other of their proposed significant revisions to their relevant laws, regulations, standards, and requirements, and to their systems for issuing Certificates, insofar as these revisions may have an impact on this Agreement. To the extent practicable, they shall offer each other an opportunity to comment on such revisions and give due consideration to such comments.
+3.   The Technical Agents may develop procedures on regulatory cooperation within the scope of this Agreement.
+4.   For the purpose of investigating and resolving safety issues, the Parties may allow each other to participate as observers in each other's oversight activities as specified in the appropriate Annex.
+5.   For purposes of surveillance and inspections, each Party's Competent Authorities shall assist the other Party's Competent Authorities with the objective of gaining unimpeded access to regulated entities subject to its jurisdiction.
+Article 8
+Exchange of safety information
+The Parties agree, without prejudice to the provisions of Article 10 and subject to their applicable legislation:
+(a)
+to provide each other, on request and in a timely manner, information available to their Technical Agents related to accidents or serious incidents or occurrences in relation to products, services or activities covered by the Annexes to this Agreement; and
+(b)
+to exchange other safety information in accordance with procedures developed by the Technical Agents.
+Article 5
+Preservation of Regulatory Authority and Safeguard Measures
+1.   Nothing in this Agreement shall be construed as limiting the authority of a Party to:
+(a)
+Determine, through its legislative, regulatory and administrative measures, the level of protection it considers appropriate for safety, for the environment, and otherwise with regard to risks within the scope of this Agreement.
+(b)
+Take all appropriate and immediate measures whenever there is a reasonable risk that a product, a service or any activity within the scope of this Agreement, may:
+(i)
+compromise the health or safety of persons or the environment;
+(ii)
+not comply with the applicable legislative, regulatory, or administrative measures of that Party; or
+(iii)
+otherwise fail to satisfy a requirement within the scope of the applicable Annex to this Agreement.
+2.   Where either Party takes measures pursuant to paragraph 1 of this Article, it shall inform the other Party in writing within 15 working days of taking such measures, providing reasons for it.
+3.   Measures taken under this Article shall not be construed or interpreted by either Party as an infringement of the provisions of this Agreement.
+Article 11
+Joint Committee of the Parties
+1.   A Joint Committee is established, consisting of representatives from each Party. The Joint Committee shall be responsible for the effective functioning of this Agreement and shall meet at regular intervals to evaluate the effectiveness of its implementation.
+2.   The Joint Committee may consider any matter related to the functioning and implementation of this Agreement. In particular it shall be responsible for:
+(a)
+resolving any question relating to the application and implementation of this Agreement including its Annexes;
+(b)
+considering ways to enhance the operation of this Agreement and make as appropriate recommendations to the Parties for the amendment of this Agreement pursuant to Article 17;
+(c)
+adopting amendments to the Annexes;
+(d)
+coordinating the development of and adopting new Annexes pursuant to Article 17; and
+(e)
+adopting, as appropriate, working procedures on regulatory cooperation and transparency for all activities referred to in Article 3.
+3.   The Joint Committee shall draw up and adopt its rules of procedure.
+Article 14
+Application
+1.   This Agreement shall apply, on the one hand, to the civil aviation regulatory system of the People's Republic of China and, on the other hand, to the civil aviation regulatory system of the European Union.
+2.   The Parties share the goal of maximizing the benefits of this Agreement by its possible extension to include third countries. To that end the Joint Committee, established pursuant to Article 11, shall consider, as appropriate, the conditions and procedures, including any necessary amendments to this Agreement that would be required for third countries to accede to this Agreement.
+Article 6
+Communication
+1.   Upon signature of this Agreement the Parties shall communicate to each other the relevant contact points for the implementation of this Agreement.
+2.   All communications related to the implementation of this Agreement between the Parties and / or the Competent Authorities shall be in the English language.
+3.   Each Party shall notify the other Party of the identity of its Competent Authority or Authorities.
+Article 15
+Consultations and Settlement of Disagreements
+1.   The Parties shall make every effort to resolve any disagreement between them regarding their cooperation under this Agreement at the lowest possible technical level by consultation in accordance with provisions contained in the Annexes to this Agreement.
+2.   In the event that any disagreement is not resolved as provided for in paragraph 1 of this Article, either Technical Agent may refer the disagreement to the Joint Committee established pursuant to Article 11, which shall consult on the matter.
+3.   Notwithstanding the provisions of paragraphs 1 and 2 of this Article, either Party may request consultations with the other Party on any matter related to this Agreement. The other Party shall enter into consultations at a time agreed by the Parties within 45 days.
+Article 3
+Scope
+1.   The scope of cooperation under this Agreement includes the following areas:
+(a)
+the airworthiness Certificates and Monitoring of Civil Aeronautical Products;
+(b)
+environmental testing and Certificates of Civil Aeronautical Products;
+(c)
+the certification and Monitoring of design and production organisations;
+(d)
+the certification and Monitoring of maintenance organisations;
+(e)
+personnel licensing and training;
+(f)
+operation of aircraft;
+(g)
+air traffic services and air traffic management; and
+(h)
+other areas subject to Annexes to the Convention on International Civil Aviation, signed in Chicago on 7 December 1944 ("the Convention").
+2.   For matters within the scope of this Agreement, the Parties shall develop Annexes and associated Implementing Procedures describing the terms, conditions and methods for reciprocal acceptance of findings of compliance and Certificates, including transitional arrangements where necessary, when they agree that their respective civil aviation standards, rules, practices, procedures and systems are sufficiently equivalent or compatible to permit acceptance of Certificates and findings of compliance with agreed upon standards made by one Party on behalf of the other. Technical differences between the Parties' civil aviation systems shall be addressed in the Annexes.
+
