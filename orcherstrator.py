@@ -24,12 +24,23 @@ def process_legal_query(user_query: str) -> str:
 
         output_1 = run_module_1(user_query)
 
+        #The output_1 is a textual response in a legal way of writing
+
         ############
         ## STEP 2 ##
         ############
 
-        
+        output_2 = None
 
+        #The output_2 is a dataframe
+
+        ############
+        ## STEP 3 ##
+        ############
+
+        output_3 = None
+ 
+        #The output_2 is a dataframe
 
 
 
