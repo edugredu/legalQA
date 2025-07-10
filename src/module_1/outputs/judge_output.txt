@@ -1,0 +1,10 @@
+```json
+{
+  "relevance": 4,
+  "completeness": 1,
+  "clarity": 3,
+  "accuracy": 4,
+  "justification": 1,
+  "explanation": "The answer is relevant as it restates the question in more formal legal terminology, indicating an understanding of the topic. However, it *only* restates the question; it provides absolutely no information about the requirements for GDPR compliance, making it almost entirely incomplete. The clarity is moderate, as the rephrasing uses legal jargon ('micro, small, and medium-sized enterprises', 'lawful compliance') which might not be immediately accessible to all small business owners. While the phrasing itself isn't inaccurate, it lacks any substantive legal content to assess for accuracy beyond plausibility, and offers zero justification for *anything*."
+}
+```
