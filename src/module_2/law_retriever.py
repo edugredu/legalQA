@@ -10,7 +10,7 @@ class LawRetriever:
         self.dataset_path = dataset_path
         self.cache_dir = Path("cache/")
         self.index_dir = self.cache_dir / "indices" / "eur_lex"
-        self.index_dir_title = self.cache_dir / "indices" / "eur_lex_titles"
+        self.index_dir2 = self.cache_dir / "indices" / "eur_lex_titles"
         self.dataset = datasets.load_dataset(self.dataset_path)
         if isinstance(self.dataset, datasets.DatasetDict):
             ds1 = self.dataset['train'].to_pandas()
@@ -18,25 +18,40 @@ class LawRetriever:
             ds3 = self.dataset['validation'].to_pandas()
             ds4 = pd.concat([ds1, ds2], axis=0)
             self.dataset = pd.concat([ds4, ds3], axis=0)
-        self.dataset = self.dataset.rename(columns={'celex_id': 'docno'}, inplace=False)
+        self.dataset = self.dataset.rename(columns={'celex_id': 'docno', 'text':'not_text', 'title':'text'}, inplace=False)
         self.dataset = self.dataset.to_dict(orient='records')
-
         try:
             self.index_ref = pt.IndexFactory.of(str(self.index_dir.absolute()))
         except:
+            print("Creating index for dataset text...")
             indexer = pt.index.IterDictIndexer(str(self.index_dir.absolute()))
             self.index_ref = indexer.index(
                 self.dataset
             )
+            
+        # Create index for dataset titles
+        self.index_ref_title = None
+
+        try:
+            self.index_ref_title = pt.IndexFactory.of(str(self.index_dir2.absolute()))
+        except:
+            indexer_title = pt.index.IterDictIndexer(str(self.index_dir2.absolute()))
+            self.index_ref_title = indexer_title.index(
+                self.dataset
+            )   
 
         # BM25 IR models for text and title of dataset documents
         self.bm25_text = pt.terrier.Retriever(self.index_ref, wmodel="BM25")
         self.bm25_title = pt.terrier.Retriever(self.index_ref_title, wmodel="BM25")
+        print("AAAAAAA:", self.dataset.columns)
 
     def get_text(self, row):
         return list(self.dataset[self.dataset['docno']==row['docno']]['text'])[0]
 
     def get_title(self, row):
+        #Print column names of the dataset
+        print("hhhhh")
+        print(self.dataset.columns)
         return list(self.dataset[self.dataset['docno']==row['docno']]['title'])[0]
 
     def retrieve_docs(self, query, K=10):
@@ -61,12 +76,17 @@ class LawRetriever:
                 K = len(merged_df)
             return merged_df[:K]
         
-        
         re_query = re.sub(r'[^A-Za-z0-9\s]', '', query)
         retr_text = self.bm25_text.search(re_query)
+        print("retr_text")
+        print(retr_text)
         retr_title = self.bm25_title.search(re_query)
+        print("retr_title")
+        print(retr_title)
         results = rrf([retr_text, retr_title], K=K)
+        print(results)
         results['title'] = results.apply(self.get_title, axis=1, raw=False)
+        print("retri")
         results['text'] = results.apply(self.get_text, axis=1, raw=False)
         results['eurovoc_concepts'] = results.apply(self.get_eurovoc_concepts, axis=1, raw=False)
         results.rename(columns={'docno': 'celex_id'}, inplace=True)
@@ -75,4 +95,5 @@ class LawRetriever:
         return results
         
     def run(self, query: str):
+        print("run")
         return self.retrieve_docs(query)
