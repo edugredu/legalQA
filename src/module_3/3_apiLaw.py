@@ -8,6 +8,7 @@ import pandas as pd
 import urllib.parse
 import json
 from tqdm import tqdm
+import ast
 
 # %%
 def get_html_by_celex_id(celex_id: str) -> str:
@@ -646,90 +647,3 @@ for i, row in df.iterrows():
 # %%
 #Export the dataframe to a CSV file
 df.to_csv('lawsWithText.csv', index=False)
-
-# %% [markdown]
-# ## Cache generation code
-
-# %%
-#Import the dennlinger/eur-lex-sum dataset
-from datasets import load_dataset
-dataset = load_dataset("dennlinger/eur-lex-sum", "english")
-
-df_train = dataset['train'].to_pandas()
-df_test = dataset['test'].to_pandas()
-df_validation = dataset['validation'].to_pandas()
-
-df = pd.concat([df_train, df_test, df_validation], ignore_index=True)
-
-df['structured_json'] = None
-
-# %%
-df_cache = df.copy()
-df_cache['structured_json'] = None
-#Remove all rows from df_cache
-df_cache = df_cache[0:0]
-
-
-
-# %%
-#Export the df to cachedLaws1.csv, cachedLaws2.csv, cachedLaws3.csv, cachedLaws4.csv
-df_cache_1 = df[:400]
-df_cache_2 = df[400:800]
-df_cache_3 = df[800:1200]
-df_cache_4 = df[1200:]
-
-df_cache_1.to_csv('cachedLaws_1.csv', index=False, encoding='utf-8')
-df_cache_2.to_csv('cachedLaws_2.csv', index=False, encoding='utf-8')
-df_cache_3.to_csv('cachedLaws_3.csv', index=False, encoding='utf-8')
-df_cache_4.to_csv('cachedLaws_4.csv', index=False, encoding='utf-8')
-
-# %%
-#Get the lengths of the structured_json
-i = 0
-
-print("Cached laws 1:", 0, len(df_cache_1))
-i += len(df_cache_1)
-print("Cached laws 2:", i, len(df_cache_2) + i)
-i += len(df_cache_2)
-print("Cached laws 3:", i, len(df_cache_3) + i)
-i += len(df_cache_3)
-print("Cached laws 4:", i, len(df_cache_4) + i)
-
-# %%
-for i, row in tqdm(df.iterrows(), total=len(df), desc="Processing laws"):
-    celex_id = row['celex_id']
-    
-    if df_cache[df_cache['celex_id'] == celex_id].empty or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isnull().all() or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].isna().all() or \
-       df_cache[df_cache['celex_id'] == celex_id]['structured_json'].apply(lambda x: x == {}).all():
-        # If the CELEX ID is not in the cache
-                
-        encoded_celex_id = url_encode_celex_id(celex_id)
-        
-        # Get the HTML content
-        html = get_html_by_celex_id(encoded_celex_id)
-        
-        # Extract structured JSON
-        structured_json = extract_eu_law_text_json(html)
-        
-        # Store JSON
-        df.at[i, 'structured_json'] = structured_json
-    else:
-        try:
-            cacheJson = df_cache[df_cache['celex_id'] == celex_id]['structured_json'].values[0]
-
-            #Convert it to a JSON object
-            if isinstance(cacheJson, str):
-                df.at[i, 'structured_json'] = json.loads(cacheJson)
-            df.at[i, 'structured_json'] = df_cache[df_cache['celex_id'] == celex_id]['structured_json'].values[0]
-        except:
-            print("Exception parsing JSON for CELEX ID:", celex_id, " in row:", i)
-            df.at[i, 'structured_json'] = None
-
-
-# %%
-#Save the dataframe to a csv file
-df.to_csv('fullLaws.json', index=False, encoding='utf-8')
-
-
