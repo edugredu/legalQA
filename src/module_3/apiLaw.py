@@ -1,5 +1,6 @@
 # %%
 import re
+from anyio import Path
 from bs4 import BeautifulSoup
 #from eurlex import get_data_by_celex_id #pip install eurlex-parser
 #from eurlex import get_html_by_celex_id #pip install eurlex
@@ -597,14 +598,17 @@ def extract_eu_law_text_json(html_content):
 def load_cache():
 
     #Read all the cached laws CSV files from the data directory
-    cacheFiles = os.listdir('data')
+    path = Path(__file__).parent / "data"
+    cacheFiles = os.listdir(path)
+    
     cacheFiles = [f for f in cacheFiles if f.startswith('cachedLawsTexts_') and f.endswith('.csv')]
     cacheFiles.sort()  # Sort to ensure consistent order
 
     # Read the cached laws CSV files into dataframes
     df_cache = pd.DataFrame()
+
     for cache_file in cacheFiles:
-        file_path = os.path.join('data', cache_file)
+        file_path = path / cache_file
         df_temp = pd.read_csv(file_path, encoding='utf-8')
         df_cache = pd.concat([df_cache, df_temp], ignore_index=True)
 
@@ -689,7 +693,6 @@ def mod3_response(lawsToConsider):
     lawsToConsider = lawsToConsider.drop(columns=['eurovoc_concepts'], errors='ignore')
 
     df_cache = load_cache()
-    print("Running module 3: API Law")
 
     dfFullText = getFullText(lawsToConsider, df_cache)
 

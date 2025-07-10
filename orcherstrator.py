@@ -55,7 +55,6 @@ def process_legal_query(user_query: str) -> str:
         ## STEP 3 ##
         ############
         output_3 = mod3_response(results)
-        print(output_3)
 
         #The output_2 is a dataframe
 
