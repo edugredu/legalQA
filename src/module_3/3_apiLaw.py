@@ -654,6 +654,32 @@ def getFullText(dfToGet, dfCache):
 
     return dfToGet
 
+
+def clean_articles(structured_json):
+    if structured_json is not None and 'articles' in structured_json:
+        filtered_articles = []
+        for article in structured_json['articles']:
+            # Ensure ID exists and convert to string for dot checking
+            if 'id' not in article:
+                print("Skipping article without ID")
+                continue
+                
+            article_id = str(article['id'])
+            
+            # Skip articles with dots in ID
+            if '.' in article_id:
+                continue
+                
+            # Skip articles where subtitle equals text
+            if ('subtitle' in article and 'text' in article and 
+                article['subtitle'] == article['text']):
+                continue
+                
+            filtered_articles.append(article)
+        
+        structured_json['articles'] = filtered_articles
+    return structured_json
+
 # %%
 def mod3_response(lawsToConsider):
     # Add this column to store JSON data
@@ -665,5 +691,7 @@ def mod3_response(lawsToConsider):
     df_cache = load_cache()
 
     dfFullText = getFullText(lawsToConsider, df_cache)
+
+    dfFullText['structured_json'] = dfFullText['structured_json'].apply(clean_articles)
 
     return dfFullText
