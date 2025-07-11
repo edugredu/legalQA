@@ -127,28 +127,25 @@ docker run -p 8501:8501 legalqa
 ```
 legalQA/
 ├── src/
-│   ├── module_1/
-│   │   ├── llm_prompt.txt (LLM prompt template)
-│   │   ├── run_llm_prompt.py (LLM prompt execution)
-│   ├── module_2/
-│   │   ├── module_2.py (Laws retrieval logic)
-│   │   ├── data/ (cache data files for laws)
-│   │   ├── 3_apiLaw.ipynb (Jupyter notebook for testing and cache retrieval)
-│   ├── module_3/
-│   │   ├── xxxx
-│   │   ├── xxxx
-│   ├── module_4/
-│   │   ├── xxxx
-│   │   ├── xxxx
-│   ├── module_5/
-│   │   ├── xxxx
-│   │   ├── xxxx
+│   ├── module_1.py (Query rephrasing logic)
+│   ├── module_2.py (Laws retrieval logic)
+│   ├── module_3.py (Legal text retrieval logic)
+│   ├── module_4.py (Paragraph retrieval logic)
+│   ├── module_5.py (Answer generation logic)
+│   ├── prompts/ (LLM prompt templates)
+│   │   ├── prompt_1.txt (Query rephrasing prompt)
+│   │   ├── prompt_5.txt (Answer generation prompt)
+│   ├── data/ (cache data files for laws)
+│   │   ├── .csv (cached laws data files)
+├── .gitignore (ignored files for Git)
 ├── app.py (Streamlit demo)
 ├── Dockerfile (for containerization)
+├── LICENSE (project license)
 ├── Makefile (for build automation)
 ├── orchestrator.py (for managing modules)
+├── README.md (this documentation file)
 ├── requirements.txt (Python dependencies)
-└── README.md (documentation - this file)
+└── summary.svg (project summary diagram)
 ```
 
 
