@@ -72,10 +72,6 @@ def main():
         col1, col2 = st.columns(2)
         
         with col1:
-            if st.button("🔒 What are the key requirements for GDPR compliance for small businesses?", key="example_1"):
-                set_example_query("What are the key requirements for GDPR compliance for small businesses?")
-                st.rerun()
-
             if st.button("🧸 What Rules Do Companies Have to Follow When Selling Toys in the EU?", key="example_2"):
                 set_example_query("What Rules Do Companies Have to Follow When Selling Toys in the EU?")
                 st.rerun()
@@ -83,10 +79,6 @@ def main():
         with col2:
             if st.button("🌐 What are the main rules governing the EU digital single market?", key="example_3"):
                 set_example_query("What are the main rules governing the EU digital single market?")
-                st.rerun()
-
-            if st.button("📊 What are the regulations for transferring personal data outside the EU?", key="example_4"):
-                set_example_query("What are the regulations for transferring personal data outside the EU?")
                 st.rerun()
         
         st.markdown("---")
