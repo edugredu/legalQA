@@ -1,20 +1,11 @@
-"""
-Module 4: Law Filtering Based on Semantic Similarity
-
-This module provides functionality to filter laws based on semantic similarity
-between query text and law articles/annexes using sentence transformers.
-"""
-
 import ast
 import json
 import numpy as np
 import pandas as pd
-from sentence_transformers import SentenceTransformer
 from typing import Optional
+from sentence_transformers import SentenceTransformer
 
-
-def module_4(df: pd.DataFrame, query: str, threshold: float = 0.5, 
-             model_name: str = 'jinaai/jina-embeddings-v2-small-en') -> pd.DataFrame:
+def run_module_4(df: pd.DataFrame, query: str, threshold: float = 0.5, model_name: str = 'jinaai/jina-embeddings-v2-small-en') -> pd.DataFrame:
     """
     Filter laws dataframe based on similarity of articles and annexes to the query.
 
@@ -99,7 +90,6 @@ def module_4(df: pd.DataFrame, query: str, threshold: float = 0.5,
     result = df_filtered[['celex_id', 'filtered_json']]
     return result
 
-
 def load_query_from_file(query_file: str) -> str:
     """
     Helper function to load query from a text file.
@@ -113,7 +103,6 @@ def load_query_from_file(query_file: str) -> str:
     with open(query_file, 'r', encoding='utf-8') as f:
         return f.read().strip()
 
-
 def save_filtered_laws(df: pd.DataFrame, output_path: str) -> None:
     """
     Helper function to save filtered laws to CSV.
@@ -125,3 +114,4 @@ def save_filtered_laws(df: pd.DataFrame, output_path: str) -> None:
     import os
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False)
+    

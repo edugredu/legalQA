@@ -1,18 +1,13 @@
-# %%
+import os
 import re
-from anyio import Path
-from bs4 import BeautifulSoup
-#from eurlex import get_data_by_celex_id #pip install eurlex-parser
-#from eurlex import get_html_by_celex_id #pip install eurlex
+import ast
+import json
 import requests
 import pandas as pd
 import urllib.parse
-import json
-from tqdm import tqdm
-import ast
-import os
+from anyio import Path
+from bs4 import BeautifulSoup
 
-# %%
 def get_html_by_celex_id(celex_id: str) -> str:
     """Retrieve HTML by CELEX ID.
 
@@ -40,8 +35,6 @@ def get_html_by_celex_id(celex_id: str) -> str:
     html = response.content.decode("utf-8")  # pragma: no cover
     return html  # pragma: no cover
 
-# %%
-#URL encode the celex_id
 def url_encode_celex_id(celex_id):
     """
     URL encode the CELEX ID to ensure it is safe for web requests.
@@ -53,33 +46,6 @@ def url_encode_celex_id(celex_id):
         str: URL encoded CELEX ID
     """
     return urllib.parse.quote(celex_id, safe='')
-
-# %%
-def parse_search_results(soap_response):
-    """Parse the SOAP response to extract search results"""
-    import xml.etree.ElementTree as ET
-    
-    try:
-        root = ET.fromstring(soap_response)
-        
-        # Define namespaces
-        namespaces = {
-            'soap12': 'http://www.w3.org/2003/05/soap-envelope',
-            'elx': 'http://eur-lex.europa.eu/search'
-        }
-        
-        # Find search results
-        search_results = root.find('.//elx:searchResults', namespaces)
-        
-        if search_results is not None:
-            # Extract document information
-            documents = search_results.findall('.//elx:document', namespaces)
-            return documents
-        else:
-            raise Exception("No search results found in response")
-            
-    except ET.ParseError as e:
-        raise Exception(f"Failed to parse SOAP response: {e}")
 
 def extract_eu_law_text(html_content):
     """
@@ -343,7 +309,6 @@ def extract_appendices(soup):
     
     return '\n\n'.join(appendix_text) if appendix_text else None
 
-# %%
 def extract_articles_json(soup):
     """Extract all articles as a list of dictionaries with full text in a single property"""
     articles_list = []
@@ -426,7 +391,6 @@ def extract_appendices_json(soup):
     
     return appendices_list if appendices_list else None
 
-# %%
 def parse_legacy_format(soup, texte_only_div):
     """
     Parse the older EUR-Lex HTML format found in TexteOnly div.
@@ -594,7 +558,6 @@ def extract_eu_law_text_json(html_content):
     # Remove None values
     return {k: v for k, v in document_data.items() if v is not None}
 
-# %%
 def load_cache():
 
     #Read all the cached laws CSV files from the data directory
@@ -614,7 +577,6 @@ def load_cache():
 
     return df_cache
 
-# %%
 def getFullText(dfToGet, dfCache):
 
     for i, row in dfToGet.iterrows():
@@ -658,7 +620,6 @@ def getFullText(dfToGet, dfCache):
 
     return dfToGet
 
-
 def clean_articles(structured_json):
     if structured_json is not None and 'articles' in structured_json:
         filtered_articles = []
@@ -684,8 +645,8 @@ def clean_articles(structured_json):
         structured_json['articles'] = filtered_articles
     return structured_json
 
-# %%
-def mod3_response(lawsToConsider):
+def run_module_3(lawsToConsider):
+    
     # Add this column to store JSON data
     lawsToConsider['structured_json'] = None
 

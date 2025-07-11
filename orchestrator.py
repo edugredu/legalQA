@@ -1,9 +1,9 @@
 import os
-from src.module_1.run_llm_prompt import run_module_1
-from src.module_2.module_2       import run_module_2
-from src.module_3.apiLaw         import mod3_response
-from src.module_4.module_4       import module_4
-from src.module_5.run_llm        import module_5
+from src.module_1 import run_module_1
+from src.module_2 import run_module_2
+from src.module_3 import run_module_3
+from src.module_4 import run_module_4
+from src.module_5 import run_module_5
 
 def process_legal_query(user_query: str) -> str:
     """
@@ -36,19 +36,19 @@ def process_legal_query(user_query: str) -> str:
         #################### STEP 3 Retrieve the full text of the laws #####################
         ####################################################################################
         
-        output_3 = mod3_response(output_2)
+        output_3 = run_module_3(output_2)
 
         ####################################################################################
         ## STEP 4 Filter by laws and articles based on semantic similarity with the query ##
         ####################################################################################
 
-        output_4 = module_4(output_3, output_1)
+        output_4 = run_module_4(output_3, output_1)
 
         #####################################################################################
         ############### STEP 5 Generate the final answer based on our context ###############
         #####################################################################################
 
-        output_5 = module_5(output_4, output_3, output_1)
+        output_5 = run_module_5(output_4, output_3, output_1)
 
         return output_5, titles
         

@@ -1,25 +1,16 @@
 import os
-import glob
 from pathlib import Path
+from openai import OpenAI
 from dotenv import load_dotenv
+
 load_dotenv()
 
-from openai import OpenAI
-
-PROMPT_PATH = Path(__file__).parent / "llm_prompt.txt"
+PROMPT_PATH = Path(__file__).parent / "prompts/prompt_1.txt"
 MODEL = os.environ.get("OPENROUTER_MODEL", "qwen/qwen3-30b-a3b:free")
 
 def load_prompt_template(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
-
-def load_inputs(inputs_dir):
-    variables = {}
-    for file_path in glob.glob(str(inputs_dir / "*.txt")):
-        var_name = Path(file_path).stem
-        with open(file_path, "r", encoding="utf-8") as f:
-            variables[var_name] = f.read().strip()
-    return variables
 
 def fill_prompt(template, variables):
     try:

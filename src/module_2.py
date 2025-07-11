@@ -1,23 +1,21 @@
-# module_2.py
-import pyterrier as pt
+import re
 import datasets
 import pandas as pd
+import pyterrier as pt
 from pathlib import Path
-import re
 
 # Global variables for lazy initialization
-_dataset = None
 _pd_ds = None
+_dataset = None
 _index_ref = None
-_index_ref_title = None
 _bm25_text = None
 _bm25_title = None
 _initialized = False
+_index_ref_title = None
 
 def _initialize():
     """Initialize the retrieval system (called once)"""
     global _dataset, _pd_ds, _index_ref, _index_ref_title, _bm25_text, _bm25_title, _initialized
-    print("····")
     
     if _initialized:
         return
@@ -49,7 +47,6 @@ def _initialize():
         indexer = pt.index.IterDictIndexer(str(index_dir.absolute()))
         _index_ref = indexer.index(pd_ds_dict)
         
-    
     # Create index for dataset titles
     index_dir2 = cache_dir / "indices" / "eur_lex_titles"
     

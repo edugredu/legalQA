@@ -1,6 +1,11 @@
-import json
+import os
 import re
+import json
 import pandas as pd
+from time import time
+from pathlib import Path
+from openai import OpenAI
+from dotenv import load_dotenv
 
 class SequenceFilterer:
     def __init__(self, minimum_length_limit=20, max_added_word_limit=10000):
@@ -97,27 +102,6 @@ class SequenceFilterer:
             total += wc
         return selected
 
-    def add_processed_column(self, df: pd.DataFrame,
-                           source_column: str = "filtered_json") -> pd.DataFrame:
-        """
-        Returns a copy of `df` with one new column:
-        - processed_text: concatenated text of filtered articles per row
-        """
-        def _process(row):
-            cid = row["celex_id"]
-            raw = row[source_column]
-            if pd.isna(cid) or pd.isna(raw):
-                return ""
-            arts = self._parse_and_flatten(cid, raw)
-            filt = self._filter_by_word_count(arts)
-            text = "\n\n".join(a.get("text", "") for a in filt)
-            return text
-
-        out = df.copy()
-        out["processed_text"] = df.apply(_process, axis=1)
-        return out
-
-
     def aggregate_all_articles(self, df: pd.DataFrame, title_df: pd.DataFrame = None, 
                           source_column: str = "filtered_json") -> dict:
         """
@@ -175,8 +159,7 @@ class SequenceFilterer:
         }
         
         return final_json
-    
-    
+      
     def generate_text_prompt(self, aggregated_json: dict) -> str:
         """
         Generate a text prompt where each paragraph is introduced by the law title
@@ -223,4 +206,79 @@ class SequenceFilterer:
         final_text = "\n\n\n".join(paragraphs)
         return final_text
 
+def run_llm_pipeline_with_variables(prompt_variables, prompt_file="prompts/prompt_5.txt"):
+    """
+    LLM pipeline that accepts variables directly instead of loading from input files.
+    
+    Args:
+        prompt_variables: Dictionary with variable names and their values
+        prompt_file: Path to the prompt template file
+    
+    Returns:
+        str: The LLM response content
+    """
+    
+    # Load environment variables
+    load_dotenv()
+    
+    # Setup paths and configuration
+    base_path = Path(__file__).parent if '__file__' in globals() else Path.cwd()
+    PROMPT_PATH = base_path / prompt_file
+    MODEL = os.environ.get("OPENROUTER_MODEL", "qwen/qwen3-30b-a3b:free")
+    API_KEY = os.environ.get("OPENROUTER_API_KEY")
+    
+    assert API_KEY, "OPENROUTER_API_KEY environment variable must be set or provided as parameter."
+    
+    # Helper functions
+    def load_prompt_template(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+    
+    def fill_prompt(template, variables):
+        try:
+            return template.format(**variables)
+        except KeyError as e:
+            raise ValueError(f"Missing variable for prompt: {e}")
+    
+    def call_openrouter_llm(prompt, api_key, model):
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=api_key,
+        )
+        completion = client.chat.completions.create(
+            extra_headers={},
+            extra_body={},
+            model=model,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        )
+        return completion.choices[0].message.content
+    
+    # Main execution logic
+    try:
+        template = load_prompt_template(PROMPT_PATH)
+        prompt = fill_prompt(template, prompt_variables)
+        answer = call_openrouter_llm(prompt, API_KEY, MODEL)
+        return answer
+    except Exception as e:
+        print(f"Error: {e}")
+        raise e
 
+def run_module_5(filteredDF, lawsDF, user_query):
+
+    filterer = SequenceFilterer(minimum_length_limit=20, max_added_word_limit=10000)
+    summarized_laws = filterer.aggregate_all_articles(df=filteredDF, title_df=lawsDF, source_column='filtered_json')
+    summarized_laws = filterer.generate_text_prompt(summarized_laws)
+
+    response = run_llm_pipeline_with_variables(
+        prompt_variables={
+            "user_query": user_query,
+            "summarized_laws": summarized_laws
+        }
+    )
+
+    return response
