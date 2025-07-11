@@ -37,7 +37,7 @@ def main():
     ---
     ### 📋 **Scope & Instructions**
     
-    **🎯 Scope:** This chatbot provides information and guidance exclusively on **European Union (EU) laws**. Concretly, it focuses on the laws included in the [eur-lex-sum dataset](https://huggingface.co/datasets/dennlinger/eur-lex-sum/tree/main/data/english), where more than 1.500 EU laws are listed.
+    **🎯 Scope:** This chatbot provides information and guidance exclusively on **European Union (EU) laws**. Concretly, it focuses on the laws included in the [eurlex dataset](https://huggingface.co/datasets/jonathanli/eurlex), where more than 74.000 EU laws are listed.
     
     **❗ Important:** This tool provides general information only and should not replace professional legal advice.
     
