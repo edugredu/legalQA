@@ -99,11 +99,13 @@ def main():
             height=120,
             placeholder="Example: What are the key requirements for GDPR compliance for small businesses?",
             help="Be specific about your legal question for better results.",
-            key="query_input",
-            on_change=on_user_input
+            key="query_input"
         )
         
+        # This submit button MUST be inside the form and properly indented
         submitted = st.form_submit_button("🔍 Get Legal Guidance", use_container_width=True)
+
+        
 
     # Update session state with current query
     st.session_state.user_query = user_query
