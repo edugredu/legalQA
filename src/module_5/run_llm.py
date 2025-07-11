@@ -1,4 +1,5 @@
 from time import time
+from src.module_5.sequence_filterer import SequenceFilterer
 
 def run_llm_pipeline_with_variables(prompt_variables, 
                                    prompt_file="prompts/llm_prompt.txt",
@@ -29,7 +30,6 @@ def run_llm_pipeline_with_variables(prompt_variables,
     # Setup paths and configuration
     base_path = Path(__file__).parent if '__file__' in globals() else Path.cwd()
     PROMPT_PATH = base_path / prompt_file
-    OUTPUTS_DIR = base_path / outputs_dir
     MODEL = os.environ.get("OPENROUTER_MODEL", "qwen/qwen3-30b-a3b:free")
     API_KEY = os.environ.get("OPENROUTER_API_KEY")
     
@@ -64,20 +64,11 @@ def run_llm_pipeline_with_variables(prompt_variables,
         )
         return completion.choices[0].message.content
     
-    def write_output(output, outputs_dir):
-        outputs_dir.mkdir(parents=True, exist_ok=True)
-        output_file = outputs_dir / f"llm_output{int(time())}.txt"
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write(output)
-        print(f"Output written to {output_file}")
-        return output_file
-    
     # Main execution logic
     try:
         template = load_prompt_template(PROMPT_PATH)
         prompt = fill_prompt(template, prompt_variables)
         answer = call_openrouter_llm(prompt, API_KEY, MODEL)
-        output_file = write_output(answer, OUTPUTS_DIR)
         return answer
     except Exception as e:
         print(f"Error: {e}")
@@ -112,3 +103,22 @@ def call_llm_with_processed_data(
         outputs_dir=outputs_dir,
         model=model,
     )
+
+
+#lawsDF = output_3
+#filteredDF = output_4
+
+def module_5(filteredDF, lawsDF, user_query):
+
+    filterer = SequenceFilterer(minimum_length_limit=20, max_added_word_limit=10000)
+    summarized_laws = filterer.aggregate_all_articles(df=filteredDF, title_df=lawsDF, source_column='filtered_json')
+    summarized_laws = filterer.generate_text_prompt(summarized_laws)
+
+    response = run_llm_pipeline_with_variables(
+        prompt_variables={
+            "user_query": user_query,
+            "summarized_laws": summarized_laws
+        }
+    )
+
+    return response
