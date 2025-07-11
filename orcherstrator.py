@@ -2,6 +2,8 @@ from src.module_1.run_llm_prompt import run_module_1
 from src.module_2.module_2 import run_module_2
 from src.module_3.apiLaw import mod3_response
 from src.module_4.module_4 import module_4
+from src.module_5.sequence_filterer import SequenceFilterer
+from src.module_5.run_llm import run_llm_pipeline_with_variables
 import os
 
 def process_legal_query(user_query: str) -> str:
@@ -24,6 +26,8 @@ def process_legal_query(user_query: str) -> str:
         examples = ["What Rules Do Companies That Handle Online Payments Have to Follow?",
                     "What Rules Do Companies Have to Follow When Sending Personal Data Outside the EU?",
                     "What Rules Do Companies Have to Follow When Selling Toys in the EU?"]
+        
+        
         
 
         ############
@@ -64,13 +68,28 @@ def process_legal_query(user_query: str) -> str:
         print(output_3)
         
         # Filter laws
-        filtered_df = module_4(output_3, output_1)
+        output_4 = module_4(output_3, output_1)
 
-        print(filtered_df.head())
+        print("Output from module 4:")
+        print(output_4.head())
         
         
-
-
+        # Initialize the filterer
+        filterer = SequenceFilterer(minimum_length_limit=20, max_added_word_limit=10000)
+        output_5 = filterer.aggregate_all_articles(df=output_4, title_df=output_3, source_column='filtered_json')
+        output_5 = filterer.generate_text_prompt(output_5)
+        
+        
+        user_query = output_1
+        summarized_laws = output_5
+        
+        # Here you would typically call your LLM with the user query and the summarized laws
+        response = run_llm_pipeline_with_variables(
+           prompt_variables={
+               "user_query": user_query,
+               "summarized_laws": summarized_laws
+           }
+        )
 
         # Example structure:
         # 1. Validate query is EU law related
@@ -80,11 +99,10 @@ def process_legal_query(user_query: str) -> str:
         
         # Placeholder response
         #response = f"Processing query: {user_query}\n\nThis is where your AI-generated legal guidance will appear."
-        print()
-        print(f"Retrieved documents: {output_2}")
-        return output_1
+        return response
         
     except Exception as e:
+        print(f"Error processing query: {str(e)}")
         return f"Error processing query: {str(e)}"
 
 
