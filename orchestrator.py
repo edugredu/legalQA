@@ -4,6 +4,7 @@ from src.module_2 import run_module_2
 from src.module_3 import run_module_3
 from src.module_4 import run_module_4
 from src.module_5 import run_module_5
+from src.utils.utils import clean_llm_response
 
 def process_legal_query(user_query: str) -> str:
     """
