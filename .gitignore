@@ -4,3 +4,4 @@ src/module_4/output/filtered_laws.csv
 cache
 __pycache__/
 **/__pycache__
+src/module_5/outputs
