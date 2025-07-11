@@ -13,31 +13,30 @@ LawLens is an intelligent legal assistant designed to answer questions regarding
 
 ## 👥 Team Members
 
-- **Adriana Morejón Jiménez**
-- **Hamish Clark**
-- **Fahad Ebrahim Al Salman**
-- **Fabio Yáñez Romero**
-- **Eduardo Grande Ruiz**
+- **Adriana Morejón Jiménez** (University of Alicante, Spain)
+- **Hamish Clark** (University of Glasgow, UK)
+- **Fahad Ebrahim Al Salman** (University of Warwick, UK)
+- **Fabio Yáñez Romero** (University of Alicante, Spain)
+- **Eduardo Grande Ruiz** (University of Alicante, Spain)
 
 
 ## 🏗️ System Architecture
 
-The LawLens system consists of **6 interconnected modules**:
+The LawLens system consists of **5 interconnected modules**:
 
 1. **Query Rephrasing** - Uses an LLM to rephrase user input into a more legally appropriate format
 2. **Laws Retrieval** - Gets the basic info (code, name and summary) of the relevant laws for the query
 3. **Legal Text Retrieval** - Retrieves the whole text of the relevant laws
 4. **Paragraph Retrieval** - Obtains the basic information of the relevant laws for the query
 5. **Answer Generation** - Generates an answer given the obtained information
-6. **Answer Judgement** - Judges whether the answer is appropriate or not
 
 ## 🛠️ Technologies Used
 
 ### Core ML/AI Components
 
-- **BM25** - For ranking retrieval
-- **Jina Embedding V2** - For embeddings
-- **Qwen 3 235b** - For answer generation
+- [**BM25**](https://pyterrier.readthedocs.io/en/latest/terrier-retrieval.html) - For ranking retrieval.
+- [**Jina Embedding V2**](https://huggingface.co/jinaai/jina-embeddings-v2-base-zh) - For embeddings.
+- **[Qwen 3 235b](https://openrouter.ai/qwen/qwen3-235b-a22b:free)** - For answer generation via OpenRouter API.
 
 
 ### Development Stack
@@ -57,8 +56,8 @@ The LawLens system consists of **6 interconnected modules**:
 
 ## 📊 Data Sources
 
-- **EUR-Lex-Sum Dataset** - Over 1,500 EU laws with summaries
-- **EUR-Lex API** - Direct access to official EU legal documents via `eur-lex.europa.eu`
+- **[EURLEX57K](https://huggingface.co/datasets/jonathanli/eurlex)** - Over 75.000 EU laws with summaries
+- **[EUR-Lex API](https://eur-lex.europa.eu/content/help/data-reuse/webservice.html)** - Direct access to official EU legal documents via `eur-lex.europa.eu`
 
 
 ## 🚀 Getting Started
@@ -129,11 +128,12 @@ docker run -p 8501:8501 legalqa
 legalQA/
 ├── src/
 │   ├── module_1/
-│   │   ├── xxxx
-│   │   ├── xxxx
+│   │   ├── llm_prompt.txt (LLM prompt template)
+│   │   ├── run_llm_prompt.py (LLM prompt execution)
 │   ├── module_2/
-│   │   ├── xxxx
-│   │   ├── xxxx
+│   │   ├── module_2.py (Laws retrieval logic)
+│   │   ├── data/ (cache data files for laws)
+│   │   ├── 3_apiLaw.ipynb (Jupyter notebook for testing and cache retrieval)
 │   ├── module_3/
 │   │   ├── xxxx
 │   │   ├── xxxx
@@ -143,12 +143,12 @@ legalQA/
 │   ├── module_5/
 │   │   ├── xxxx
 │   │   ├── xxxx
-├── app.py
-├── Dockerfile
-├── Makefile
-├── orchestrator.py
-├── requirements.txt
-└── README.md
+├── app.py (Streamlit demo)
+├── Dockerfile (for containerization)
+├── Makefile (for build automation)
+├── orchestrator.py (for managing modules)
+├── requirements.txt (Python dependencies)
+└── README.md (documentation - this file)
 ```
 
 
