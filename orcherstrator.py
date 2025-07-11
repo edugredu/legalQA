@@ -27,69 +27,75 @@ def process_legal_query(user_query: str) -> str:
                     "What Rules Do Companies Have to Follow When Sending Personal Data Outside the EU?",
                     "What Rules Do Companies Have to Follow When Selling Toys in the EU?"]
         
-        
-        
+        for example in examples:
+            print(f"Processing example: {example}")
+            
+            ####################################################################
+            ## STEP 1  Translates the user query into a legal question domain ##
+            ####################################################################
+            output_1 = run_module_1(example, API_KEY=API_KEY)  # Call your LLM model with the example query
+            print(f"AI-generated response for example: {output_1}\n")
 
-        ############
-        ## STEP 1 ##
-        ############
-        
-        output_1 = 'What are the legal and regulatory requirements that businesses must comply with under the European Union Toy Safety Directive (2009/48/EC), including applicable safety standards, conformity assessment procedures, labeling obligations, CE marking requirements, and other enforceable compliance measures for the sale of toys within the EU?'
-        '''
-        try:
-            print(f"Executing step 1")
-            output_1 = run_module_1(user_query, API_KEY=API_KEY)  # Call your LLM model with the user query
-        except Exception as e:
-            output_1 = f"Error in LLM processing: {str(e)}"
-        '''
-        print(f"Processing query: {user_query}\n\nAI-generated response: {output_1}")
 
-        #The output_1 is a textual response in a legal way of writing
+        #output_1 = 'What are the legal and regulatory requirements that businesses must comply with under the European Union Toy Safety Directive (2009/48/EC), including applicable safety standards, conformity assessment procedures, labeling obligations, CE marking requirements, and other enforceable compliance measures for the sale of toys within the EU?'
+            #output_1 = 'What are the legal and regulatory requirements that businesses must comply with under the European Union Toy Safety Directive (2009/48/EC), including applicable safety standards, conformity assessment procedures, labeling obligations, CE marking requirements, and other enforceable compliance measures for the sale of toys within the EU?'
+    
 
-        ############
-        ## STEP 2 ##
-        ############
+            #################################################################
+            ## STEP 2 Find the relevvant laws according to the legal query ##
+            #################################################################
 
-        output_2 = run_module_2(user_query, K=5)
+            print("Getting relevant laws for the query...")
+            output_2 = run_module_2(user_query, K=5)
+            print(f"Relevant laws found for query '{user_query}':")
+            print(output_2)
 
-        #The output_2 is a dataframe
+            ###############################################
+            ## STEP 3 Retrieve the full text of the laws ##
+            ###############################################
+            print("Retrieving full text of laws...")
+            output_3 = mod3_response(output_2)
+            print("Full text of laws retrieved successfully.")
+            print(output_3)
+        
+            ####################################################################################
+            ## STEP 4 Filter by laws and articles based on semantic similarity with the query ##
+            ####################################################################################
 
-        ############
-        ## STEP 3 ##
-        ############
-        output_3 = mod3_response(output_2)
+            
+        
+            print("Getting the most relevant sections for each law...")
+            output_4 = module_4(output_3, output_1)
+            print("Most relevant sections for each law:")
+            print(output_4.head())
 
-        #The output_3 is a dataframe
-        
-        ############
-        ## STEP 4 ##
-        ############
-        print("Output from module 3:")
-        print(output_3)
-        
-        # Filter laws
-        output_4 = module_4(output_3, output_1)
+            #####################################################################################
+            ## STEP 5 Aggregate and summarize the relevant articles ##
+            #####################################################################################
 
-        print("Output from module 4:")
-        print(output_4.head())
+            # Initialize the filterer
+            print("Aggregating and summarizing relevant articles...")
+            filterer = SequenceFilterer(minimum_length_limit=20, max_added_word_limit=10000)
+            output_5 = filterer.aggregate_all_articles(df=output_4, title_df=output_3, source_column='filtered_json')
+            output_5 = filterer.generate_text_prompt(output_5)
+
+            print("Aggregated and summarized relevant articles:")
+            print(output_5)
+
+            ###########################################################
+            ## STEP 6 Generate the final answer based on our context ##
+            ###########################################################
+
+
+            user_query = output_1
+            summarized_laws = output_5
         
-        
-        # Initialize the filterer
-        filterer = SequenceFilterer(minimum_length_limit=20, max_added_word_limit=10000)
-        output_5 = filterer.aggregate_all_articles(df=output_4, title_df=output_3, source_column='filtered_json')
-        output_5 = filterer.generate_text_prompt(output_5)
-        
-        
-        user_query = output_1
-        summarized_laws = output_5
-        
-        # Here you would typically call your LLM with the user query and the summarized laws
-        response = run_llm_pipeline_with_variables(
-           prompt_variables={
-               "user_query": user_query,
-               "summarized_laws": summarized_laws
-           }
-        )
+            response = run_llm_pipeline_with_variables(
+            prompt_variables={
+                "user_query": user_query,
+                "summarized_laws": summarized_laws
+            }
+            )
 
         # Example structure:
         # 1. Validate query is EU law related
@@ -106,4 +112,4 @@ def process_legal_query(user_query: str) -> str:
         return f"Error processing query: {str(e)}"
 
 
-process_legal_query("What Rules Do Companies Have to Follow When Selling Toys in the EU?")  # Example query
+#process_legal_query("What Rules Do Companies Have to Follow When Selling Toys in the EU?")  # Example query
