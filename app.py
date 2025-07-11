@@ -48,17 +48,65 @@ def main():
     
     # Main query interface
     st.subheader("💬 Ask Your Legal Question")
-    
+
+    # Initialize session state variables
+    if 'show_examples' not in st.session_state:
+        st.session_state.show_examples = True
+    if 'user_query' not in st.session_state:
+        st.session_state.user_query = ""
+
+    # Function to handle example clicks
+    def set_example_query(example_text):
+        st.session_state.user_query = example_text
+        st.session_state.show_examples = False
+
+    # Function to handle user typing
+    def on_user_input():
+        if st.session_state.user_query.strip():
+            st.session_state.show_examples = False
+
+    # Display example buttons only if examples should be shown
+    if st.session_state.show_examples:
+        st.markdown("**💡 Try these example queries:**")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            if st.button("🔒 GDPR Compliance Requirements", key="example_1"):
+                set_example_query("What are the key requirements for GDPR compliance for small businesses?")
+                st.rerun()
+            
+            if st.button("🏪 Consumer Rights Protection", key="example_2"):
+                set_example_query("What are the main consumer rights under EU law for online purchases?")
+                st.rerun()
+        
+        with col2:
+            if st.button("🌐 Digital Single Market Rules", key="example_3"):
+                set_example_query("What are the main rules governing the EU digital single market?")
+                st.rerun()
+            
+            if st.button("📊 Data Transfer Regulations", key="example_4"):
+                set_example_query("What are the regulations for transferring personal data outside the EU?")
+                st.rerun()
+        
+        st.markdown("---")
+
     # Create a form for better UX
     with st.form("legal_query_form"):
         user_query = st.text_area(
             "Enter your EU legal question:",
+            value=st.session_state.user_query,
             height=120,
             placeholder="Example: What are the key requirements for GDPR compliance for small businesses?",
-            help="Be specific about your legal question for better results."
+            help="Be specific about your legal question for better results.",
+            key="query_input",
+            on_change=on_user_input
         )
         
         submitted = st.form_submit_button("🔍 Get Legal Guidance", use_container_width=True)
+
+    # Update session state with current query
+    st.session_state.user_query = user_query
     
     # Process query when submitted
     if submitted:

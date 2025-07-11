@@ -166,6 +166,6 @@ We welcome contributions to improve LawLens! Please feel free to submit issues, 
 
 **Developed with ❤️ by Team "The Sharks" at ESSIR 2025**
 
-<div style="text-align: center">⁂</div>
+<div style="text-align: center"></div>
 
 [^1]: https://2025.essir.eu
