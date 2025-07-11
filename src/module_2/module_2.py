@@ -86,6 +86,7 @@ def _rrf(dfs, i=1, K=100):
     merged_df["rank"] = list(range(len(merged_df)))
     if K > len(merged_df):
         K = len(merged_df)
+        
     return merged_df[:K]
 
 def _get_text(row):
@@ -97,20 +98,20 @@ def _get_title(row):
 def _get_eurovoc_concepts(row):
     return list(_pd_ds[_pd_ds['celex_id'] == row['docno']]['eurovoc_concepts'])[0]
 
-def run_module_2(user_prompt, K=10):
+def run_module_2(user_prompt, K=0.5):
     """
-    Main function to retrieve documents based on user prompt.
+    Main function to retrieve documents based on user prompt with a score threshold.
     
     Args:
         user_prompt (str): The query string from the user
-        K (int): Number of top results to return (default: 10)
+        K (float): The minimum score threshold to include documents (default: 0.5)
     
     Returns:
-        pandas.DataFrame: DataFrame with top-K results containing celex_id, title, text, and eurovoc_concepts
+        pandas.DataFrame: DataFrame with results containing celex_id, score, title, text, and eurovoc_concepts
+        At least 2 laws will be returned regardless of threshold.
     """
     # Initialize if not already done
     _initialize()
-    
     
     # Clean the query
     re_query = re.sub(r'[^A-Za-z0-9\s]', '', user_prompt)
@@ -119,16 +120,23 @@ def run_module_2(user_prompt, K=10):
     retr_text = _bm25_text.search(re_query)
     retr_title = _bm25_title.search(re_query)
     
-    # Apply RRF to combine results
-    results = _rrf([retr_text, retr_title], K=K)
+    # Apply RRF to combine results (get more results to ensure proper filtering)
+    all_results = _rrf([retr_text, retr_title], K=10)
+    
+    # Filter by score threshold
+    filtered_results = all_results[all_results['score'] >= K]
+    
+    # Ensure at least 2 laws are returned
+    if len(filtered_results) < 2:
+        filtered_results = all_results.head(2)
     
     # Add metadata columns
-    results['title'] = results.apply(_get_title, axis=1, raw=False)
-    results['text'] = results.apply(_get_text, axis=1, raw=False)
-    results['eurovoc_concepts'] = results.apply(_get_eurovoc_concepts, axis=1, raw=False)
+    filtered_results['title'] = filtered_results.apply(_get_title, axis=1, raw=False)
+    filtered_results['text'] = filtered_results.apply(_get_text, axis=1, raw=False)
+    filtered_results['eurovoc_concepts'] = filtered_results.apply(_get_eurovoc_concepts, axis=1, raw=False)
     
     # Rename and select final columns
-    results.rename(columns={'docno': 'celex_id'}, inplace=True)
-    results = results[['celex_id', 'title', 'text', 'eurovoc_concepts']]
+    filtered_results.rename(columns={'docno': 'celex_id'}, inplace=True)
+    filtered_results = filtered_results[['celex_id', 'score', 'title', 'text', 'eurovoc_concepts']]
     
-    return results
+    return filtered_results, filtered_results['title'].tolist()

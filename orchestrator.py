@@ -30,8 +30,8 @@ def process_legal_query(user_query: str) -> str:
         ############ STEP 2 Find the relevvant laws according to the legal query ###########
         ####################################################################################
 
-        output_2 = run_module_2(output_1, K=5)
-
+        output_2, titles = run_module_2(output_1, K=5)
+        
         ####################################################################################
         #################### STEP 3 Retrieve the full text of the laws #####################
         ####################################################################################
@@ -50,7 +50,7 @@ def process_legal_query(user_query: str) -> str:
 
         output_5 = module_5(output_4, output_3, output_1)
 
-        return output_5
+        return output_5, titles
         
     except Exception as e:
         print(f"Error processing query: {str(e)}")

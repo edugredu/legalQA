@@ -72,20 +72,20 @@ def main():
         col1, col2 = st.columns(2)
         
         with col1:
-            if st.button("🔒 GDPR Compliance Requirements", key="example_1"):
+            if st.button("🔒 What are the key requirements for GDPR compliance for small businesses?", key="example_1"):
                 set_example_query("What are the key requirements for GDPR compliance for small businesses?")
                 st.rerun()
-            
-            if st.button("🏪 Consumer Rights Protection", key="example_2"):
-                set_example_query("What are the main consumer rights under EU law for online purchases?")
+
+            if st.button("🧸 What Rules Do Companies Have to Follow When Selling Toys in the EU?", key="example_2"):
+                set_example_query("What Rules Do Companies Have to Follow When Selling Toys in the EU?")
                 st.rerun()
         
         with col2:
-            if st.button("🌐 Digital Single Market Rules", key="example_3"):
+            if st.button("🌐 What are the main rules governing the EU digital single market?", key="example_3"):
                 set_example_query("What are the main rules governing the EU digital single market?")
                 st.rerun()
-            
-            if st.button("📊 Data Transfer Regulations", key="example_4"):
+
+            if st.button("📊 What are the regulations for transferring personal data outside the EU?", key="example_4"):
                 set_example_query("What are the regulations for transferring personal data outside the EU?")
                 st.rerun()
         
@@ -97,15 +97,18 @@ def main():
             "Enter your EU legal question:",
             value=st.session_state.user_query,
             height=120,
-            placeholder="Example: What are the key requirements for GDPR compliance for small businesses?",
+            placeholder="",
             help="Be specific about your legal question for better results.",
             key="query_input"
         )
         
         # This submit button MUST be inside the form and properly indented
         submitted = st.form_submit_button("🔍 Get Legal Guidance", use_container_width=True)
-
         
+    # If the user has typed something, hide examples
+    if user_query.strip() and st.session_state.show_examples:
+        st.session_state.show_examples = False
+
 
     # Update session state with current query
     st.session_state.user_query = user_query
@@ -113,14 +116,23 @@ def main():
     # Process query when submitted
     if submitted:
         if user_query.strip():
-            with st.spinner("🤖 Analyzing your legal question..."):
+            with st.spinner("⚖️ Analyzing your legal question..."):
                 try:
                     # Call orchestrator.py to process the query
-                    response = process_legal_query(user_query)
+                    response, titles = process_legal_query(user_query)
                     
+                    # Create a box with the applicable laws (titles)
+                    if titles:
+                        with st.container():
+                            st.info("📜 **Applicable Laws**")
+                            st.markdown("Here are the relevant laws based on your query:")
+                            for title in titles:
+                                st.markdown(f"- {title}")
+
                     # Display response
-                    st.subheader("📖 Legal Guidance")
-                    st.markdown(response)
+                    with st.container():
+                        st.success("📖 **Legal Guidance**")
+                        st.markdown(response)
                     
                     # Disclaimer
                     st.markdown("""
