@@ -50,19 +50,20 @@ def module_4(df: pd.DataFrame, query: str, threshold: float = 0.5,
     # Encode the query
     query_emb = model.encode(query, convert_to_numpy=True)
 
-    def filter_structured(sj):
+    def filter_structured(data: dict):
         """
         Parse the Python-style JSON in sj, compute cosine similarity of each
         article/annex text to the query, add 'score' and keep only elements
         with score >= threshold.
         """
         # Parse Python-dict string
-        try:
-            data = ast.literal_eval(sj)
-        except (ValueError, SyntaxError):
-            return {'articles': [], 'annexes': []}
+        # try:
+        #     #data = ast.literal_eval(sj)
+        # except (ValueError, SyntaxError):
+        #     return {'articles': [], 'annexes': []}
 
         out = {'articles': [], 'annexes': []}
+        
         for section in ('articles', 'annexes'):
             for elem in data.get(section, []):
                 text = elem.get('text', '')

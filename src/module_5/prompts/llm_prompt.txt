@@ -18,6 +18,8 @@ Your task is to:
 6. Structure your answer logically, using paragraphs or bullet points as needed for clarity.
 
 **Important:**  
+- Provide only your final answer
+- Ensure that your response is based solely on the provided summarized laws and does not include any personal opinions or unverified information.
 - Do not simply repeat the summarized laws verbatim; instead, synthesize the information into a coherent answer.  
 - Avoid legal jargon where possible, or explain it clearly if used.
 
