@@ -1,3 +1,5 @@
+from time import time
+
 def run_llm_pipeline_with_variables(prompt_variables, 
                                    prompt_file="prompts/llm_prompt.txt",
                                    outputs_dir="outputs",
@@ -64,7 +66,7 @@ def run_llm_pipeline_with_variables(prompt_variables,
     
     def write_output(output, outputs_dir):
         outputs_dir.mkdir(parents=True, exist_ok=True)
-        output_file = outputs_dir / "llm_output.txt"
+        output_file = outputs_dir / f"llm_output{int(time())}.txt"
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(output)
         print(f"Output written to {output_file}")
@@ -83,7 +85,7 @@ def run_llm_pipeline_with_variables(prompt_variables,
 
 
 
-def call_llm_with_processed_data(processed_text, 
+def call_llm_with_processed_data(
                                 prompt_file="prompts/llm_prompt.txt",
                                 outputs_dir="outputs",
                                 model=None,

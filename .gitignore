@@ -1,3 +1,4 @@
 .env
 *.json
 src/module_4/output/filtered_laws.csv
+cache
