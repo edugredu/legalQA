@@ -268,17 +268,23 @@ def run_llm_pipeline_with_variables(prompt_variables, prompt_file="prompts/promp
         print(f"Error: {e}")
         raise e
 
-def run_module_5(filteredDF, lawsDF, user_query):
+def run_module_5(filteredDF, lawsDF, user_query, dummy_prompt:bool=False):
 
     filterer = SequenceFilterer(minimum_length_limit=20, max_added_word_limit=10000)
     summarized_laws = filterer.aggregate_all_articles(df=filteredDF, title_df=lawsDF, source_column='filtered_json')
     summarized_laws = filterer.generate_text_prompt(summarized_laws)
 
+    if dummy_prompt:
+        # Use a dummy prompt for testing purposes
+        prompt_file = "prompts/dummy_prompt.txt"
+    else:
+        prompt_file = "prompts/prompt_5.txt"
     response = run_llm_pipeline_with_variables(
         prompt_variables={
             "user_query": user_query,
             "summarized_laws": summarized_laws
-        }
+        },
+        prompt_file=prompt_file
     )
 
     return response

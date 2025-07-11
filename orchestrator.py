@@ -49,7 +49,7 @@ def process_legal_query(user_query: str) -> str:
         ############### STEP 5 Generate the final answer based on our context ###############
         #####################################################################################
 
-        output_5 = run_module_5(output_4, output_3, output_1)
+        output_5 = run_module_5(output_4, output_3, output_1, dummy_prompt=False)
         response = clean_llm_response(output_5)
 
         return response, titles
