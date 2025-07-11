@@ -50,8 +50,9 @@ def process_legal_query(user_query: str) -> str:
         #####################################################################################
 
         output_5 = run_module_5(output_4, output_3, output_1)
+        response = clean_llm_response(output_5)
 
-        return output_5, titles
+        return response, titles
         
     except Exception as e:
         print(f"Error processing query: {str(e)}")
